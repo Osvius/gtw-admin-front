@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Bree+Serif|Cairo|Domine|Ek+Mukta|Francois+One|Merriweather+Sans|Montserrat|Roboto+Slab|Sanchez" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all-index1.css" />
+	<script src="js/jquery-3.2.0.js"></script>
+	<script src='js/jquery.inputmask.js'></script>
+	<script src="js/main.js"></script>
+	<title>GoToWeb</title>
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+		<div class="logo">
+			<span class="logo_item1">goto</span>
+			<span class="logo_item2">web</span>
+		</div>
+		<nav class="nav">
+			<ul class="navigation">
+				<li><a href="#">Главная</a></li>
+				<li class="active"><a href="#" >Просмотр сайта</a></li>
+				<li><a href="#">Продвижение</a></li>
+				<li><a href="#">GoTo Social</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Поддержка</a></li>
+			</ul>
+		</nav>
+		<div class="login_block">
+			<span>Выход</span>
+		</div>	
+	</header>
+	<main id="main">
+	  <div class="content-wrap">
+		<aside class="aside_wrap">
+			<h2>Панель&nbsp;управления</h2>
+			<div class="aside_content">
+				<h3>Доступные разделы</h3>
+				<ul class="aside_nav">
+					<li><span>Мой магазин</span></li>
+					<li><span>Слайдер</span></li>
+					<li><span>Категории</span></li>
+					<li><span>Товары</span></li>
+					<li><span>Производители</span></li>
+					<li><span>Группы Характеристик</span></li>
+					<li><span>Характеристики</span></li>
+					<li><span>Доставка / Оплата</span></li>
+					<li class="active"><span >Заказы</span></li>
+				</ul>
+			</div>
+		</aside>
+	<div class="order_wrap">
+		<h5>Здесь Вы можете добавлять, обрабатывать и удалять Ваши заказы</h5>
+		<div class="order_content">
+			<div class="order_head">
+				<span class="add_order">
+				Добавление заказа 
+				</span>
+				<div class="btn-container_1">
+					<span class="btn btn_add">Добавить</span>
+					<span class="btn btn_remove"></span>
+				</div>
+			</div>	
+			<div class="order_tabs">
+				<ul id="tabs" class="tabs">
+				 	 <li class="tab1 btn active"><a href="#">1. Информация о покупателе</a></li>
+				     <li class="tab2 btn"><a href="#">2. Товары</a></li>
+				     <li class="tab3 btn"><a href="#">3. Адрес доставки</a></li>
+				     <li class="tab4 btn"><a href="#">4. Итого</a></li>
+				</ul>
+			</div>
+			<div class="tab-content">
+			    <div class="tab1">
+					<form  class="tab-form" id="user_info_form">
+					<div class="inputs_container">
+						<div class="inputs_wrap">
+							<label for="name">* Имя и Фамилия</label>
+							<input type="text" name="name" id="name" placeholder="* Имя и Фамилия должны содержать от1 до 32 символов">
+							<label for="name" class="error-box"></label>
+						</div>
+						<div class="inputs_wrap">
+							<label for="email">E-mail</label>
+							<input type="email" id="email" name="email">
+							<label for="email" class="error-box"></label>
+						</div>
+						<div class="inputs_wrap">
+							<label for="tel">Телефон</label>
+							<input type="tel" id="tel" placeholder="8 (999) 123-45-64" pattern="2[0-9]{3}-[0-9]{3}" name="tel" >
+							<label for="tel" class="error-box"></label>
+						</div>
+					</div>	
+					<div class="btn_container">
+						<button  class="btn btn_save">
+							<span class="save_icon"></span>
+							<span class="save_text">Сохранить</span>
+						</button>			
+					</div>	
+				</form>
+
+
+			</div>
+		<div class="tab2">
+
+			<form  class="tab-form ">
+				<table class="order_table col-6">
+					<tr>
+						<th>
+							<p>Товар</p>
+						</th>
+						<th>
+							<p>Модель</p>
+						</th>
+						<th >
+							<p>Количество</p>
+						</th>
+						<th>
+							<p>Цена за еденицу</p>
+						</th>
+						<th>
+							<p>Всего</p>
+						</th>
+						<th class="action">
+							<p>Действие</p>
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<p>Macbook Pro</p>
+						</td>
+						<td>
+							<p>FR839</p>
+						</td>
+						<td>
+							<div class="input_count">
+								<input type="nubmer" id="count">
+								<button type="reset"></button>
+							</div>
+							
+						</td>
+						<td>
+							<p>835 $</p>
+						</dh>
+						<td>
+							<p>1670 $</p>
+						</td>
+						<td class="action">
+							<div class="td-btn-container">
+								<button class="del"></button>
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p></p>
+						</td>
+						<td>
+							<p></p>
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							<p></p>
+						</dh>
+						<td>
+							<p></p>
+						</td>
+						<td class="action">
+	
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p></p>
+						</td>
+						<td>
+							<p></p>
+						</td>
+						<td>
+							
+						</td>
+						<td>
+							<p></p>
+						</dh>
+						<td>
+							<p></p>
+						</td>
+						<td class="action">
+						</td>
+					</tr>
+			</table>
+				<div class="inputs_container">
+					<div class="inputs_wrap">
+						<label for="product_name">Выбрать товар </label>
+						<input type="text" id="product_name">
+						<label for="product_name" class="error-box"></label>
+					</div>
+					<div class="inputs_wrap">
+						<label for="quantity">Количество</label>
+						<input type="number" id="quantity">
+						<label for="quantity" class="error-box"></label>
+					</div>
+				</div>	
+				<div class="btn_container">
+					<button  class="btn btn_save">
+						<span class="save_icon"></span>
+						<span class="save_text">Сохранить</span>
+					</button>				
+				</div>	
+		</form>			
+		</div>
+		<div class="tab3">
+				<form  class="tab-form ">
+					<div class="inputs_container">
+						<div class="inputs_wrap">
+							<label for="adress">Адрес</label>
+							<textarea name="adress" id="adress" cols="30" rows="10"></textarea>
+							<label for="adress" class="error-box"></label>
+						</div>
+
+					</div>	
+					<div class="btn_container">
+						<button  class="btn btn_save">
+							<span class="save_icon"></span>
+							<span class="save_text">Сохранить</span>
+						</button>			
+					</div>	
+
+				</form>			
+		</div>
+		<div class="tab4">
+
+			<form  class="tab-form ">
+				<table class="order_table col-5">
+					<tr>
+						<th>
+							<p>Товар</p>
+						</th>
+						<th>
+							<p>Модель</p>
+						</th>
+						<th >
+							<p>Количество</p>
+						</th>
+						<th>
+							<p>Цена за еденицу</p>
+						</th>
+						<th>
+							<p>Всего</p>
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<p>Macbook Pro</p>
+						</td>
+						<td>
+							<p>FR839</p>
+						</td>
+						<td >
+							<p>2</p>
+						</td>
+						<td>
+							<p>835 $</p>
+						</dh>
+						<td>
+							<p>1670 $</p>
+						</td>
+					</tr>
+			</table>
+			<div class="order_list_container">
+					<dl class="order_list">
+						<div class="item-container">
+							<dt>Доставка курьером</dt>
+							<dd>10 $</dd>
+						</div>
+						<div class="item-container">			
+							<dt>Итого:</dt>
+							<dd>1680 $</dd>
+						</div>
+					</dl>
+
+
+			</div>
+			
+				<div class="inputs_container">
+					<div class="inputs_wrap">
+						<label for="delivery_method">Способ доставки</label>
+						<div class="select_bg">
+						<select id="delivery_method">
+						    <option>Доставка курьером</option>
+						    <option>Доставка не курьером</option>
+						</select>
+						<div class="select_btn">
+							<img src="images/triangle-t.png" alt="triang">
+							<img src="images/triangle-b.png" alt="triang">
+						</div>
+						<span class="select_arrow_block"></span>
+						</div>
+					</div>
+					<div class="inputs_wrap">
+						<label for="payment_method">Способ оплаты</label>
+						<div class="select_bg">
+						<select id="payment_method">
+						    <option >Выберите</option>
+						    <option>Наличные</option>
+						</select>
+						<div class="select_btn">
+							<img src="images/triangle-t.png" alt="triang">
+							<img src="images/triangle-b.png" alt="triang">
+						</div>
+						<span class="select_arrow_block"></span>
+						</div>
+
+					</div>
+					<div class="inputs_wrap">
+						<label for="order_status">Статус заказа</label>
+						<input type="text" value="В ожидании" id="order_status">
+					</div>
+					<div class="inputs_wrap">
+						<label for="comment">Комментарий к заказу</label>
+						<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+					</div>					
+				</div>	
+				<div class="btn_container">
+						<button  class="btn btn_save">
+							<span class="save_icon"></span>
+							<span class="save_text">Сохранить</span>
+						</button>		
+				</div>	
+		</form>		
+
+
+		</div>
+				</div>
+			</div>	
+		</div>
+	</div>	
+  </div>	
+
+		
+	</main>
+</div>
+</body>
+</html>

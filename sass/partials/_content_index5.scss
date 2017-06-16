@@ -1,0 +1,302 @@
+
+.order_head{
+	@include display-block(block);
+	margin-bottom:15px;
+	span{
+		display:inline-block;	
+		background-repeat: no-repeat; 
+		background-position:  0 50%; 
+	}
+	@include display-block(block);
+	.add_order{
+		float: left;
+		margin-left:18px;
+		font-size: 20px;
+		font-weight: 400;  
+		padding-left:30px;
+		height: 30px;
+		line-height: 30px;  
+		-webkit-background-size: 21px 21px; 
+		-o-background-size: 21px 21px; 
+		background-size: 21px 21px; 
+		background-image: url(../images/attach_black.png);
+		background-position:  0 50%; 
+	}
+	.btn-container_1{
+		float: right;
+		overflow:hidden;
+		.btn{
+			background: #FFF ;
+			margin-left: 13px;
+			width:35px;
+			height:28px;
+			float: left;
+			@include border-radius(5px);
+			-webkit-background-size: 21px 21px; 
+			-o-background-size: 21px 21px; 
+			background-size: 21px 21px; 
+			background-repeat: no-repeat; 
+		}
+		.btn_edit{
+			border:1px solid #377de7;
+			color: #377de7;
+			background-image: url(../images/edit.png);
+			background-position:  50% 50%; 
+			&:hover{
+					background-color: #377de7;
+					color:#fff;
+					background-image: url(../images/edit_inverse.png);
+				}
+		}
+		.btn_remove{
+			border:1px solid #f20101;
+			background-image: url(../images/previous.png);
+			background-position:  50% 50%; 
+			&:hover{
+				background-color: #f20101;
+				color:#fff;
+				background-image: url(../images/previous_inverse.png);
+			}
+		}
+	}
+}
+// list
+.h3_block{
+	border:1px solid #377de7;
+	font-size: 14px;
+	height:28px;
+	line-height: 29px;  
+	margin:13px 0 17px;
+	padding-left:70px;
+	@include border-radius(5px);
+	background-color:#f4f4f7;
+	text-align: left;
+	width: calc(100% - 72px);
+	margin-bottom:10px;
+	background-repeat:no-repeat; 
+	-webkit-background-size: 18px; 
+		-o-background-size: 18px; 
+		  background-size: 18px;  
+}
+.order_list_container{
+	@include display-block(block);
+	margin-bottom: 20px;
+	.order_list{
+		float: left;
+		overflow:hidden;
+		width:calc(50% - 10px);
+		h3{
+			text-align:center;
+			padding:0;
+			width:calc(100% - 2px);
+		}
+		ul{
+			border:1px solid #377de7;
+			@include border-radius(5px);
+			width:calc(100% - 2px);
+			li{
+				padding-left:55px;
+				height:30px;
+				line-height: 30px; 
+				background-repeat:no-repeat; 
+				-webkit-background-size: 20px; 
+				-o-background-size: 20px; 
+				background-size: 20px; 
+				background-position:  20px 50%;
+			}
+		}
+	}
+	.list_1{
+		margin-right:10px;
+		h3{
+			background-image: url(../images/shopping-bag.png);
+			background-position:  23% 50%;;			
+		}
+		li:first-child{
+			background-image: url(../images/real-estate.png);		
+		}
+		li:nth-child(2){
+			background-image: url(../images/calendar.png);		
+		}
+		li:nth-child(3){
+			background-image: url(../images/credit-card.png);		
+		}
+		li:last-child{
+			background-image: url(../images/truck.png);		
+		}
+	}
+	.list_2{
+		margin-left:10px;
+		h3{
+			background-image: url(../images/avatar.png);
+			background-position:  18% 50%;			
+		}
+		li:first-child{
+			background-image: url(../images/id-card.png);		
+		}
+		li:nth-child(2){
+			background-image: url(../images/team.png);		
+		}
+		li:nth-child(3){
+			background-image: url(../images/mail.png);		
+		}
+		li:last-child{
+			background-image: url(../images/phone-call.png);		
+		}
+	}
+}
+.order_history{
+	@include display-block(block);
+}
+.h3_details{
+	background-image: url(../images/info-sign.png); 
+	background-position:  45px 50%;
+	background-size: 10px; 
+}
+.h3_add_history{
+	background-image: url(../images/add.png); 
+	background-position:  45px 50%;
+}
+// table
+.order_table{
+	width: 100%;
+	font-size: 12px;
+	border-collapse: collapse;
+	tr{
+		text-align: center;
+		}
+	td,th{
+		width: 20%;
+		height:35px;
+		line-height: 35px; 
+		position:relative;
+		border: 2px solid #83aff1;
+		vertical-align: middle;
+		overflow:hidden;
+		&:nth-child(2){
+			width:30%;
+		}
+	}
+}
+// table
+// order list
+.history_form{
+	font-size: 14px ;
+	@include display-block(block);
+	.inputs_container{
+		overflow:hidden;
+		background-color: $bgColor;
+		padding-bottom: 6px;
+		width:calc(100% - 2px);
+		@include border-radius(5px);
+		border:1px solid #377de7;
+	}
+	.inputs_wrap{
+		margin: 12px 0;
+		width:100%;	
+		overflow:hidden;
+		position:relative;
+			label{
+				float: left;
+				width:calc(25% - 40px);
+				line-height: 38px;
+				height: 38px; 
+				text-align: left;
+				margin-left:35px;
+				color:#040404;
+				font-weight: 400; 
+			}
+			input,.select_bg{
+				float: left;
+				@include border-radius(4px);
+				border: 1px solid #377de7;
+				line-height: 38px;
+				height:38px;
+				margin-right: 25px;
+				text-indent:10px;
+				width:calc(75% - 27px) ;
+			}
+			.select_bg{
+				overflow:hidden;
+				display:inline-block;
+				position:relative;
+				background-color: #fff; 
+			}
+			.select_btn{
+				width:40px;
+				height: 40px;
+				position:absolute;				
+				top:1px;
+				right:-10px; 
+				img{
+					display:block;
+					margin:4px 0;
+					&:last-of-type{
+						-ms-transform: rotate(180deg); 
+						   -webkit-transform: rotate(180deg); 
+						    transform: rotate(180deg);
+					}
+				}
+			}
+			.select_arrow_block{
+				width:15px;
+				height: 30px;
+				@include vertical-align;
+				right:-3px;
+				z-index:200;
+				background-color: #fff ;
+			}
+			select{
+				overflow:hidden;
+				@include vertical-align;
+				left:-1px;
+				width:559px;
+				padding-left:20px;
+				height:30px;
+				line-height: 30px; 
+				z-index:150;
+				border:none;
+				background: transparent;
+			}
+		}
+	.btn_container{
+		@include display-block(block);
+		.btn_add_history{
+			color:#000;
+			border:1px solid #377de7; 
+			float: right;
+			margin-right:25px;
+			width:160px;
+			overflow:hidden;
+			background-color: #fff; 
+			padding:0;	
+
+			.add_icon{
+				float: left;
+				width:20%;
+				height: 28px ;
+				line-height: 28px; 
+				background-repeat:no-repeat; 
+				background-size: 21px 21px; 
+				background-image: url(../images/add.png);
+				background-position:  10px 50%; 
+				transition: all 0.5s;
+			}
+			.add_text{
+				float: left;
+				width:80%;
+				height: 100%; 
+				font-size: 13px; 
+			}
+			&:hover{
+				.add_icon{
+				 	background-image: url(../images/add_inverse.png);
+				 }			
+				color:#fff;
+				background-color: #377de7;
+
+			}
+
+		}
+	}
+}

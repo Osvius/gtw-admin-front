@@ -1,0 +1,122 @@
+.aside_wrap{
+	width:270px;
+	text-align:left;
+	h2{
+		font-size: 24px; 
+		font-weight: 400; 
+		padding-left:10%;
+		height: 70px;
+		line-height: 70px;  
+	}
+}
+
+.aside_content{
+	height: 100%; 
+	background-color: #FFF;
+	padding:30px 15px;
+	@include border-radius(4px);  
+	h3{
+		font-size: 14px; 
+		text-transform: uppercase;
+		margin-bottom: 10px; 
+		padding-left:18px;
+	}
+}
+.aside_nav{
+	li{
+		width:100%;
+		@include border-radius(5px);
+		border: 1px solid #f4f7fa;
+		margin: 10px 0;
+		position: relative;
+		overflow:hidden;
+		cursor:pointer;
+		background-repeat:no-repeat;
+		-webkit-background-size: 21px 21px; 
+		 -o-background-size: 21px 21px; 
+		 background-size: 21px 21px;  
+		background-position: 15px 50%;
+		&:after{
+			content:"";
+			@include vertical-align;
+			right:0;
+			width:20px;
+			height: 20px;
+			background-image: url(../images/options.png);  
+			background-repeat:no-repeat;
+		}
+		&:hover{
+			background-color: #377de7;
+			color: #fff;
+			span{
+				color:#fff 
+				}	
+		}
+		&:first-of-type{
+			background-image: url(../images/real-estate.png);
+			&:hover{
+				background-image: url(../images/real-estate_inverse.png);
+			}
+		}
+		&:nth-of-type(2){
+			background-image: url(../images/slider.png);
+			&:hover{
+				background-image: url(../images/slider_inverse.png);
+			}
+		}
+		&:nth-of-type(3){
+			background-image: url(../images/list.png);
+			&:hover{
+				background-image: url(../images/list_inverse.png);
+			}
+		}
+		&:nth-of-type(4){
+			background-image: url(../images/portfolio.png);
+			&:hover{
+				background-image: url(../images/portfolio_inverse.png);
+			}
+		}
+		&:nth-of-type(5){
+			background-image: url(../images/factory.png);
+			&:hover{
+				background-image: url(../images/factory_inverse.png);
+			}
+		}
+		&:nth-of-type(6){
+			background-image: url(../images/folder1.png);
+			&:hover{
+				background-image: url(../images/folder1_inverse.png);
+			}
+		}
+		&:nth-of-type(7){
+			background-image: url(../images/folder2.png);
+			&:hover{
+				background-image: url(../images/folder2_inverse.png);
+			}
+		}		
+		&:nth-of-type(8){
+			background-image: url(../images/truck.png);
+			&:hover{
+				background-image: url(../images/truck_inverse.png);
+			}
+		}	
+		&:last-of-type{
+			background-image: url(../images/attach.png);
+			}			
+		}
+		span{
+			font-size: 14px;
+			line-height: 50px;
+			color: #2f3a46; 
+			display: inline-block;
+			padding-left: 60px;
+			// padding-right:20px;
+		}
+	.active{
+		background-color: #377de7;
+		color: #fff;
+		span{
+			color:#fff 
+			}	
+		}
+}

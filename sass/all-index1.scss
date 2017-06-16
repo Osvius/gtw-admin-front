@@ -1,0 +1,197 @@
+/* SCSS Compiled */
+@import "global/mixins.scss";
+@import "global/reset.scss";
+@import "global/var.scss";
+@import "../fonts/font-face.css";
+
+@import "partials/header.scss";
+@import "partials/sidebar.scss";
+@import "partials/content_index1.scss";
+@import "partials/content_index2.scss";
+@import "partials/content_index3.scss";
+@import "partials/content_index4.scss";
+// main
+body{
+	
+	@include box-treatment;
+	font-weight: 400; 
+	// font-family: 'Montserrat', sans-serif;
+	font-family: 'Ek Mukta', sans-serif;
+	// font-family: 'Francois One', sans-serif;
+	// font-family: 'Cairo', sans-serif;
+
+
+	// font-family: 'Roboto Slab', serif;
+	// font-family: 'Bree Serif', serif;
+	// font-family: 'Merriweather Sans', sans-serif;
+	// font-family: 'Domine', serif;
+	// font-family: 'Sanchez', serif;
+// font-family: 'Ek Mukta', sans-serif;
+
+}
+button{
+	cursor: pointer;
+}
+
+textarea{
+	resize:none!important;
+}
+#main{
+	background-color: #f3f4f6; 
+}
+.content-wrap{
+	@include max-width(1170px);
+	@include display-flex;
+	@include justify-content(space-between);
+	@include align-item(stretch);
+	overflow:hidden;
+	margin:0 auto;
+}
+
+.aside_wrap,.order_wrap{
+	overflow: hidden;
+	margin: 50px 0;
+}
+.order_wrap{
+	overflow:hidden;
+	width: 820px;
+	h5{
+		font-size:  14px; 
+		margin-left:60px;
+		height: 70px;
+		line-height: 70px;  
+	}
+}
+.order_content{
+	padding: 13px 20px;
+	background-color: #FFF;
+	@include border-radius(4px);
+	height:100%;
+	position:relative;
+	overflow:hidden;
+}
+.btn{
+	@include border-radius(4px);
+	display:inline-block;
+	padding: 0 15px;
+	line-height: 28px;
+	font-size: 16px;  
+	cursor: pointer;
+	transition: all .5s ease;
+	&:hover{
+		background-color: #f3f4f6	}
+	i{
+		margin-right: 10px;
+	}
+}
+input,textarea{
+	&:focus{
+	-webkit-box-shadow: inset -1px -1px 18px -5px rgba(140,146,154,1);
+	-moz-box-shadow: inset -1px -1px 18px -5px rgba(140,146,154,1);
+	box-shadow: inset -1px -1px 18px -5px rgba(140,146,154,1);		
+	}
+}
+
+.order_head{
+	@include display-block(block);
+	margin-bottom:35px;
+	span{
+		display:inline-block;	
+		background-repeat: no-repeat; 
+		background-position:  0 50%; 
+	}
+	.add_order{
+		float: left;
+		margin-left:18px;
+		font-size: 20px;
+		font-weight: 400;  
+		padding-left:30px;
+		-webkit-background-size: 21px 21px; 
+		-o-background-size: 21px 21px; 
+		background-size: 21px 21px; 
+		background-image: url(../images/add.png);
+		background-position:  0 50%; 
+	}
+	.btn-container_1{
+		float: right;
+		overflow:hidden;
+		.btn{
+			background: #FFF ;
+			margin-left: 13px;
+			float: left;
+			@include border-radius(5px);
+			-webkit-background-size: 21px 21px; 
+			-o-background-size: 21px 21px; 
+			background-size: 21px 21px; 
+			background-repeat: no-repeat; 	
+		}
+		.btn_add{
+			border:1px solid #377de7;
+			color: #377de7;
+			padding: 0 20px 0 50px;
+			background-image: url(../images/addblue.png);
+			background-position:  18px 50%; 
+			&:hover{
+				background-color: #377de7;
+				color:#fff;
+				background-image: url(../images/add_inverse.png);
+			}
+		}
+		.btn_remove{
+			width: 20px;
+			height:28px;
+			border:1px solid #f20101;
+			background-image: url(../images/previous.png);
+			background-position:  50% 50%; 
+			&:hover{
+				background-color: #f20101;
+				color:#fff;
+				background-image: url(../images/previous_inverse.png);
+			}
+		}
+	}
+}
+
+
+// tabs
+
+.order_tabs{
+	@include display-block(block);
+	margin-bottom:30px;
+}
+.tab-content{
+	@include display-block(block);
+}
+#tabs{
+	overflow:hidden;
+	@include display-flex;
+	@include justify-content(space-between);
+	li{
+		display:block;
+		border:1px solid $tabsBorder;
+		width:178px;
+		text-align:center;
+		padding:0 2px;
+		font-size: 12px; 
+		height:38px;
+		a{
+			color:#233539;
+			display:block;
+			width:100%;
+			line-height: 38px; 
+		}
+	}
+	.active{
+		background-color: #377de7;
+		a{
+			color:#fff;
+		} 
+		&:hover{
+			background-color: #0a53c1; 
+		}
+	}
+}
+
+.tab-content{
+	@include display-block(block);
+}

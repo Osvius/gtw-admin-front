@@ -1,0 +1,239 @@
+.order_form{
+	@include display-block(block);
+}
+.order_head{
+	font-size: 23px; 
+	span{
+		display:inline-block;
+		padding-left:35px;
+		background-image: url(../images/list_2.png);
+		background-repeat: no-repeat; 
+		background-position:  0 50%; 
+	}
+	@include display-block(block);
+	.add_order{
+		float: left;
+	}
+	.btn-container_1{
+		float: right;
+		overflow: hidden;
+		.btn{
+			margin-left: 20px;
+			float: left;
+		}
+		.btn_add{
+			border: 1px solid #377de7;
+			color: #377de7;
+			padding: 0 20px 0 50px;
+			background-image:url(../images/addblue.png) ;
+			background-repeat: no-repeat; 
+			background-position: 18px 50%; 
+			height: 28px; 
+			&:hover{
+				background-color: #377de7; 
+				color:#fff;
+				background-image:url(../images/add_inverse.png) ;
+			}
+		}
+		.btn_delete{
+			border: 1px solid #f20101;
+			color: #f20101;
+			width:44px;
+			height: 28px; 
+			background-image:url(../images/garbage.png) ;
+			background-repeat: no-repeat; 
+			background-position: 50% 50%; 
+			&:hover{
+				background-color: #f20101; 
+				color:#fff;
+				background-image:url(../images/garbage_inverse.png);
+			}
+		}
+
+	}
+}
+.btn{
+	@include border-radius(4px);
+	display:inline-block;
+	padding: 0 15px;
+	line-height: 28px;
+	font-size: 16px;  
+	cursor: pointer;
+	transition: all .5s ease;
+	background-color: #fff ;
+	&:hover{
+		background-color: #f3f4f6; 
+	}
+}
+
+
+
+.order_inputs{
+	font-size: 16px ;
+	width: 100%;
+	@include display-flex;
+	@include flex-wrap(wrap);
+	@include justify-content(space-between);
+	overflow:hidden;
+	.inputs_wrap{
+		margin-top: 40px;
+		width: 30%;
+		display:block;
+		overflow:hidden;
+			label{
+			display: block;
+			padding:0 0 5px 10px;
+			}
+			input{
+				display:block;
+				@include border-radius(4px);
+				border: 1px solid #377de7;
+				background-color: #f4f4f7;
+				line-height: 40px;
+				width: calc(100% - 2px);
+				text-indent:10px;
+				}
+		}
+}
+.btn_container_2{
+	margin:35px 0 ;
+	overflow:hidden;
+	.btn{
+		float: left;
+		border: 1px solid #377de7;
+		color: #377de7;
+		margin-left: 5px;
+		padding-left:40px;
+		background-repeat:no-repeat; 
+		background-position:  12px 50%; 
+	}
+	.btn_reset{
+		background-image: url(../images/redo-circular-arrow.png);
+		&:hover{
+			background-color: #377de7; 
+			color:#fff;
+			background-image: url(../images/redo-circular-arrow_inverse.png);
+		}
+	}
+	.btn_filter{
+		background-image: url(../images/funnel.png);
+		&:hover{
+			background-color: #377de7;
+			color:#fff;
+			background-image: url(../images/funnel_inverse.png); 
+		}
+	}
+}
+.btn-float{
+	float: right;
+}
+.order_table{
+	width: 100%;
+	font-size: 12px;
+	border-collapse: collapse;
+	tr{
+		text-align: center;
+		}
+	td,th{
+		width: 15%;
+		height:$td_Height;
+		position:relative;
+		border: 2px solid #83aff1;
+		vertical-align: middle;
+		overflow:hidden;}
+	.checkB{
+		position: relative;
+		width: 5%;
+	}
+	.td-number{
+		width:10%!important;}
+
+	.td-btn{
+			width:100%;
+			@include display-flex;
+			@include justify-content(space-around);
+			overflow:hidden;
+	}
+	button{
+		border: 1px solid #377de7;
+		width: 30px;
+		height: 26px;
+		color: #377de7;
+		background: #fff ;
+		background-repeat:no-repeat; 
+		-webkit-background-size: 17px; 
+		-o-background-size: 17px; 
+		background-size: 17px; 
+		transition: all .5s ease;
+		}
+	.look{
+		background-image: url(../images/look.png);
+		background-position:  50% 50%; 
+		background-color: #f3f4f6; 
+		&:hover{
+			background-image: url(../images/look_inverse.png);
+			background-color: #377de7; 
+		}
+	
+	}
+	.edit{
+		background-image: url(../images/edit.png) ;
+		background-position: 50% 50%; 
+		background-color: #f3f4f6; 
+
+		&:hover{
+			background-image: url(../images/edit_inverse.png) ;
+			background-color: #377de7; 
+		}
+	}
+
+	
+}
+.checkbox{
+	display: none;
+	& + label::before {	
+  		content: "";
+		height: 15px;
+	    width: 15px;
+	    border: 1px solid #83aff1;
+	    position: absolute;
+		left:50%;
+		top:50%;
+		margin-top:-7.5px;
+		margin-left:-7.5px;
+	}
+	&:checked + label::before {
+		    content: "\2713";
+		    color: #83aff1;
+			}
+	}
+.pagination{
+	overflow:hidden;
+	position:absolute;
+	bottom: 100px;
+	font-size: 16px; 
+	.pagination-list{
+		display:inline-block;
+		overflow:hidden;
+		li{
+			display:inline-block;
+			text-align:center;
+			border:1px solid $headerLi;
+			transition: all .5s ease;
+			&:hover{
+				background-color: $headerLi;
+				span{
+					color:#fff;
+				} 
+			}
+			span{
+				line-height: 20px; 
+				color:$headerLi;
+				font-size: 18px;
+				padding: 0 10px;
+				cursor:pointer;	
+			}
+		}
+	}
+
+}

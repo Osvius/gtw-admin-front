@@ -1,0 +1,105 @@
+#header {
+	width: 100%;
+	@include display-block(block);
+    background: $white;
+    z-index: 10;
+    color: $headerLi;
+    border-bottom: 1px solid $darkBlue;
+    @include transition(300ms);
+    position:relative; 
+    height:$headerHeight;
+}
+.nav{
+	@include max-width(1170px);
+	top:0;
+	@include horizontal-align;
+	height:$headerHeight;
+	overflow:hidden;
+	@include display-flex;
+}
+.logo{
+	padding-left:45px;
+	overflow:hidden;
+	position:absolute;
+    left:0;
+    top:0;
+    height:$headerHeight;
+    @include display-flex;
+    @include align-item(center) ;
+    span{
+		display:block;
+    	width: 50%;
+    	text-transform: uppercase;
+    	line-height: 45px;
+    	text-align:center; 
+    }
+}   
+.login_block{
+	position:absolute;
+	height:$headerHeight;
+	top:0;
+    right:0;
+	overflow:hidden;
+	padding-right: 20px;
+	cursor: pointer;
+	span{
+		display:block;
+		font-size: 18px;
+		line-height: $headerHeight;
+		color: $headerLi;
+		padding-left:30px;
+		background-image: url(../images/logout.png);
+		background-repeat: no-repeat ;
+		background-position: 0 50%; 
+		}
+	}   
+	.logo_item1{
+		color: $lightBlue;
+		font-size: 24px;
+		padding-right: 9px;
+	}
+	.logo_item2{
+		color: $white;
+		font-size: 24px;
+		background-color: $darkBlue;  
+	}
+.navigation{
+	width:90%;
+	display:block;
+	overflow: hidden;
+	margin: 0 12%;	
+	li{
+		float: left;
+		margin: 0 20px;
+		position: relative;
+		&:after {
+	          position: absolute;
+	          bottom: 12px;
+	          content: '';
+	          margin: auto;
+	          height: 2px;
+	          width: 100%;
+	          transform: scaleX(0);
+	          background: transparent;
+	          transition: transform .5s ease;
+	        }
+		&:hover:after {
+		    transform: scaleX(1);
+		    background: $headerLi ;
+		    }
+		&.active{
+			&:after {
+            transform: scaleX(1);
+            background: $headerLi;
+          }
+		}
+		a{
+			display:block;
+			font-size: 18px;
+			line-height: $headerHeight;
+			color: $headerLi;
+		}
+	}
+
+}
+

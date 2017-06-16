@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Gudea|Libre+Baskerville|Merriweather+Sans|Montserrat|Overpass|Signika" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fonts/font-face.css" />
+    <link rel="stylesheet" type="text/css" href="css/all-index0.css" />
+
+		<script src="./js/jquery-3.2.0.js"></script>
+		<script src="js/main.js"></script>
+		<title>GoToWeb</title>
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+		<div class="logo">
+			<span class="logo_item1">goto</span>
+			<span class="logo_item2">web</span>
+		</div>
+		<nav class="nav">
+			<ul class="navigation">
+				<li><a href="#">Главная</a></li>
+				<li class="active"><a href="#" >Просмотр сайта</a></li>
+				<li><a href="#">Продвижение</a></li>
+				<li><a href="#">GoTo Social</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Поддержка</a></li>
+			</ul>
+		</nav>
+		<div class="login_block">
+			<span>Выход</span>
+		</div>	
+	</header>
+	<main id="main">
+	  <div class="content-wrap">
+		<aside class="aside_wrap">
+			<h2>Панель&nbsp;управления</h2>
+			<div class="aside_content">
+				<h3>Доступные разделы</h3>
+				<ul class="aside_nav">
+					<li><span>Мой магазин</span></li>
+					<li><span>Слайдер</span></li>
+					<li><span>Категории</span></li>
+					<li><span>Товары</span></li>
+					<li><span>Производители</span></li>
+					<li><span>Группы Характеристик</span></li>
+					<li><span>Характеристики</span></li>
+					<li><span>Доставка / Оплата</span></li>
+					<li class="active"><span >Заказы</span></li>
+				</ul>
+			</div>
+		</aside>
+		<div class="order_wrap">
+			<h5>Здесь Вы можете добавлять, обрабатывать и удалять Ваши заказы</h5>
+			<div class="order_content">
+				<form class="order_form">
+				<div class="order_head">
+					<span>
+					Список заказов
+					</span>
+					<div class="btn-container_1">
+					<button class="btn btn_add">
+						Добавить
+					</button>
+					<button class="btn btn_delete">
+					</buttton>
+					</div>
+					
+				</div>
+				<div class="order_inputs">
+					<div class="inputs_wrap">
+						<label for="order_number">Заказ №</label>
+						<input type="text" id="order_number">
+					</div>
+					<div class="inputs_wrap">
+						<label for="order_status">Статус заказа</label>
+						<input type="text" id="order_status">
+					</div>
+					<div class="inputs_wrap">
+						<label for="order_date">Дата добавления</label>
+						<input type="text" id="order_date">
+					</div>
+					<div class="inputs_wrap">
+						<label for="order_buyer">Покупатель</label>
+						<input type="text" id="order_buyer">
+					</div>
+					<div class="inputs_wrap">
+						<label for="order_total">Итого</label>
+						<input type="text" id="order_total">
+					</div>
+					<div class="inputs_wrap">
+						<label for="order_edit_date">Дата редактирования</label>
+						<input type="text" id="order_edit_date">
+					</div>
+				</div>
+				<div class="btn_container_2">
+					<div class="btn-float">
+						<button  class="btn btn_reset">Сброс</button>
+						<button  class="btn btn_filter">
+						Фильтр</button>
+					</div>
+					
+				</div>
+				</form>
+				<table class="order_table">
+					<tr>
+						<th class="checkB">
+							<input type="checkbox" id="check1" class="checkbox">
+							<label for="check1"></label>
+						</th>
+						<th class="td-border td-number">
+							<p>Заказ №</p>
+						</th>
+						<th>
+							<p>Покупатель</p>
+						</th>
+						<th class="td-border">
+							<p>Статус</p>
+						</th>
+						<th class="td-border">
+							<p>Всего</p>
+						</th>
+						<th>
+							<p>Создан</p>
+						</th>
+						<th>
+							<p>Обнавлен</p>
+						</th>
+						<th>
+							<p>Действие</p>
+						</th>
+					</tr>
+					<tr>
+						<td class="checkB">
+							<input type="checkbox" id="check2" class="checkbox">
+							<label for="check2"></label>
+						</td>
+						<td class="td-border td-number">
+							<p>132</p>
+						</td>
+						<td >
+							<p>Алексей</p>
+						</td>
+						<td class="td-border">
+							<p>Ожидание</p>
+						</td>
+						<td class="td-border">
+							<p>1350 грн</p>
+						</td>
+						<td>
+							<p>19.05.2017</p>
+						</td>
+						<td>
+							<p>19.05.2017</p>
+						</td>
+						<td class="table-btn">
+							<div class="td-btn-container">
+								<button class="look"></button>
+								<button class="edit"></button>
+							</div>		
+						</td>
+					</tr>
+					<tr>
+						<td class="checkB">
+							<input type="checkbox" id="check3" class="checkbox">
+							<label for="check3"></label>
+						</td>
+						<td class="td-border td-number">
+							<p></p>
+						</td>
+						<td>
+							<p></p>
+						</td>
+						<td class="td-border">
+							<p></p>
+						</td>
+						<td class="td-border">
+							<p></p>
+						</td>
+						<td>
+							<p></p>
+						</td>
+						<td>
+							<p></p>
+						</td>
+						<td class="table-btn">
+							<div class="td-btn-container">
+								<button class="look"></button>
+								<button class="edit"></button>
+							</div>	
+						</td>
+					</tr>
+					<tr>
+						<td class="checkB">
+							<input type="checkbox" id="check4" class="checkbox">
+							<label for="check4"></label>
+						</td>
+						<td class="td-border td-number">
+							<p></p>
+						</td>
+						<td>
+							<p></p>
+						</td>
+						<td class="td-border">
+							<p></p>
+						</td>
+						<td class="td-border">
+							<p></p>
+						</td>
+						<td>
+							<p></p>
+						</td>
+						<td>
+							<p></p>
+						</td>
+						<td>
+							<div class="td-btn-container">
+								<button class="look"></button>
+								<button class="edit"></button>
+							</div>	
+						</td>
+					</tr>
+				</table>
+				<div class="pagination">
+					<ul class="pagination-list">
+						<li class="prev"><span>
+							&laquo;
+						</span></li>
+						<li><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li class="else"><span>...</span></li>
+						<li><span>35</span></li>
+						<li class="next"><span>&raquo;</span></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>	
+	  </div>	
+
+		
+	</main>
+</div>
+</body>
+</html>

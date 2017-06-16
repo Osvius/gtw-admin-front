@@ -1,0 +1,74 @@
+	/* SCSS Compiled */
+@import "global/mixins.scss";
+@import "global/reset.scss";
+@import "global/var.scss";
+
+@import "partials/header.scss";
+@import "partials/sidebar.scss";
+@import "partials/content_index5.scss";
+
+
+
+// main
+body{
+	font-family: 'SFNSDisplay' ;
+	@include box-treatment;
+}
+button{
+	cursor: pointer;
+}
+#main{
+	background-color: #f3f4f6; 
+}
+.content-wrap{
+	@include max-width(1170px);
+	@include display-flex;
+	@include justify-content(space-between);
+	@include align-item(stretch);
+	overflow:hidden;
+	margin:0 auto;
+}
+.aside_wrap,.order_wrap{
+	overflow: hidden;
+	margin: 50px 0;
+}
+.order_wrap{
+	overflow:hidden;
+	width: 820px;
+	h5{
+		font: 14px sans-serif; 
+		margin-left:60px;
+		height: 70px;
+		line-height: 70px;  
+	}
+}
+
+.order_content{
+	padding: 13px 20px;
+	background-color: #FFF;
+	@include border-radius(4px);
+	height:100%;
+	position:relative;
+	overflow:hidden;
+}
+.btn{
+	@include border-radius(4px);
+	display:inline-block;
+	padding: 0 15px;
+	line-height: 28px;
+	font-size: 16px;  
+	cursor: pointer;
+	transition: all .5s ease;
+	&:hover{
+		background-color: #f3f4f6	}
+	i{
+		margin-right: 10px;
+	}
+}
+input,textarea{
+	&:focus{
+	-webkit-box-shadow: inset -1px -1px 18px -5px rgba(140,146,154,1);
+	-moz-box-shadow: inset -1px -1px 18px -5px rgba(140,146,154,1);
+	box-shadow: inset -1px -1px 18px -5px rgba(140,146,154,1);		
+	}
+}
