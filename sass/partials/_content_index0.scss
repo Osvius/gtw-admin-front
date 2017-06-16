@@ -83,18 +83,58 @@
 			label{
 			display: block;
 			padding:0 0 5px 10px;
-			}
-			input{
+			}	// select style start 
+			input,.select_bg{
 				display:block;
 				@include border-radius(4px);
 				border: 1px solid #377de7;
 				background-color: #f4f4f7;
 				line-height: 40px;
+				height:40px;
 				width: calc(100% - 2px);
 				text-indent:10px;
+				overflow:hidden;
+				position:relative;
 				}
+
+			select{
+				@include vertical-align;
+				left:-1px;
+				padding-left:20px;
+				height:40px;
+				width:101%;
+				z-index:150;
+				border:none;
+				background: transparent;
+				overflow:hidden;
+			}
+			.select_btn{
+			    width: 20px;
+			    height: 35px;
+			    position: absolute;
+			    top: 1px;
+				right:5px; 
+				background-color: #f4f4f7;
+				img{
+					display:block;
+					margin:4px 0;
+					&:last-of-type{
+						-ms-transform: rotate(180deg); 
+						   -webkit-transform: rotate(180deg); 
+						    transform: rotate(180deg);
+					}
+				}
+			}
+			.select_arrow_block{
+				width:10px;
+				height: 30px;
+				@include vertical-align;
+				right:1px;
+				z-index:300;
+				background-color: #f4f4f7 ;	
+			}
 		}
-}
+}	// select style start 
 .btn_container_2{
 	margin:35px 0 ;
 	overflow:hidden;

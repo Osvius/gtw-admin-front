@@ -582,23 +582,79 @@ h6 {
   padding: 0 0 5px 10px;
 }
 /* line 87, ../sass/partials/_content_index0.scss */
-.order_inputs .inputs_wrap input {
+.order_inputs .inputs_wrap input, .order_inputs .inputs_wrap .select_bg {
   display: block;
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 1px solid #377de7;
   background-color: #f4f4f7;
   line-height: 40px;
+  height: 40px;
   width: calc(100% - 2px);
   text-indent: 10px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 100, ../sass/partials/_content_index0.scss */
+.order_inputs .inputs_wrap select {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  left: -1px;
+  padding-left: 20px;
+  height: 40px;
+  width: 101%;
+  z-index: 150;
+  border: none;
+  background: transparent;
+  overflow: hidden;
+}
+/* line 111, ../sass/partials/_content_index0.scss */
+.order_inputs .inputs_wrap .select_btn {
+  width: 20px;
+  height: 35px;
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  background-color: #f4f4f7;
+}
+/* line 118, ../sass/partials/_content_index0.scss */
+.order_inputs .inputs_wrap .select_btn img {
+  display: block;
+  margin: 4px 0;
+}
+/* line 121, ../sass/partials/_content_index0.scss */
+.order_inputs .inputs_wrap .select_btn img:last-of-type {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 128, ../sass/partials/_content_index0.scss */
+.order_inputs .inputs_wrap .select_arrow_block {
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  right: 1px;
+  z-index: 300;
+  background-color: #f4f4f7;
 }
 
-/* line 98, ../sass/partials/_content_index0.scss */
+/* line 138, ../sass/partials/_content_index0.scss */
 .btn_container_2 {
   margin: 35px 0;
   overflow: hidden;
 }
-/* line 101, ../sass/partials/_content_index0.scss */
+/* line 141, ../sass/partials/_content_index0.scss */
 .btn_container_2 .btn {
   float: left;
   border: 1px solid #377de7;
@@ -608,43 +664,43 @@ h6 {
   background-repeat: no-repeat;
   background-position: 12px 50%;
 }
-/* line 110, ../sass/partials/_content_index0.scss */
+/* line 150, ../sass/partials/_content_index0.scss */
 .btn_container_2 .btn_reset {
   background-image: url(../images/redo-circular-arrow.png);
 }
-/* line 112, ../sass/partials/_content_index0.scss */
+/* line 152, ../sass/partials/_content_index0.scss */
 .btn_container_2 .btn_reset:hover {
   background-color: #377de7;
   color: #fff;
   background-image: url(../images/redo-circular-arrow_inverse.png);
 }
-/* line 118, ../sass/partials/_content_index0.scss */
+/* line 158, ../sass/partials/_content_index0.scss */
 .btn_container_2 .btn_filter {
   background-image: url(../images/funnel.png);
 }
-/* line 120, ../sass/partials/_content_index0.scss */
+/* line 160, ../sass/partials/_content_index0.scss */
 .btn_container_2 .btn_filter:hover {
   background-color: #377de7;
   color: #fff;
   background-image: url(../images/funnel_inverse.png);
 }
 
-/* line 127, ../sass/partials/_content_index0.scss */
+/* line 167, ../sass/partials/_content_index0.scss */
 .btn-float {
   float: right;
 }
 
-/* line 130, ../sass/partials/_content_index0.scss */
+/* line 170, ../sass/partials/_content_index0.scss */
 .order_table {
   width: 100%;
   font-size: 12px;
   border-collapse: collapse;
 }
-/* line 134, ../sass/partials/_content_index0.scss */
+/* line 174, ../sass/partials/_content_index0.scss */
 .order_table tr {
   text-align: center;
 }
-/* line 137, ../sass/partials/_content_index0.scss */
+/* line 177, ../sass/partials/_content_index0.scss */
 .order_table td, .order_table th {
   width: 15%;
   height: 40px;
@@ -653,16 +709,16 @@ h6 {
   vertical-align: middle;
   overflow: hidden;
 }
-/* line 144, ../sass/partials/_content_index0.scss */
+/* line 184, ../sass/partials/_content_index0.scss */
 .order_table .checkB {
   position: relative;
   width: 5%;
 }
-/* line 148, ../sass/partials/_content_index0.scss */
+/* line 188, ../sass/partials/_content_index0.scss */
 .order_table .td-number {
   width: 10% !important;
 }
-/* line 151, ../sass/partials/_content_index0.scss */
+/* line 191, ../sass/partials/_content_index0.scss */
 .order_table .td-btn {
   width: 100%;
   display: -webkit-box;
@@ -676,7 +732,7 @@ h6 {
   justify-content: space-around;
   overflow: hidden;
 }
-/* line 157, ../sass/partials/_content_index0.scss */
+/* line 197, ../sass/partials/_content_index0.scss */
 .order_table button {
   border: 1px solid #377de7;
   width: 30px;
@@ -689,34 +745,34 @@ h6 {
   background-size: 17px;
   transition: all .5s ease;
 }
-/* line 169, ../sass/partials/_content_index0.scss */
+/* line 209, ../sass/partials/_content_index0.scss */
 .order_table .look {
   background-image: url(../images/look.png);
   background-position: 50% 50%;
   background-color: #f3f4f6;
 }
-/* line 173, ../sass/partials/_content_index0.scss */
+/* line 213, ../sass/partials/_content_index0.scss */
 .order_table .look:hover {
   background-image: url(../images/look_inverse.png);
   background-color: #377de7;
 }
-/* line 179, ../sass/partials/_content_index0.scss */
+/* line 219, ../sass/partials/_content_index0.scss */
 .order_table .edit {
   background-image: url(../images/edit.png);
   background-position: 50% 50%;
   background-color: #f3f4f6;
 }
-/* line 184, ../sass/partials/_content_index0.scss */
+/* line 224, ../sass/partials/_content_index0.scss */
 .order_table .edit:hover {
   background-image: url(../images/edit_inverse.png);
   background-color: #377de7;
 }
 
-/* line 192, ../sass/partials/_content_index0.scss */
+/* line 232, ../sass/partials/_content_index0.scss */
 .checkbox {
   display: none;
 }
-/* line 194, ../sass/partials/_content_index0.scss */
+/* line 234, ../sass/partials/_content_index0.scss */
 .checkbox + label::before {
   content: "";
   height: 15px;
@@ -728,40 +784,40 @@ h6 {
   margin-top: -7.5px;
   margin-left: -7.5px;
 }
-/* line 205, ../sass/partials/_content_index0.scss */
+/* line 245, ../sass/partials/_content_index0.scss */
 .checkbox:checked + label::before {
   content: "\2713";
   color: #83aff1;
 }
 
-/* line 210, ../sass/partials/_content_index0.scss */
+/* line 250, ../sass/partials/_content_index0.scss */
 .pagination {
   overflow: hidden;
   position: absolute;
   bottom: 100px;
   font-size: 16px;
 }
-/* line 215, ../sass/partials/_content_index0.scss */
+/* line 255, ../sass/partials/_content_index0.scss */
 .pagination .pagination-list {
   display: inline-block;
   overflow: hidden;
 }
-/* line 218, ../sass/partials/_content_index0.scss */
+/* line 258, ../sass/partials/_content_index0.scss */
 .pagination .pagination-list li {
   display: inline-block;
   text-align: center;
   border: 1px solid #4c8aea;
   transition: all .5s ease;
 }
-/* line 223, ../sass/partials/_content_index0.scss */
+/* line 263, ../sass/partials/_content_index0.scss */
 .pagination .pagination-list li:hover {
   background-color: #4c8aea;
 }
-/* line 225, ../sass/partials/_content_index0.scss */
+/* line 265, ../sass/partials/_content_index0.scss */
 .pagination .pagination-list li:hover span {
   color: #fff;
 }
-/* line 229, ../sass/partials/_content_index0.scss */
+/* line 269, ../sass/partials/_content_index0.scss */
 .pagination .pagination-list li span {
   line-height: 20px;
   color: #4c8aea;
