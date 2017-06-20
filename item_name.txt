@@ -1,0 +1,32 @@
+.order_head шапка конента ( заголовоки кнопки ) 
+.order_list_name класс заголовка контентной области в index0.html
+.btn-container_1  обертка дл€ кнопок в шапке контента 
+.order_inputs контейнер дл€ инпутов
+.input класс дл€ input в index0.html
+
+.btn-float  обертка дл€ смешени€ кнопок btn_filter  btn_reset в сторону в index0.html  
+
+.order_table класс общими стил€ми таблицы
+
+.tab4_inputs_container обертка дл€ select и input в 4 табсе index1.html
+
+.tab_textarea класс дл€ textarea в index1.html
+
+.input_label класс дл€ лейблов 
+.tab1_input класс дл€ инпутов в 1 табче inex1.html
+
+
+.select_bg обертка дл€ стилизации select полей 
+
+.select_bg2 доп стили дл€ стилизации select  в index2.html
+
+.table_input_count блок в €чейке таблицы,который содержит инпут дл€ ввода чисел и кнопку 
+(возможно лучше обертку div помен€ть на form?)
+.input_count поле input  в блоке .table_input_count
+.button_count кнопка отравки  инпута .input_count
+
+index2.html
+ 
+.order_list_container контейнер дл€ списков в  index2.html
+.list_1  соответственно первый и второй список в .order_list_container
+.list_2
