@@ -62,9 +62,7 @@ body{
   font-family: 'Gudea', sans-serif;
  /*font-family: 'Ek Mukta', sans-serif;*/
 }
-.display-none{
-  display:none;
-}
+
 button{
   cursor: pointer;
 }
@@ -118,6 +116,10 @@ input:focus, textarea:focus {
   margin: 50px 0;
 }
 
+.hidden{
+  display:none;
+  opacity:0;
+}
 
 /* common style for all pages end  */
 
@@ -916,7 +918,7 @@ input:focus, textarea:focus {
   height: 45px;
   display: block;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .tab_textarea_wrap{
    height: 80px!important;
@@ -961,7 +963,24 @@ input:focus, textarea:focus {
   color: #ff0000;
   font-weight: normal;
 }
+.dropdown-menu{
+  position:absolute ;
+  top:42px;
+  /*width:300px;*/
+  left:25%;
+  z-index:150;
+    border:1px solid #4991e3;
+}
+.dropdown-menu li{
 
+  cursor:pointer;
+  background-color: #fff;
+  padding:5px 10px;
+  /*height: 20px;*/
+}
+.dropdown-menu li:hover{
+  background-color: #dce4f4;
+}
 .tab-form .btn_container {
   display: block;
   overflow: hidden;
@@ -1160,9 +1179,10 @@ input:focus, textarea:focus {
 
 
 .tab4_inputs_container{
+  padding-top:10px;
   margin-bottom: 25px;
   background-color: #f3f4f6;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
  .tab4_select_bg {
