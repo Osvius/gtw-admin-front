@@ -117,8 +117,8 @@ input:focus, textarea:focus {
 }
 
 .hidden{
-  display:none;
-  opacity:0;
+  display:none!important;
+  opacity:0!important;
 }
 .alert {
     padding: 10px;
@@ -131,6 +131,11 @@ input:focus, textarea:focus {
     border-color: #fde2e2;
     color: #f56b6b;
 }
+.alert-success{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
 .close{
   background-color: transparent;
   font-size: 14px;
@@ -142,7 +147,9 @@ input:focus, textarea:focus {
   color:#000;
 }
 
-
+.star{
+  color:#EB5A46;
+}
 /* common style for all pages end  */
 
 /*header style star*/
@@ -512,7 +519,7 @@ input:focus, textarea:focus {
   border: 1px solid #f20101;
   color: #f20101;
   width: 44px;
-  height: 28px;
+  height: 30px;
   background-image: url(../image/gtw-images/garbage.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -873,6 +880,7 @@ input:focus, textarea:focus {
   width: 20px;
   height: 28px;
   border: 1px solid #f20101;
+  background-repeat: no-repeat;
   background-image: url(../image/gtw-images/previous.png);
   background-position: 50% 50%;
 }
@@ -1003,13 +1011,14 @@ input:focus, textarea:focus {
 }
 
  .error-box {
+  display:block;
   position: absolute;
-  top: -10px;
-  color: #ff0000;
+  top: -17px;
+  color: #ff0000!important;
   font-weight: normal;
   z-index: 100;
-  left: 30%;
-  width: 70%;
+  left: 28%;
+  width: 70%!important;
   text-align: left;
   color: #ff0000;
   font-weight: normal;
@@ -1142,6 +1151,26 @@ input:focus, textarea:focus {
   box-shadow: none;
 }
 
+.select-min  {
+  left:25%!important;
+  text-indent:5px!important;
+  width:160px!important;
+}
+
+.select-min .tab4_select {
+   width:162px!important;
+  left: -1px;
+  padding-left: 5px;
+}
+.radio_container{
+  position:absolute;
+  left:50%;
+  
+}
+.radio_box{
+   display: block;
+   margin:5px 0;
+}
  .button_count {
   position: absolute;
   right: 7px;

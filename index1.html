@@ -59,8 +59,8 @@
 				Добавление заказа 
 				</span>
 				<div class="btn-container_1">
-					<span class="btn btn_add">Добавить</span>
-					<span class="btn btn_remove"></span>
+					<a href="#"  class="btn btn_add">Добавить</a>
+					<a href="#" class="btn btn_remove"></a>
 				</div>
 			</div>	
 		<form action="">
@@ -80,17 +80,21 @@
 							<div class="tab_inputs_wrap">
 								<label class="tab_label" for="name">* Имя и Фамилия</label>
 								<input type="text" class="tab1_input" name="name" id="name" placeholder="* Имя и Фамилия должны содержать от1 до 32 символов">
-								<label class="tab_label" for="name" class="error-box"></label>
+								<span  for="name" class="error-box">
+								</span>
 							</div>
 							<div class="tab_inputs_wrap">
 								<label class="tab_label" for="email">E-mail</label>
 								<input type="email" class="tab1_input" id="email" name="email">
-								<label class="tab_label" for="email" class="error-box"></label>
+								<span  for="email" class="error-box">
+
+								</span>
 							</div>
 							<div class="tab_inputs_wrap">
 								<label class="tab_label" for="tel">Телефон</label>
 								<input type="tel" class="tab1_input" id="tel" placeholder="8 (999) 123-45-64" pattern="2[0-9]{3}-[0-9]{3}" name="tel" >
-								<label class="tab_label" for="tel" class="error-box"></label>
+								<span  for="tel" class="error-box">	
+								</span>
 							</div>
 						</div>	
 						<div class="btn_container">
@@ -197,17 +201,39 @@
 
 					<div class="inputs_container">
 						<div class="tab_inputs_wrap">
-							<label class="tab_label" for="product_name" class="tab_label">Выбрать товар </label>
+							<label  for="product_name" class="tab_label">Выбрать товар </label>
 							<input type="text"  name="product" value="" id="input-product" class="tab1_input">
-							<ul class="dropdown-menu">
+							<span  for="tel" class="error-box">	
+							<ul class="dropdown-menu hidden">
 								<li><a href="#"></a>1cckckkckckckckck</li>
 								<li><a href="#"></a>2</li>
 								<li><a href="#"></a>3</li>
 							</ul>
 						</div>
 						<div class="tab_inputs_wrap">
-							<label class="tab_label" for="quantity" class="tab_label">Количество</label>
+							<label  for="quantity" class="tab_label">Количество</label>
 							<input type="number" class="tab1_input" id="quantity">
+							<span  for="tel" class="error-box">	
+								</span>
+						</div>
+						<div class="tab_inputs_wrap ">
+							<label  for="product_name" class="tab_label">Выбрать товар </label>
+
+							<div class="tab4_select_bg select-min">
+								<select  class="tab4_select">
+								    <option>Доставка курьером</option>
+								    <option>Доставка не курьером</option>
+								</select>
+								
+							</div>	
+
+							<div class="radio_container">
+							<label class="select_radio"><span class="star"> * </span>Выберите характеристики</label>
+								<div class="radio_box"><input type="radio"> вариант 1</div>
+								<div class="radio_box"><input type="radio"> вариант 2</div>	
+							</div>
+
+
 						</div>
 					</div>	
 					<div class="btn_container">
@@ -216,7 +242,7 @@
 							<span class="save_text">Сохранить</span>
 						</button>				
 					</div>	
-			<!-- </form>			 -->
+			<!-- </form>			
 				</div>
 			</div><!-- tab end  -->
 			
@@ -227,6 +253,8 @@
 							<div class="tab_inputs_wrap tab_textarea_wrap">
 								<label class="tab_label" for="adress" class="tab_label">Адрес</label>
 								<textarea class="tab_textarea" name="adress" id="adress" cols="30" rows="10"></textarea>
+								<span  for="tel" class="error-box">	
+								</span>								
 							</div>
 
 						</div>	
