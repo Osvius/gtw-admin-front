@@ -59,7 +59,7 @@
 				</span>
 			</div>	
 			<div class="order_tabs">
-				<ul id="tabs" class="tabs">
+				<ul id="tabs" class="tabs flex-start">
 					 <li class="tab1 btn active"><a href="#">1. Доставка</a></li>
 			    	 <li class="tab2 btn"><a href="#">2. Оплата</a></li>
 				</ul>
@@ -79,11 +79,11 @@
 						<td class="table_md"><input type="text" class="input"></td>
 						<td class="table_md"><input type="text" class="input"></td>
 						<td class="table_sm">
-							<div class="chechbox_block checkB">
-								<!-- <input type="checkbox" > -->
-								<input type="checkbox" id ="ch1" class="checkbox">
-								<label class="order_label" for="ch1"></label>
-							<!-- <input type="checkbox" class="checkbox1"> -->
+							<div class="chechbox_block checkB">		
+								<label >
+								    <input class="checkbox" type="checkbox" >
+								    <span class="checkbox-custom"></span>
+								</label>
 							</div>
 						</td>
 						<td class="table_sm">
@@ -92,63 +92,135 @@
 							</div>		
 						</td>
 					</tr>
-				</table>
-
-					<!-- <form  class="delivery-form" id="delivery_info_form">
-						<div class="delivery_container">
-							<div class="inputs_container_1">
-								<div class="inputs_wrap">
-									<h4 class="inputs_head">Название</h4>
-									<input type="text">
-									<input type="text">
-									<input type="text">
-									<input type="text">
-									<input type="text">	
-								</div>
-								<div class="inputs_wrap">
-									<h4 class="inputs_head">Стоимость</h4>
-									<input type="text">
-									<input type="text">
-									<input type="text">
-									<input type="text">
-									<input type="text">	
-								</div>
-								<div class="inputs_wrap">
-									<h4 class="inputs_head">Порядок сортировки</h4>
-									<input type="text">
-									<input type="text">
-									<input type="text">
-									<input type="text">
-									<input type="text">	
-								</div>								
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm">
+							<div class="chechbox_block checkB">		
+								<label >
+								    <input class="checkbox" type="checkbox" >
+								    <span class="checkbox-custom"></span>
+								</label>
 							</div>
-							<div class="inputs_container_2">
-							<h4 class="inputs_head">Порядок сортировки</h4>
-								<div class="inputs_wrap">
-									<div class="chechbox_block">
-										<input type="checkbox">
-									</div>
-									<div class="btn_block">
-										<button class="del">
-											
-										</button>
-									</div>
-								</div>
-							</div>	
-						</div>
-						
-						<div class="btn_container">
-							<button  class="btn btn_save">
-								<span class="save_icon"></span>
-								<span class="save_text">Сохранить</span>
-							</button>				
-						</div>	
-					</form> -->
+						</td>
+						<td class="table_sm">
+							<div class="chechbox_block">
+								<button class="del"></button>
+							</div>		
+						</td>
+					</tr>
+						<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm">
+							<div class="chechbox_block checkB">		
+								<label >
+								    <input class="checkbox" type="checkbox" >
+								    <span class="checkbox-custom"></span>
+								</label>
+							</div>
+						</td>
+						<td class="table_sm">
+							<div class="chechbox_block">
+								<button class="del"></button>
+							</div>		
+						</td>
+					</tr>
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm">
+							<div class="chechbox_block checkB">		
+								<label >
+								    <input class="checkbox" type="checkbox" >
+								    <span class="checkbox-custom"></span>
+								</label>
+							</div>
+						</td>
+						<td class="table_sm">
+							<div class="chechbox_block">
+								<button class="del"></button>
+							</div>		
+						</td>
+					</tr>
+					<tr class="last_row">
+						<td colspan="3"></td>
+						<td class="table_sm">
+							<a href="#" class="chechbox_block btn_add"></a>
+						</td>
+						<td class="table_sm">
+							<a href="#" class="chechbox_block btn_remove"></a>						
+						</td>
+					</tr>
+				</table>
+				<div class="btn_container">
+					<button  class="btn btn_save">
+						<span class="save_icon"></span>
+						<span class="save_text">Сохранить</span>
+					</button>				
+				</div>	
 				</div>
 			<div class="tab2">
 				<form  class="tab-form ">
-					<table class="order_table col-6">
-					</table>
+<table class="table delivery_table">
+					<tr>
+						<th>Название</th>
+						<th>Стоимость</th>
+						<th>Порядок сортировки</th>
+						<th colspan="2">Отображать на сайте</th>
+						<!-- <th></th> -->
+					</tr>
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm">
+							<div class="chechbox_block checkB">		
+								<label >
+								    <input class="checkbox" type="checkbox" >
+								    <span class="checkbox-custom"></span>
+								</label>
+							</div>
+						</td>
+						<td class="table_sm">
+							<div class="chechbox_block">
+								<button class="del"></button>
+							</div>		
+						</td>
+					</tr>
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm">
+							<div class="chechbox_block checkB">		
+								<label >
+								    <input class="checkbox" type="checkbox" >
+								    <span class="checkbox-custom"></span>
+								</label>
+							</div>
+						</td>
+						<td class="table_sm">
+							<div class="chechbox_block">
+								<button class="del"></button>
+							</div>		
+						</td>
+					</tr>
+
+
+					<tr class="last_row">
+						<td colspan="3"></td>
+						<td class="table_sm">
+							<a href="#" class="chechbox_block btn_add"></a>
+						</td>
+						<td class="table_sm">
+							<a href="#" class="chechbox_block btn_remove"></a>						
+						</td>
+					</tr>
+				</table>
 					<div class="btn_container">
 						<button  class="btn btn_save">
 							<span class="save_icon"></span>
