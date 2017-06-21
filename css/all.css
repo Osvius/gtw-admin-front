@@ -125,6 +125,14 @@ input:focus, textarea:focus {
     margin-bottom: 17px;
     border: 1px solid transparent;
     border-radius: 3px;
+    overflow:hidden;
+    
+}
+.alert  span{
+  float:left;
+}
+.alert a{
+  float:right;
 }
 .alert-danger {
     background-color: #fef1f1;
@@ -582,7 +590,8 @@ input:focus, textarea:focus {
 
 .input,
 .select_bg,
-.datepicker
+.datepicker1,
+.chechbox_block
  {
   display: block;
   -webkit-border-radius: 4px;
@@ -597,7 +606,7 @@ input:focus, textarea:focus {
   position: relative;
 }
 
-.datepicker .input{
+.datepicker1 .input{
   float:left;
   border-radius:0;
   width: calc(80% - 1px);
@@ -763,6 +772,7 @@ input:focus, textarea:focus {
 
 .look ,
 .edit {
+  display:inline-block;
   border: 1px solid #377de7;
   width: 30px;
   height: 26px;
@@ -1102,7 +1112,7 @@ input:focus, textarea:focus {
 }
 
 
- .td-btn-container .del {
+ .del {
   border: 1px solid #f41a1a;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -1520,7 +1530,28 @@ input:focus, textarea:focus {
   background-position: 45px 50%;
 }
 
-
+.table_col-4{
+  margin:10px 0;
+}
+.order_table a{
+  position:relative;
+}
+.order_table a.asc:after {
+    content: "\2193";
+    font-size: 12px;
+    display:inline-block;
+    position:absolute;
+    top:-2px;
+    right:-8px;
+}
+.order_table a.desk:after {
+    content: "\2191";
+    font-size: 12px;
+    display:inline-block;
+    position:absolute;
+    top:-2px;
+    right:-8px;
+}
 .table_col-4 td,
 .table_col-4 th {
   width: 20%;
@@ -1605,6 +1636,77 @@ input:focus, textarea:focus {
   background: transparent;
 }
 
+.switch_box{
+    float: left;
+    position:relative;
+    height: 38px;
+}
+.h_inputs_wrap{
+  height: 50px;
+  
+}
+.h_inputs_wrap .history_label{
+  line-height: 50px;
+}
+.history_form .tab_textarea {
+  height: 25px !important;
+  right: 36px;
+  width: calc(73% - 27px);
+}
+.switch {
+
+    vertical-align: middle;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+
+.switch + label {
+  cursor: pointer;
+}
+
+.switch:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.switch:not(checked) + label {
+  position: relative; 
+  padding: 0 0 0 60px; 
+}
+
+.switch:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+
+.switch:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top:60%;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .2s; 
+}
+
+.switch:checked + label:before {
+  background: #377de7;
+}
+
+.switch:checked + label:after {
+  left: 26px;
+}
+
  .btn_add_history {
   color: #000;
   border: 1px solid #377de7;
@@ -1645,6 +1747,68 @@ input:focus, textarea:focus {
 /*  content style for page index2.html  END */
 
 /*  content style for page index3.html  START */
+  .delivery_table{
+    width:100%;
+    background-color: #f4f4f7;
+    padding:15px 30px;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+  }
+.delivery_table td,
+.delivery_table th {
+  padding: 10px;
+  vertical-align:middle;
+}
+.delivery_table .input,
+.delivery_table .chechbox_block
+{
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  /*width:80%;*/
 
+  /*margin:0 auto;*/
+  width: 100%;
+  height: 30px;
+  /*line-height: 28px;*/
+  vertical-align:middle;
+  text-align:center;
+}
+.chechbox_block{
+  position:relative;
+}
+.chechbox_block .del{
+  position:absolute;
+   left: 50%;
+   top:4px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.chechbox_block .checkbox + label::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 1px solid #83aff1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -7.5px;
+  margin-left: -7.5px;
+}
+
+.chechbox_block .checkbox:checked + label::before {
+  content: "\2713";
+  color: #83aff1;
+  
+}
+
+.table_md{
+  width:20%;
+}
+.table_sm{
+  width:10%;
+}
 
 /*  content style for page index3.html END */

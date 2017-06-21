@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Bree+Serif|Cairo|Domine|Ek+Mukta|Francois+One|Merriweather+Sans|Montserrat|Roboto+Slab|Sanchez" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+	<script src="js/jquery-3.2.0.js"></script>
+	<script src='js/jquery.inputmask.js'></script>
+	<script src="js/main.js"></script>
+	<title>GoToWeb</title>
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+		<div class="logo">
+			<span class="logo_item1">goto</span>
+			<span class="logo_item2">web</span>
+		</div>
+		<nav class="nav">
+			<ul class="navigation">
+				<li><a href="#">Главная</a></li>
+				<li class="active"><a href="#" >Просмотр сайта</a></li>
+				<li><a href="#">Продвижение</a></li>
+				<li><a href="#">GoTo Social</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Поддержка</a></li>
+			</ul>
+		</nav>
+		<div class="login_block">
+			<span>Выход</span>
+		</div>	
+	</header>
+<main id="main">
+<div class="content-wrap">
+	<aside class="aside_wrap">
+		<h2>Панель&nbsp;управления</h2>
+		<div class="aside_content">
+			<h3>Доступные разделы</h3>
+			<ul class="aside_nav">
+				<li><span>Мой магазин</span></li>
+				<li><span>Слайдер</span></li>
+				<li><span>Категории</span></li>
+				<li><span>Товары</span></li>
+				<li><span>Производители</span></li>
+				<li><span>Группы Характеристик</span></li>
+				<li><span>Характеристики</span></li>
+				<li class="active"><span>Доставка / Оплата</span></li>
+				<li><span >Заказы</span></li>
+			</ul>
+		</div>
+	  </aside>
+	<div class="order_wrap">
+		<h5>Здесь Вы можете настроить доставку и оплату.</h5>
+		<div class="order_content">
+			<div class="order_head">
+				<span class="add_order">
+					Доставка / Оплата  
+				</span>
+			</div>	
+			<div class="order_tabs">
+				<ul id="tabs" class="tabs">
+					 <li class="tab1 btn active"><a href="#">1. Доставка</a></li>
+			    	 <li class="tab2 btn"><a href="#">2. Оплата</a></li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab1">
+				<table class="table delivery_table">
+					<tr>
+						<th>Название</th>
+						<th>Стоимость</th>
+						<th>Порядок сортировки</th>
+						<th colspan="2">Отображать на сайте</th>
+						<!-- <th></th> -->
+					</tr>
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm">
+							<div class="chechbox_block checkB">
+								<!-- <input type="checkbox" > -->
+								<input type="checkbox" id ="ch1" class="checkbox">
+								<label class="order_label" for="ch1"></label>
+							<!-- <input type="checkbox" class="checkbox1"> -->
+							</div>
+						</td>
+						<td class="table_sm">
+							<div class="chechbox_block">
+								<button class="del"></button>
+							</div>		
+						</td>
+					</tr>
+				</table>
+
+					<!-- <form  class="delivery-form" id="delivery_info_form">
+						<div class="delivery_container">
+							<div class="inputs_container_1">
+								<div class="inputs_wrap">
+									<h4 class="inputs_head">Название</h4>
+									<input type="text">
+									<input type="text">
+									<input type="text">
+									<input type="text">
+									<input type="text">	
+								</div>
+								<div class="inputs_wrap">
+									<h4 class="inputs_head">Стоимость</h4>
+									<input type="text">
+									<input type="text">
+									<input type="text">
+									<input type="text">
+									<input type="text">	
+								</div>
+								<div class="inputs_wrap">
+									<h4 class="inputs_head">Порядок сортировки</h4>
+									<input type="text">
+									<input type="text">
+									<input type="text">
+									<input type="text">
+									<input type="text">	
+								</div>								
+							</div>
+							<div class="inputs_container_2">
+							<h4 class="inputs_head">Порядок сортировки</h4>
+								<div class="inputs_wrap">
+									<div class="chechbox_block">
+										<input type="checkbox">
+									</div>
+									<div class="btn_block">
+										<button class="del">
+											
+										</button>
+									</div>
+								</div>
+							</div>	
+						</div>
+						
+						<div class="btn_container">
+							<button  class="btn btn_save">
+								<span class="save_icon"></span>
+								<span class="save_text">Сохранить</span>
+							</button>				
+						</div>	
+					</form> -->
+				</div>
+			<div class="tab2">
+				<form  class="tab-form ">
+					<table class="order_table col-6">
+					</table>
+					<div class="btn_container">
+						<button  class="btn btn_save">
+							<span class="save_icon"></span>
+							<span class="save_text">Сохранить</span>
+						</button>				
+					</div>	
+				</form>			
+			</div>
+
+			</div>
+		</div>	
+	</div>
+	<!-- order wrap end -->
+
+</div>	
+<!-- content-wrap  end --> 
+	
+</main>
+
+</div>
+<!-- wrapper end -->
+</body>
+</html>
