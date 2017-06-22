@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<?php include('head.php')?>
+<body>
+<?php include('header.php')?>
+<main id="main">
+	  <div class="content-wrap">
+	  <?php include('aside.php')?>
+	<div class="order_wrap">
+		<h5>Здесь Вы можете настроить доставку и оплату.</h5>
+		<div class="order_content">
+			<div class="order_head">
+				<span class="add_order">
+					Доставка / Оплата  
+				</span>
+			</div>	
+			<div class="order_tabs">
+				<ul id="tabs" class="tabs flex-start">
+					 <li class="tab1 btn active"><a href="#">1. Доставка</a></li>
+			    	 <li class="tab2 btn"><a href="#">2. Оплата</a></li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab1">
+				<table class="table delivery_table">
+					<tr>
+						<th class="table_md">Название</th>
+						<th class="table_md">Стоимость</th>
+						<th class="table_md">Порядок сортировки</th>
+						<th class="table_sm">Отображать на сайте</th>
+						<th></th>
+						<!-- <th></th> -->
+					</tr>
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm box-middle">
+							<div class="switch_box">
+								<input type="checkbox" class="switch" id="switch2" />
+								<label for="switch2" class="switch_label"></label>
+							</div>
+						</td>
+						<td class="table_sm box-middle">
+							<button class="del"></button>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm box-middle">
+							<div class="switch_box">
+								<input type="checkbox" class="switch" id="switch3" />
+								<label for="switch3" class="switch_label"></label>
+							</div>
+						</td>
+						<td class="table_sm box-middle">
+
+								<button class="del"></button>
+						</td>
+					</tr>
+						<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm box-middle">
+							<div class="switch_box">
+								<input type="checkbox" class="switch" id="switch4" />
+								<label for="switch4" class="switch_label"></label>
+							</div>
+						</td>
+						<td class="table_sm box-middle">
+
+								<button class="del"></button>
+
+						</td>
+					</tr>
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_sm box-middle">
+							<div class="switch_box ">
+								<input type="checkbox" class="switch" id="switch5" />
+								<label for="switch5" class="switch_label"></label>
+							</div>
+						</td>
+						<td class="table_sm box-middle">
+							<button class="del"></button>
+						</td>
+					</tr>
+					<tr class="last_row">
+						<td colspan="3"></td>
+						<td class="table_sm box-middle">
+							<a href="#" class="chechbox_block btn_add"></a>
+						</td>
+						<td class="table_sm box-middle">
+							<a href="#" class="chechbox_block btn_remove"></a>						
+						</td>
+					</tr>
+				</table>
+				<div class="btn_container">
+					<button  class="btn btn_save">
+						<span class="save_icon"></span>
+						<span class="save_text">Сохранить</span>
+					</button>				
+				</div>	
+			</div>
+			<div class="tab2">
+				<form  class="tab-form ">
+					<table class="table delivery_table">
+					<tr>
+						<th class="table_md">Название</th>
+						<th class="table_lg">Информация </th>
+						<th class="table_sm">порядок сорировки</th>
+						<th class="table_sm">Отображать на сайте</th>
+						<th class="table_sm"></th>
+					</tr>
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_lg"><textarea class="textarea"></textarea></td>
+						<td class="table_sm"><input type="text" class="input"></td>
+						<td class="table_sm box-middle">
+							<div class="switch_box">
+								<input type="checkbox" class="switch" id="switch1" />
+								<label for="switch1" class="switch_label"></label>
+							</div>
+						</td>
+						<td class="table_sm box-middle">
+								<button class="del"></button>
+						</td>
+					</tr>
+					<tr>
+						<td class="table_md"><input type="text" class="input"></td>
+						<td class="table_lg"><textarea class="textarea"></textarea></td>
+						<td class="table_sm"><input type="text" class="input"></td>
+						<td class="table_sm box-middle">
+							<div class="switch_box">
+								<input type="checkbox" class="switch" id="switch2_1" />
+								<label for="switch2_1" class="switch_label"></label>
+							</div>
+						</td>
+						<td class="table_sm box-middle">
+								<button class="del"></button>
+						</td>
+					</tr>
+					<tr class="last_row">
+						<td colspan='4'></td>
+						<td class="table_sm box-middle">
+							<a href="#" class="chechbox_block btn_add"></a>
+						</td>
+					</tr>
+				</table>
+					<div class="btn_container">
+						<button  class="btn btn_save">
+							<span class="save_icon"></span>
+							<span class="save_text">Сохранить</span>
+						</button>				
+					</div>	
+				</form>			
+			</div>
+
+			</div>
+		</div>	
+	</div>
+	  </div>
+</main>
+
+
+</body>
+</html>
