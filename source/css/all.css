@@ -131,12 +131,8 @@ input:focus, textarea:focus {
     overflow:hidden;
     
 }
-.alert  span{
-  float:left;
-}
-.alert a{
-  float:right;
-}
+
+
 .alert-danger {
     background-color: #fef1f1;
     border-color: #fde2e2;
@@ -150,6 +146,7 @@ input:focus, textarea:focus {
 .close{
   background-color: transparent;
   font-size: 14px;
+  float:right;
   border:none;
   padding-left:10px;
   color:#d6cbcb;
@@ -792,24 +789,34 @@ th a:active{
 .btn-float {
   float: right;
 }
-.order_table {
+.table {
   width: 100%;
   font-size: 12px;
   border-collapse: collapse;
+  text-align:center!important;
 }
-.order_table .chechbox_block{
+.table .chechbox_block{
   border:none;
   width:100%!important;
 }
-.order_table .checkbox-custom{
+.table .checkbox-custom{
   top: 10px!important;
 }
-.order_table tr {
-
-  text-align: center;
+.table th,
+.table td{ 
+ border: 2px solid #83aff1;
+  vertical-align: middle;
+  overflow: hidden;
+  position:relative;
+  height: 40px;
+  text-align:center;
+  
+  }
+.table th {
+  /*text-align: center;*/
 }
-.order_table a:active,
-.order_table a:hover{
+.table a:active,
+.table a:hover{
     color:#20678d;
 }
 .table_col-8 td, 
@@ -827,11 +834,11 @@ th a:active{
   width: 5%;
 }
 
-.order_table .td-number {
+.table .td-number {
   width: 10% !important;
 }
 
-.order_table .td-btn {
+.table .td-btn {
   width: 100%;
   display: -webkit-box;
   display: -moz-box;
@@ -1111,7 +1118,6 @@ th a:active{
 .dropdown-menu{
   position:absolute ;
   top:42px;
-  /*width:300px;*/
   left:25%;
   z-index:150;
     border:1px solid #4991e3;
@@ -1177,16 +1183,12 @@ th a:active{
   margin-bottom:20px;
 }
 
-th,td{ 
- border: 2px solid #83aff1;
-  vertical-align: middle;
-  overflow: hidden;
-  }
+
 .table_col-6 td,
 .table_col-6 th {
   width: 15%;
-  height: 40px;
-  position: relative;
+/*  height: 40px;
+  position: relative;*/
 
 }
 
@@ -1337,9 +1339,9 @@ input[type=radio]:checked + label:before {
 .table_col-5 td, 
 .table_col-5 th {
     width: 15%;
-    height:40px;
-    position:relative;
-    border: 2px solid #83aff1;
+    /*height:40px;*/
+    /*position:relative;*/
+    /*border: 2px solid #83aff1;*/
     vertical-align: middle;
     overflow:hidden;
 }
@@ -1638,10 +1640,10 @@ input[type=radio]:checked + label:before {
 .table_col-4{
   margin:10px 0;
 }
-.order_table a{
+.table a{
   position:relative;
 }
-.order_table a.asc:after {
+.table a.asc:after {
     content: "\2193";
     font-size: 12px;
     display:inline-block;
@@ -1649,7 +1651,7 @@ input[type=radio]:checked + label:before {
     top:-2px;
     right:-8px;
 }
-.order_table a.desc:after {
+.table a.desc:after {
     content: "\2191";
     font-size: 12px;
     display:inline-block;
