@@ -66,7 +66,7 @@
 			<div class="tab2">
 	
 				<div class="tab-form ">
-					<table class="order_table table_col-6">
+					<table class="table table_col-6">
 						<tr>
 							<th>
 								<p>Товар</p>
@@ -240,7 +240,7 @@
 			<div class="tab4">
 
 				<div class="tab-form">
-					<table class="order_table table_col-5">
+					<table class="table table_col-5">
 						<tr>
 							<th>
 								<p>Товар</p>

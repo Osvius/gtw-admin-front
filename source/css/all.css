@@ -131,8 +131,12 @@ input:focus, textarea:focus {
     overflow:hidden;
     
 }
-
-
+.alert  span{
+  float:left;
+}
+.alert a{
+  float:right;
+}
 .alert-danger {
     background-color: #fef1f1;
     border-color: #fde2e2;
@@ -146,7 +150,6 @@ input:focus, textarea:focus {
 .close{
   background-color: transparent;
   font-size: 14px;
-  float:right;
   border:none;
   padding-left:10px;
   color:#d6cbcb;
@@ -552,6 +555,8 @@ th a:active{
   overflow: hidden;
   width: 100%;
   margin-bottom:30px;
+  padding-bottom: 20px;
+  border-bottom:2px solid #f4f4f7;
 }
 .order_head span {
   float: left;
@@ -792,9 +797,10 @@ th a:active{
 .table {
   width: 100%;
   font-size: 12px;
+  margin-bottom:20px;
   border-collapse: collapse;
-  text-align:center!important;
 }
+
 .table .chechbox_block{
   border:none;
   width:100%!important;
@@ -802,18 +808,9 @@ th a:active{
 .table .checkbox-custom{
   top: 10px!important;
 }
-.table th,
-.table td{ 
- border: 2px solid #83aff1;
-  vertical-align: middle;
-  overflow: hidden;
-  position:relative;
-  height: 40px;
-  text-align:center;
-  
-  }
-.table th {
-  /*text-align: center;*/
+.table tr {
+
+  text-align: center;
 }
 .table a:active,
 .table a:hover{
@@ -1084,7 +1081,8 @@ th a:active{
   font-weight: 400;
 }
 
-.tab1_input {
+.tab1_input,
+.tab_input {
   position: absolute;
   right: 12px;
   -webkit-border-radius: 4px;
@@ -1118,6 +1116,7 @@ th a:active{
 .dropdown-menu{
   position:absolute ;
   top:42px;
+  /*width:300px;*/
   left:25%;
   z-index:150;
     border:1px solid #4991e3;
@@ -1183,12 +1182,16 @@ th a:active{
   margin-bottom:20px;
 }
 
-
+th,td{ 
+ border: 2px solid #83aff1;
+  vertical-align: middle;
+  overflow: hidden;
+  }
 .table_col-6 td,
 .table_col-6 th {
   width: 15%;
-/*  height: 40px;
-  position: relative;*/
+  height: 40px;
+  position: relative;
 
 }
 
@@ -1339,9 +1342,9 @@ input[type=radio]:checked + label:before {
 .table_col-5 td, 
 .table_col-5 th {
     width: 15%;
-    /*height:40px;*/
-    /*position:relative;*/
-    /*border: 2px solid #83aff1;*/
+    height:40px;
+    position:relative;
+    border: 2px solid #83aff1;
     vertical-align: middle;
     overflow:hidden;
 }
@@ -1375,14 +1378,20 @@ input[type=radio]:checked + label:before {
 }
 
 
-.tab4_inputs_container{
+.tab4_inputs_container,
+.tab_inputs_container
+{
   padding-top:10px;
-  margin-bottom: 25px;
+  /*margin-bottom: 25px;*/
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  border: 1px solid #377de7;
   background-color: #f3f4f6;
   /*overflow: hidden;*/
 }
 
- .tab4_select_bg {
+ .tab4_select_bg, 
+ .tab_select_bg{
   position: absolute;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -1396,7 +1405,8 @@ input[type=radio]:checked + label:before {
   width: calc(75% - 14px);
 }
 
- .tab4_select_btn {
+ .tab4_select_btn,
+ .tab_select_btn {
   width: 23px;
   height: 35px;
   position: absolute;
@@ -1404,18 +1414,22 @@ input[type=radio]:checked + label:before {
   right: 9px;
 }
 
-.tab4_select_btn img {
+.tab4_select_btn img,
+.tab_select_btn img {
   display: block;
   margin: 4px 0;
 }
 
- .tab4_select_btn img:last-of-type {
+ .tab4_select_btn img:last-of-type,
+ .tab_select_btn img:last-of-type {
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
- .tab4_select_arrow_block {
+ .tab4_select_arrow_block,
+ .tab_select_arrow_block
+  {
   width: 15px;
   height: 30px;
   position: absolute;
@@ -1430,7 +1444,8 @@ input[type=radio]:checked + label:before {
   background-color: #FFF;
 }
 
-.tab4_select {
+.tab4_select,
+.tab_select {
   position:absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1973,7 +1988,7 @@ histoty history*/
 /*  content style for page index3.html END */
 
 /*  content style for page index4.html Characteristics start  */
-.char_name{
+ .char_name{
   background-image: url(../image/gtw-images/folder2_1.png);
 }
 
@@ -1984,7 +1999,7 @@ histoty history*/
 .edit_2{
   display:inline-block;
   border: 1px solid #377de7;
-  width: 80%;
+  width: 60%;
   height: 28px;
    vertical-align:middle;
   -webkit-border-radius: 5px;
@@ -1992,15 +2007,54 @@ histoty history*/
   background-image: url(../image/gtw-images/edit.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  -webkit-background-size: 21px;
-       -o-background-size: 21px;
-          background-size: 21px;
+  -webkit-background-size: 19px;
+       -o-background-size: 19px;
+          background-size: 19px;
 
 }
 .edit_2:hover{
   background-color: #377de7;
   background-image: url(../image/gtw-images/edit_inverse.png);
 }
-
-
 /*  content style for page index4.html  CharacteristicsEND */
+
+/*  content style for page index4_1.html  Characteristics tab 2 start*/
+.character_container{
+  margin-bottom:70px;
+}
+.character_container .tab_inputs_container {
+  padding-bottom:70px;
+}
+.character_container .tab_input,
+.character_container .tab_select_bg{
+  width: calc(72% - 14px);  
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+}
+.character_container .tab_label {
+    width: calc(32% - 39px);
+    text-align: center;
+  }
+.character_container .tab_select{
+     width: 550px;
+  }  
+.character_container .dropdown-menu {
+    left: 28%;
+}
+.char_add{
+  background-image: url(../image/gtw-images/add.png);
+}
+/*  content style for page index4_1.html  Characteristics tab 2 end*/
+
+
+
+/*  content style for page index5.html Group of characteristics  start*/
+
+.char_list{
+  background-image: url(../image/gtw-images/folder3.png);
+}
+
+.char_edit{
+  background-image: url(../image/gtw-images/edit_black.png);
+}
+/*  content style for page index5.html Group of characteristics  end*/

@@ -80,7 +80,7 @@
 
 				</div>
 				<form action="post" id="form-order">
-					<table class="order_table table_col-8">
+					<table class="table table_col-8">
 						<tr>
 							<th class="checkB">
 							<div class="chechbox_block ">		

@@ -42,7 +42,7 @@
 		</div>
 		<div class="order_details">
 			<h3 class="h3_block h3_details">Детали заказа</h3>
-			<table class="order_table table_col-4">
+			<table class="table table_col-4">
 					<tr>
 						<th>
 							<p></p>
@@ -75,7 +75,7 @@
 		</div>
 		<div class="order_history">
 			<h3 class="h3_block h3_add_history">Добавить историю заказов</h3>
-			<table class="order_table table_col-4">
+			<table class="table table_col-4">
 					<tr>
 						<th>
 							<p></p>

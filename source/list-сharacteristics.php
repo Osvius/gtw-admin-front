@@ -26,7 +26,7 @@
 				</div>
 				
 				<form action="post" id="form-order">
-					<table class="order_table ">
+					<table class="table ">
 						<tr>
 							<th class="table_xs">
 							<div class="chechbox_block char_table">		
