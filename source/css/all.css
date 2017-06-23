@@ -215,6 +215,27 @@ th a:visited,
 th a:active{
   color:#5480c1;
 }
+
+.td_5{
+  width:5%!important;
+ 
+}
+.td_10{
+  width:10%!important;
+}
+.td_15{
+  width:15%!important;
+}
+.td_20{
+   width:20%!important;
+}
+.td_25{
+  width:25%!important;
+}
+.td_30{
+  width:30%!important;
+}
+
 /* common style for all pages end  */
 
 /*header style star*/
@@ -651,7 +672,6 @@ th a:active{
   width: 30%;
   display: block;
   position: relative;
-  /*overflow: hidden*/
 }
 
 
@@ -799,42 +819,29 @@ th a:active{
   font-size: 12px;
   margin-bottom:20px;
   border-collapse: collapse;
+  margin-bottom:20px;
 }
+.table th,
+.table td{ 
+  border: 2px solid #83aff1;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align:center;
+  height: 40px;
+  position:relative;
+ }
 
 .table .chechbox_block{
   border:none;
-  width:100%!important;
+  width:100%;
 }
 .table .checkbox-custom{
   top: 10px!important;
-}
-.table tr {
-
-  text-align: center;
 }
 .table a:active,
 .table a:hover{
     color:#20678d;
 }
-.table_col-8 td, 
-.table_col-8 th {
-  width: 15%;
-  height: 40px;
-  position: relative;
-  border: 2px solid #83aff1;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.table_col-8 .checkB {
-  position: relative;
-  width: 5%;
-}
-
-.table .td-number {
-  width: 10% !important;
-}
-
 .table .td-btn {
   width: 100%;
   display: -webkit-box;
@@ -948,8 +955,6 @@ th a:active{
 
 
 /*  content style for page index1.html  START */
-
-
 
 .add_order {
   float: left;
@@ -1066,7 +1071,6 @@ th a:active{
   height: 45px;
   display: block;
   position: relative;
-  /*overflow: hidden;*/
 }
 .tab_textarea_wrap{
    height: 80px!important;
@@ -1116,7 +1120,6 @@ th a:active{
 .dropdown-menu{
   position:absolute ;
   top:42px;
-  /*width:300px;*/
   left:25%;
   z-index:150;
     border:1px solid #4991e3;
@@ -1126,7 +1129,6 @@ th a:active{
   cursor:pointer;
   background-color: #fff;
   padding:5px 10px;
-  /*height: 20px;*/
 }
 .dropdown-menu li:hover{
   background-color: #dce4f4;
@@ -1142,7 +1144,6 @@ th a:active{
   color: #377de7;
   border: 1px solid #377de7;
   float: right;
-  margin-right: 13px;
   width: 140px;
   background-color: #fff;
   overflow: hidden;
@@ -1178,15 +1179,7 @@ th a:active{
 
 /*  tab2 style for  index1.html START */
 
-.table_col-6{
-  margin-bottom:20px;
-}
 
-th,td{ 
- border: 2px solid #83aff1;
-  vertical-align: middle;
-  overflow: hidden;
-  }
 .table_col-6 td,
 .table_col-6 th {
   width: 15%;
@@ -1311,12 +1304,10 @@ input[type=radio]:checked + label:before {
   background-size: 10px;
 }
 
-
 /*  tab2  style for index1.html END  */
 
 
 /*  tab3 style for  index1.html START */
-
 
 }
 
@@ -1336,19 +1327,6 @@ input[type=radio]:checked + label:before {
 
 /*  tab4 style for  index1.html START */
 
-.table_col-5{
-  margin-bottom:15px;
-}
-.table_col-5 td, 
-.table_col-5 th {
-    width: 15%;
-    height:40px;
-    position:relative;
-    border: 2px solid #83aff1;
-    vertical-align: middle;
-    overflow:hidden;
-}
- 
 .tab4_list_container {
   display: block;
   overflow: hidden;
@@ -1361,7 +1339,6 @@ input[type=radio]:checked + label:before {
   width: 40%;
   overflow:hidden;
 }
-
 .item_container {
   overflow: hidden;
   width:calc(100% - 2px );
@@ -1370,24 +1347,19 @@ input[type=radio]:checked + label:before {
   line-height: 28px;
   margin-top: 7px;
   list-style:none;
-
 }
 .item_container li{
   float:left;
   width:calc(50% - 2px);
 }
-
-
 .tab4_inputs_container,
 .tab_inputs_container
 {
   padding-top:10px;
-  /*margin-bottom: 25px;*/
   -webkit-border-radius: 6px;
           border-radius: 6px;
   border: 1px solid #377de7;
   background-color: #f3f4f6;
-  /*overflow: hidden;*/
 }
 
  .tab4_select_bg, 
@@ -1475,12 +1447,9 @@ input[type=radio]:checked + label:before {
 
 /*  tab4 style for  index1.html END*/
 
-
 /*  content style for page index1.html  END */
 
 /*  content style for page index2.html  START*/
-
-
  .add_order {
   float: left;
   margin-left: 18px;
@@ -1583,7 +1552,6 @@ input[type=radio]:checked + label:before {
   background-size: 20px;
   background-position: 20px 50%;
 }
-
  .list_1 {
   margin-right: 10px;
 }
@@ -1631,33 +1599,25 @@ input[type=radio]:checked + label:before {
 .phone-call {
   background-image: url(../image/gtw-images/phone-call.png);
 }
-
-
 .order_history {
   display: block;
   overflow: hidden;
   width: 100%;
 }
-
-
 .h3_details {
   background-image: url(../image/gtw-images/info-sign.png);
   background-position: 45px 50%;
   background-size: 10px;
 }
-
-
 .h3_add_history {
   background-image: url(../image/gtw-images/add.png);
   background-position: 45px 50%;
 }
 
-.table_col-4{
+.table .order_details{
   margin:10px 0;
 }
-.table a{
-  position:relative;
-}
+
 .table a.asc:after {
     content: "\2193";
     font-size: 12px;
@@ -1673,21 +1633,6 @@ input[type=radio]:checked + label:before {
     position:absolute;
     top:-2px;
     right:-8px;
-}
-.table_col-4 td,
-.table_col-4 th {
-  width: 20%;
-  height: 35px;
-  line-height: 35px;
-  position: relative;
-  border: 2px solid #83aff1;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.table_col-4 td:nth-child(2),
-.table_col-4 th:nth-child(2) {
-  width: 30%;
 }
 
 
@@ -1757,7 +1702,6 @@ input[type=radio]:checked + label:before {
   border: none;
   background: transparent;
 }
-
 .switch_box{
     float: left;
     position:relative;
@@ -1765,7 +1709,6 @@ input[type=radio]:checked + label:before {
 }
 .h_inputs_wrap{
   height: 50px;
-  
 }
 .h_inputs_wrap .history_label{
   line-height: 50px;
@@ -1776,13 +1719,10 @@ input[type=radio]:checked + label:before {
   width: calc(73% - 27px);
 }
 .switch {
-
-    vertical-align: middle;
   margin: 0 3px 0 0;
   width: 17px;
   height: 17px;
 }
-
 .switch + label {
   cursor: pointer;
 }
@@ -1807,7 +1747,6 @@ input[type=radio]:checked + label:before {
   background: #CDD1DA;
   box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
 }
-
 .switch:not(checked) + label:after {
   content: '';
   position: absolute;
@@ -1820,7 +1759,6 @@ input[type=radio]:checked + label:before {
   box-shadow: 0 2px 5px rgba(0,0,0,.3);
   transition: all .2s; 
 }
-
 .switch:checked + label:before {
   background: #377de7;
 }
@@ -1828,7 +1766,6 @@ input[type=radio]:checked + label:before {
 .switch:checked + label:after {
   left: 26px;
 }
-
  .btn_add_history {
   color: #000;
   border: 1px solid #377de7;
@@ -1839,7 +1776,6 @@ input[type=radio]:checked + label:before {
   background-color: #fff;
   padding: 0;
 }
-
  .add_icon {
   float: left;
   width: 20%;
@@ -1851,7 +1787,6 @@ input[type=radio]:checked + label:before {
   background-position: 10px 50%;
   transition: all 0.5s;
 }
-
  .add_text {
   float: left;
   width: 80%;
@@ -1879,6 +1814,7 @@ input[type=radio]:checked + label:before {
 .flex-start li{
   margin-right: 10px;
 }
+
 .delivery_table{
     width:100%;
     font-size: 14px;
@@ -1890,77 +1826,56 @@ input[type=radio]:checked + label:before {
   }
 .delivery_table td,
 .delivery_table th {
-  padding: 10px 15px;
+  height: 50px;
   vertical-align:top;
 }
-.delivery_table td.box-middle{
-   vertical-align:middle!important;
+.delivery_table th{
+  padding:15px 0;
+  height: 20px;
+  vertical-align:top;
 }
 .delivery_table .input,
 .delivery_table .chechbox_block
 {
   -webkit-border-radius: 6px;
           border-radius: 6px;
-  width: 100%;
   height: 30px;
-  vertical-align:middle;
+  display:inline-block;
   position:relative;
 }
-.table_sm .del{
-  width:100%;
+.delivery_table .input{
+    width: 80%;
+}
+.delivery_table .chechbox_block{
+    width: 70%;
+}
+.delivery_table .del{
+  width:70%;
   background-image: url(../image/gtw-images/remove1.png);
   height: 30px;
 }
-.table_sm .del:hover{
+.delivery_table .del:hover{
     background-color: #f41a1a;
   background-image: url(../image/gtw-images/remove1_inverse.png);
 
 }
 
 
-/*
-  left: 50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);*/
-.table_md{
-  width:20%;
-  position:relative;
-}
-.table_lg{
-  width:25%;
-  position:relative;
-}
-.table_sm{
-  width:10%;
-  position:relative;
-}
-.table_xs{
-  width:5%;
-  position:relative;
-}
-
-/*checkbox -checkox
-histoty history*/
-
-
 .delivery_table .switch_box{
-  /*top:5%;*/
   position:absolute;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
+  left:4px;
+  top:-5px;
+  display:block;
+  width:100%;
+  float:none;
+  height: 30px;
 }
 .delivery_table td,
 .delivery_table th{
   border:none;
 }
 .delivery_table .btn_add{
+  border:1px solid  #377de7;
   background-repeat: no-repeat;
   background-color: #377de7;
   background-image: url(../image/gtw-images/add_inverse.png);
@@ -1968,21 +1883,31 @@ histoty history*/
 }
 .delivery_table .btn_add:hover{
   background-image: url(../image/gtw-images/addblue.png);
-  background-color: #fff;
-   
-   
+  background-color: #fff;   
 }
 
-.delivery_table .btn_remove{
-  border:1px solid #377de7;
-  background-repeat: no-repeat;
-  background-image: url(../image/gtw-images/previous_blue.png);
-  background-position: 50% 50%;
+.delivery_table .textarea{
+  height:20px;
+
 }
-.delivery_table .btn_remove:hover{
-  background-color: #377de7;
-  background-image: url(../image/gtw-images/previous_white.png);
-  
+.overflow-visible{
+  overflow: visible!important;
+}
+.delivery_table .textarea:focus{
+    -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  height: 70px;
+  vertical-align:top;
+  z-index:200;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.last_row td{
+  padding-top:10px;
 }
 
 /*  content style for page index3.html END */
@@ -2001,7 +1926,7 @@ histoty history*/
   border: 1px solid #377de7;
   width: 60%;
   height: 28px;
-   vertical-align:middle;
+
   -webkit-border-radius: 5px;
           border-radius: 5px;
   background-image: url(../image/gtw-images/edit.png);
@@ -2058,3 +1983,18 @@ histoty history*/
   background-image: url(../image/gtw-images/edit_black.png);
 }
 /*  content style for page index5.html Group of characteristics  end*/
+
+
+
+@media (max-width: 768px) {
+  .btn_save{
+    width: 80px;
+  }
+  .btn_save .save_text{
+    display:none;
+  }
+  .btn_save .save_icon{
+    width:100%;
+    background-position: 50% 50%;
+  }
+}

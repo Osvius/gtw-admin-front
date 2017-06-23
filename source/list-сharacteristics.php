@@ -28,7 +28,7 @@
 				<form action="post" id="form-order">
 					<table class="table ">
 						<tr>
-							<th class="table_xs">
+							<th class="td_5">
 							<div class="chechbox_block char_table">		
 								<label >
 								    <input class="checkbox" type="checkbox" name="radio-test">
@@ -36,25 +36,25 @@
 								</label>
 							</div>
 							</th>
-							<th class="table_lg">
+							<th class="td_25">
 								<a href="#" class="asc">Название </a>
 							</th>
-							<th class="table_md">
+							<th class="td_20">
 								<a href="#" class="desc">Группа</a>
 							</th>
-							<th class="table_md">
+							<th class="td_20">
 								<a href="#">Порядок
 							сортировки</a>
 							</th>
-							<th class="table_md">
+							<th class="td_20">
 								<a href="#">Связанные характеристики</a>
 							</th>
-							<th class="table_md">
+							<th class="td_20">
 								<a href="#">Действия</a>
 							</th>
 						</tr>
 						<tr>
-							<td class="table_xs">
+							<td class="td_5">
 							<div class="chechbox_block ">		
 								<label >
 								    <input class="checkbox" type="checkbox" name="radio-test">
@@ -62,20 +62,20 @@
 								</label>
 							</div>
 							</td>
-							<td class="table_lg">
+							<td class="td_25">
 	
 							</td>
-							<td class="table_md">
+							<td class="td_20">
 
 							</td>
-							<td class="table_md">
+							<td class="td_20">
 	
 							</td>
-							<td class="table_md">
+							<td class="td_20">
 	
 							</td>
 
-							<td class="table_md">
+							<td class="td_20">
 							
 								<a href="#" class="edit_2"></a>	
 							</td>

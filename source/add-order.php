@@ -8,7 +8,7 @@
 	  <?php include('aside.php')?>
 <div class="order_wrap">
 		<h5>Здесь Вы можете добавлять, обрабатывать и удалять Ваши заказы</h5>
-		<div class="order_content page_1">
+		<div class="order_content">
 			<div class="order_head">
 				<span class="add_order">
 				Добавление заказа 
@@ -29,8 +29,7 @@
 			</div>
 		<div class="tab-content">
 			<div class="tab1">
-						<div  class="tab-form" id="user_info_form">
-
+						<div  class="tab-form">
 						<div class="inputs_container">
 							<div class="tab_inputs_wrap">
 								<label class="tab_label" for="name">* Имя и Фамилия</label>
@@ -59,97 +58,78 @@
 							</button>			
 						</div>	
 					</div>
-
+		
 					
 			</div>
 			
 			<div class="tab2">
-	
+				
 				<div class="tab-form ">
-					<table class="table table_col-6">
+					<table class="table ">
 						<tr>
-							<th>
-								<p>Товар</p>
+							<th class="td_15">
+								Товар
 							</th>
-							<th>
-								<p>Модель</p>
+							<th class="td_15">
+								Модель
 							</th>
-							<th >
-								<p>Количество</p>
+							<th class="td_15">
+								Количество
 							</th>
-							<th>
-								<p>Цена за еденицу</p>
+							<th class="td_15">
+								Цена за еденицу
 							</th>
-							<th>
-								<p>Всего</p>
+							<th class="td_15">
+								Всего
 							</th>
-							<th class="action">
-								<p>Действие</p>
+							<th class="td_10">
+								Действие
 							</th>
 						</tr>
 						<tr>
-							<td>
-								<p>Macbook Pro</p>
+							<td class="td_15">
+								Macbook Pro
 							</td>
-							<td>
-								<p>FR839</p>
+							<td class="td_15">
+								FR839
 							</td>
-							<td>
+							<td class="td_15">
 								<div class="table_input_count">
 									<input type="nubmer"  id="count" class="input_count">
 									<button type="reset" class="button_count"></button>
 								</div>
 								
 							</td>
-							<td>
-								<p>835 $</p>
+							<td class="td_15">
+								835 $
 							</dh>
-							<td>
-								<p>1670 $</p>
+							<td class="td_15">
+								1670 $
 							</td>
-							<td class="action">
+							<td class="td_10">
 								<div class="td-btn-container">
 									<button class="del"></button>
 								</div>	
 							</td>
 						</tr>
 						<tr>
-							<td>
-								<p></p>
+							<td class="td_15">
+							
 							</td>
-							<td>
-								<p></p>
+							<td class="td_15">
+							
 							</td>
-							<td>
+							<td class="td_15">
 								
 							</td>
-							<td>
-								<p></p>
+							<td class="td_15">
+							
 							</dh>
-							<td>
-								<p></p>
+							<td class="td_15">
+							
 							</td>
-							<td class="action">
+							<td class="td-15">
 		
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p></p>
-							</td>
-							<td>
-								<p></p>
-							</td>
-							<td>
-								
-							</td>
-							<td>
-								<p></p>
-							</dh>
-							<td>
-								<p></p>
-							</td>
-							<td class="action">
 							</td>
 						</tr>
 					</table>
@@ -210,13 +190,10 @@
 							<span class="save_text">Сохранить</span>
 						</button>				
 					</div>	
-
 				</div>
 			</div>
-
 			
 			<div class="tab3">
-
 					<div class="tab-form " >
 						<div class="inputs_container ">
 							<div class="tab_inputs_wrap tab_textarea_wrap">
@@ -234,7 +211,7 @@
 							</button>			
 						</div>	
 					</div>
-
+				
 			</div>
 			
 			<div class="tab4">
@@ -242,36 +219,36 @@
 				<div class="tab-form">
 					<table class="table table_col-5">
 						<tr>
-							<th>
+							<th class="td-15">
 								<p>Товар</p>
 							</th>
-							<th>
+							<th class="td-15">
 								<p>Модель</p>
 							</th>
-							<th >
+							<th class="td-15">
 								<p>Количество</p>
 							</th>
-							<th>
+							<th class="td-15">
 								<p>Цена за еденицу</p>
 							</th>
-							<th>
+							<th class="td-15">
 								<p>Всего</p>
 							</th>
 						</tr>
 						<tr>
-							<td>
+							<td class="td-15">
 								<p>Macbook Pro</p>
 							</td>
-							<td>
+							<td class="td-15">
 								<p>FR839</p>
 							</td>
-							<td >
+							<td class="td-15">
 								<p>2</p>
 							</td>
-							<td>
+							<td class="td-15">
 								<p>835 $</p>
-							</dh>
-							<td>
+							</td>
+							<td class="td-15">
 								<p>1670 $</p>
 							</td>
 						</tr>
@@ -336,7 +313,6 @@
 							</button>		
 					</div>	
 				</div>
-		
 
 			</div>
 		
@@ -344,9 +320,9 @@
 		
 		</form>
 
-	</div>	
+	</div>
 
-	</div> 
+	</div>
 	  </div>
 </main>
 

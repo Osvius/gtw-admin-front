@@ -6,7 +6,7 @@
 <main id="main">
 	  <div class="content-wrap">
 	  <?php include('aside.php')?>
-<div class="order_wrap">
+		<div class="order_wrap">
 			<h5>Здесь Вы можете настроить характеристики.</h5>
 			<div class="order_content ">
 				
@@ -43,7 +43,7 @@
 						</button>		
 				</div>
 			</div>
-		</div>	
+		</div>
 	  </div>
 </main>
 

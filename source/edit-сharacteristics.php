@@ -6,15 +6,15 @@
 <main id="main">
 	  <div class="content-wrap">
 	  <?php include('aside.php')?>
-				<div class="order_wrap">
+		<div class="order_wrap">
 			<h5>Здесь Вы можете настроить характеристики.</h5>
 			<div class="order_content ">
 				
 				<div class="order_form">
 		
 				<div class="order_head">
-					<span class="order_list_name char_add">
-					Добавление характеристик  
+					<span class="order_list_name char_edit">
+					Редактирование характеристик 
 					</span>
 					<div class="btn-container_1">
 
@@ -33,8 +33,8 @@
 							<label class="tab_label" for="payment_method" class="tab_label">Группа</label>
 							<div class="tab_select_bg">
 							<select id="payment_method" class="tab_select">
-							    <option></option>
-							    <option></option>
+							    <option>Группа 1</option>
+							    <option>Группа 2</option>
 							</select>
 							<div class="tab_select_btn">
 								<img src="image/gtw-images/triangle-t.png" alt="triang">
@@ -65,7 +65,7 @@
 						</button>		
 				</div>
 			</div>
-		</div>
+		</div>	
 	  </div>
 </main>
 

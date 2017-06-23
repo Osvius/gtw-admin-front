@@ -8,7 +8,7 @@
 	  <?php include('aside.php')?>
 <div class="order_wrap">
 		<h5 >Здесь Вы можете добавлять, обрабатывать и удалять Ваши заказы</h5>
-		<div class="order_content page_2 ">
+		<div class="order_content  ">
 			<div class="order_head">
 				<span class="add_order">
 				Заказы 
@@ -42,32 +42,32 @@
 		</div>
 		<div class="order_details">
 			<h3 class="h3_block h3_details">Детали заказа</h3>
-			<table class="table table_col-4">
+			<table class="table">
 					<tr>
-						<th>
+						<th class="td_20">
 							<p></p>
 						</th>
-						<th>
+						<th class="td_30">
 							<p></p>
 						</th>
-						<th >
+						<th class="td_20">
 							<p></p>
 						</th>
-						<th>
+						<th class="td_20">
 							<p></p>
 						</th>
 					</tr>
 					<tr>
-						<td>
+						<td class="td_20">
 							<p></p>
 						</td>
-						<td>
+						<td class="td_30">
 							<p></p>
 						</td>
-						<td>
+						<td class="td_20">
 							<p></p>
 						</td>
-						<td>
+						<td class="td_20">
 							<p></p>
 						</td>
 					</tr>
@@ -75,32 +75,32 @@
 		</div>
 		<div class="order_history">
 			<h3 class="h3_block h3_add_history">Добавить историю заказов</h3>
-			<table class="table table_col-4">
+			<table class="table">
 					<tr>
-						<th>
+						<th class="td_20">
 							<p></p>
 						</th>
-						<th >
+						<th class="td_30">
 							<p></p>
 						</th>
-						<th>
+						<th class="td_20">
 							<p></p>
 						</th>
-						<th>
+						<th class="td_20">
 							<p></p>
 						</th>
 					</tr>
 					<tr>
-						<td>
+						<td class="td_20">
 							<p></p>
 						</td>
-						<td>
+						<td class="td_30">
 							<p></p>
 						</td>
-						<td>
+						<td class="td_20">
 							<p></p>
 						</td>
-						<td>
+						<td class="td_20">
 							<p></p>
 						</td>
 					</tr>
