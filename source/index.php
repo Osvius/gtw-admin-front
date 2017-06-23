@@ -49,8 +49,8 @@
 					<div class="inputs_wrap ">
 						<label class="order_label" for="order_date" class="label">Дата добавления</label>
 						<div class="datepicker1" >
-						<input  type="text" id="date1" class="input">
-						<a href="#"  class="datepicker_btn"></a>
+						<input  type="text"  class="input">
+						<a href="#" id="date1" class="datepicker_btn"></a>
 						</div>	
 
 					</div>
@@ -232,16 +232,6 @@
 		</div>	
 	  </div>
 </main>
-<script>
-  $( function() {
-    // $( "#date1" ).datepicker();
-    $( "#date2" ).datepicker();
-  $('#date2').click(function(){
-    event.preventDefault();
- 	 $('#date2').datepicker();
-	});
-    // $( "#date2" ).datepicker();
-  } );
-  </script>
+
 </body>
 </html>
