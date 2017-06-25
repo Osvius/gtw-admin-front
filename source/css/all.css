@@ -204,7 +204,7 @@ input:focus, textarea:focus {
     padding: 5px 8px;
     width: calc(100% - 18px);
     height: 45px;
-    vertical-align: middle;
+/*    vertical-align: middle;*/
 }
 
 th a{
@@ -689,7 +689,6 @@ th a:active{
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 1px solid #377de7;
-  background-color: #fff;
   line-height: 40px;
   height: 40px;
   width: calc(100% - 2px);
@@ -1073,7 +1072,11 @@ th a:active{
   position: relative;
 }
 .tab_textarea_wrap{
-   height: 80px!important;
+   height: 80px;
+  margin: 17px 0;
+  width: 100%;
+  display: block;
+  position: relative;
   }
 
 .tab_label {
@@ -1433,17 +1436,7 @@ input[type=radio]:checked + label:before {
   border: none;
   background: transparent;
 }
-.tab_textarea{
-  position: absolute;
-  right: 12px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #377de7;
-  padding: 10px 5px;
-  height: 48px;
-  width: calc(75% - 24px);
-  text-indent: 9px;
-}
+
 
 /*  tab4 style for  index1.html END*/
 
@@ -1617,7 +1610,9 @@ input[type=radio]:checked + label:before {
 .table .order_details{
   margin:10px 0;
 }
-
+.table a{
+  position: relative;
+}
 .table a.asc:after {
     content: "\2193";
     font-size: 12px;
@@ -1747,6 +1742,7 @@ input[type=radio]:checked + label:before {
   background: #CDD1DA;
   box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
 }
+
 .switch:not(checked) + label:after {
   content: '';
   position: absolute;
@@ -1761,6 +1757,9 @@ input[type=radio]:checked + label:before {
 }
 .switch:checked + label:before {
   background: #377de7;
+}
+.switch_red:checked + label:before{
+   background:#fa5151;
 }
 
 .switch:checked + label:after {
@@ -1951,11 +1950,13 @@ input[type=radio]:checked + label:before {
   padding-bottom:70px;
 }
 .character_container .tab_input,
-.character_container .tab_select_bg{
+.character_container .tab_select_bg
+{
   width: calc(72% - 14px);  
   -webkit-border-radius: 6px;
           border-radius: 6px;
 }
+
 .character_container .tab_label {
     width: calc(32% - 39px);
     text-align: center;
@@ -1984,7 +1985,89 @@ input[type=radio]:checked + label:before {
 }
 /*  content style for page index5.html Group of characteristics  end*/
 
+/*  content style for page index6.html Manufacturers  start*/
+.factory_img{
+  background-image: url(../image/gtw-images/factory_black.png);
+}
 
+/*  content style for page index6.html Manufacturers  end*/
+
+/*  content style for page index7.html Categories  start*/
+.category_img{
+  background-image: url(../image/gtw-images/list_3.png);
+}
+
+
+.tab_inputs_wrap .switch_box{
+    float: none;
+    position: absolute;
+    height: 38px;
+    line-height: 38px;
+    top: -12px;
+    left: 28%;
+  }
+
+.h_min{
+
+  margin:0!important;
+}
+.paddin0{
+  padding:0!important;
+}
+  .tab_text{
+    position: absolute;
+    height: 16px;
+    font-size: 13px;
+    color: #233539;
+    left: 28%;
+  }
+/*  content style for page index7.html Categories end*/
+
+
+
+/*  content style for page index9.html addPages start*/
+
+.order_h{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.add_pages{
+  margin:0;
+  background-color: #f3f4f6;
+  padding:30px 0  70px;
+}
+.add_pages .table{
+  width:95%;
+  margin: 0 auto 20px;
+}
+.add_pages .btn-container_1{
+  margin-right: 19.5px;
+}
+.add_pages_2 {
+
+}
+.add_pages_2 .tab_inputs_container {
+  border:none;
+    padding:30px 0 ;
+}
+/*.add_pages .tab_textarea{
+  height: 70px;
+  right: 12px;
+width: calc(75% - 24px);
+}*/
+/*.tab_textarea {
+  position: absolute;
+  right: 12px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #377de7;
+  padding: 10px 5px;
+  height: 45px !important;
+  width: calc(75% - 24px);
+  text-indent: 9px;
+}*/
+/*  content style for page index9.html addPages end*/
 
 @media (max-width: 768px) {
   .btn_save{
@@ -1998,3 +2081,4 @@ input[type=radio]:checked + label:before {
     background-position: 50% 50%;
   }
 }
+
