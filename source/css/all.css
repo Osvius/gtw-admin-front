@@ -131,12 +131,12 @@ input:focus, textarea:focus {
     overflow:hidden;
     
 }
-.alert  span{
+/*.alert  span{
   float:left;
-}
-.alert a{
+}*/
+/*.alert a{
   float:right;
-}
+}*/
 .alert-danger {
     background-color: #fef1f1;
     border-color: #fde2e2;
@@ -153,6 +153,7 @@ input:focus, textarea:focus {
   border:none;
   padding-left:10px;
   color:#d6cbcb;
+  float:right;
 }
 .close:hover{
   color:#000;
