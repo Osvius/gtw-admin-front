@@ -8,7 +8,6 @@
 			<li><a href="#">Главная</a></li>
 			<li class="active"><a href="#" >Просмотр сайта</a></li>
 			<li><a href="#">Продвижение</a></li>
-			<li><a href="#">GoTo Social</a></li>
 			<li><a href="#">Новости</a></li>
 			<li><a href="#">Поддержка</a></li>
 		</ul>

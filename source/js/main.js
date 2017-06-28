@@ -3,6 +3,7 @@
 
 	$(document).ready(function() {
 	//tabs
+
 	$('#tabs li').click(function(){
 	  var thisClass = this.className.slice(0,5);
 	    $('div.tab1').hide();
@@ -17,16 +18,14 @@
 	  });
 	 $('li.tab1').click();
 
-   $('#date1').click(function(){
-    event.preventDefault()
-   });
-   $('#date2').click(function(){
-    event.preventDefault()
-     $('#date2').datepicker();
-   });
 
-    $('#date1').datepicker();
-    $('#date2').datepicker();
+$(function() {
+  $('#date1').datepicker();
+  $('#date2').datepicker(); 
+});
+  
+
+
 
 
 // vallidator
