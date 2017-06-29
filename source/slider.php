@@ -14,6 +14,13 @@
 					<span class="order_list_name slider_img">
 					Редактирование слайдера
 					</span>
+					<div class="btn-container_1">
+					<span class="slider_status">Статус:</span>
+						<div class="switch_box">
+							<input type="checkbox" class="switch" id="switch4" />
+							<label for="switch4" class="switch_label"></label>
+						</div>
+					</div>		
 				</div>
 				<div class="slider_container">
 					<div class="block1">
@@ -34,18 +41,12 @@
 								<label  class="label">Ссылка</label>
 								<input type="text"  class="input">
 							</div>
-							<div class="double_inputs_wrap">
-								<div class="inputs_wrap wrap1">
+							<div class="inputs_wrap">
+								
 									<label  class="label">Сортировка</label>
 									<input type="text"  class="input input1">
-								</div>
-								<div class="inputs_wrap wrap2">
-									<label  class="label label2">Статус</label>
-									<div class="switch_box">
-										<input type="checkbox" class="switch" id="switch4" />
-										<label for="switch4" class="switch_label"></label>
-									</div>
-								</div>
+
+
 							</div>
 						</div>
 						<div class="block_item3">
@@ -67,8 +68,10 @@
 					</button>		
 				</div>	
 			</div>	
+	  </div>	
 	  </div>
 </main>
+
 
 </body>
 </html>
