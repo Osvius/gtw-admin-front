@@ -10,6 +10,8 @@
 	       $('div.tab2').hide();
 	       $('div.tab3').hide();
 	       $('div.tab4').hide();
+         $('div.tab5').hide();
+         $('div.tab6').hide();
 	       $('div.' + thisClass).fadeIn(500);
 	       $('#tabs li').removeClass('active');
 	       $(this).addClass('active');
@@ -23,8 +25,7 @@ $(function() {
   $('#date1').datepicker();
   $('#date2').datepicker(); 
 });
-  
-
+ 
 
 
 
@@ -111,6 +112,34 @@ $(function() {
                 notValid.call(this,"Обязательное поле,минимум 10 символов") ;
               }
       })
+
+// file validation
+$(".upload_img").change(function (){
+  var type   = ['image/jpeg','image/png'];
+  var width  = 1024;
+  var height = 768;
+  var size   = 5000000; // bytes
+  var file   = $(this)[0].files[0];
+  var prev   = document.getElementById('img_prev');
+  function errMsg(x) {
+    alert('Error ' + x);
+    prev.src = '';
+    $(this)[0].value = '';
+  }
+  if (type.indexOf(file.type) == -1) {
+    errMsg('Допустимый формат файла jpeg,png ');
+    return false;
+  } else if (file.size > size) {
+    errMsg('Размер изображения до 5 мб');
+    return false;
+  } else {
+      // errMsg('Validation success!');
+      $(this)[0].value = '';
+      alert('Validation success!')
+    };
+  
+})
+
 
 }) 
 })(jQuery)

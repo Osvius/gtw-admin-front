@@ -16,13 +16,7 @@
 					<span class="order_list_name category_img">
 					Список категорий   
 					</span>
-					<div class="btn-container_1">
-						<a href="#" class="btn btn_add">
-							Добавить
-						</a>
-						<button  class="btn btn_delete">
-						</button >
-					</div>		
+	
 				</div>
 				
 				<form action="post" id="form-order" class="character_container">

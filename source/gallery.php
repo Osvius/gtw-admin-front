@@ -4,34 +4,24 @@
 <body>
 <?php include('header.php')?>
 <main id="main">
-	  <div class="content-wrap">
-	  <?php include('aside.php')?>
-		<div class="order_wrap">
+	 <div class="order_wrap">
 			<h5>Здесь Вы можете настроить категории</h5>
 			<div class="order_content gallery_block">
-				
-
-		
 				<div class="order_head">
 					<span class="order_list_name media_img">
 					Галерея 
 					</span>
 				</div>
-
-			
 					<div class="btn-container_1">
-						<a href="#" class="btn btn_download">
-							Загрузить
-						</a>
+						<button type="button" class="btn btn_download" onclick="$('#img_file').trigger('click')">Загрузить</button>
 						<a href="#" class="btn btn_upload">
 							Скачать
 						</a>
 						<a href="#" class="btn btn_upload">
 							Скачать  все 
 						</a>
-						<a href="#" class="btn btn_delete">
-							<!-- удалить  -->
-						</a>
+						<button type="button" class="btn btn_delete">
+						</button>
 						<a href="#" class="btn btn_delete delete_all">
 							Удалить  все 
 						</a>
@@ -89,7 +79,6 @@
 					</div>
 				</div>
 	
-			<!-- </div> -->
 					<div class="pagination">
 					<ul class="pagination-list">
 						<li class="prev"><a href="#">
@@ -105,9 +94,8 @@
 
 		</div>
 		</div>	
-
-	  </div>	
 	  </div>
+	  <input id="img_file" type="file" class="upload_img " value="Загрузить" placeholder="">
 </main>
 
 

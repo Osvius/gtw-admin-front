@@ -15,12 +15,7 @@
 				<div class="order_head">
 					<span class="order_list_name char_add">
 					Добавление групп  
-					</span>
-					<div class="btn-container_1">
-
-						<a class="btn btn_remove">
-						</a >
-					</div>		
+					</span>	
 				</div>
 				
 				<form action="post" id="form-order" class="character_container">
