@@ -7,80 +7,65 @@
 	  <div class="content-wrap">
 	  <?php include('aside.php')?>
 <div class="order_wrap">
-			<h5>Здесь Вы можете настроить категории</h5>
-			<div class="order_content">
+			<h5>Здесь Вы можете настроить страницы.</h5>
+			<div class="order_content ">
 				
 				<div class="order_form">
 		
 				<div class="order_head">
-					<span class="order_list_name category_img">
-					Добавление страниц   
+					<span class="order_list_name char_add">
+					Добавление страниц
 					</span>
 					<div class="btn-container_1">
-						<a href="#" class="btn btn_add">
-							Добавить
-						</a>
-						<button  class="btn btn_delete">
-						</button >
+
+						<a class="btn btn_remove">
+						</a >
 					</div>		
 				</div>
-				<h2 class="order_h">Список добавленных страниц</h2>
-				<form action="post" class="character_container add_pages">
-					<table class="table ">
-						<tr>
-							<th class="td_5">
-							<div class="chechbox_block char_table">		
-								<label >
-								    <input class="checkbox" type="checkbox" name="radio-test">
-								    <span class="checkbox-custom"></span>
-								</label>
+				
+				<form action="post" class="character_container add_pages_2 ">
+					<div class="tab_inputs_container ">
+						<div class="tab_inputs_wrap">
+							<label class="tab_label" >Заголовок страницы</label>
+							<input type="text" class="tab_input" >
+						</div>
+						<div class="large_wrap">
+							<label class="tiny_label">Описание</label>
+							<div class="tiny_textarea">
+								<textarea ></textarea>
 							</div>
-							</th>
-							<th class="td_25">
-								<a href="#" class="asc">Название страниц</a>
-							</th>
-							<th class="td_25">
-								<a href="#">Порядок
-							сортировки</a>
-							</th>
-							<th class="td_5">
-								<a href="#">Действия</a>
-							</th>
-						</tr>
-						<tr>
-							<td class="td_5">
-							<div class="chechbox_block ">		
-								<label >
-								    <input class="checkbox" type="checkbox" name="radio-test">
-								    <span class="checkbox-custom"></span>
-								</label>
-							</div>
-							</td>
-							<td class="td_25">
-	
-							</td>
-							<td class="td_25">
-							
-							</td>
-							<td class="td_5">
-							
-								<a href="#" class="edit_2"></a>	
-							</td>
-						</tr>
-						
-						
+						</div>
+						<script>
+							tinymce.init({ selector:'textarea' });
+						</script>
 
-						
-					</table>
-					<div class="btn-container_1">
-						<a href="#" class="btn btn_add">
-							Добавить
-						</a>
-						<button  class="btn btn_delete">
-						</button >
+						<div class="tab_inputs_wrap">
+							<label class="tab_label" class="tab_label">Порядок сортировки</label>
+							<input type="text" class="tab_input">
+						</div>
+						<div class="tab_inputs_wrap">
+							<label class="tab_label" class="tab_label">Отображать в футере</label>
+							<div class="switch_box">
+								<input type="checkbox" class="switch" id="switch1" />
+								<label for="switch1" class="switch_label"></label>
+							</div>
+						</div>
+						<div class="tab_inputs_wrap">
+							<label class="tab_label" class="tab_label">Статус отображения</label>
+							<div class="switch_box">
+								<input type="checkbox" class="switch " id="switch2" />
+								<label for="switch2" class="switch_label"></label>
+							</div>
+						</div>
+
 					</div>
 				</form>
-	
+				<div class="btn_container">
+						<button  class="btn btn_save">
+							<span class="save_icon"></span>
+							<span class="save_text">Сохранить</span>
+						</button>		
+				</div>
 			</div>
 		</div>	
 	  </div>
