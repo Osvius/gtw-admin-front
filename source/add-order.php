@@ -134,15 +134,15 @@
 						</tr>
 					</table>
 
-					<div class="inputs_container">
+						<div class="inputs_container">
 						<div class="tab_inputs_wrap">
 							<label  for="product_name" class="tab_label">Выбрать товар </label>
 							<input type="text"  name="product" value="" id="input-product" class="tab1_input">
 							<span  for="tel" class="error-box">	
-							<ul class="dropdown-menu hidden">
-								<li><a href="#"></a>1cckckkckckckckck</li>
-								<li><a href="#"></a>2</li>
-								<li><a href="#"></a>3</li>
+							<ul class="dropdown-menu">
+								<li><a href="#">1cckckkckckckckck</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
 							</ul>
 						</div>
 						<div class="tab_inputs_wrap">
@@ -151,7 +151,7 @@
 							<span  for="tel" class="error-box">	
 								</span>
 						</div>
-						<div class="tab_inputs_wrap ">
+						<div class="tab_inputs_wrap wrap_large">
 							<label  for="product_name" class="tab_label">Выбрать товар </label>
 
 							<div class="tab4_select_bg select-min">
@@ -165,25 +165,26 @@
 							<div class="radio_container">
 							<label class="select_radio"><span class="star"> * </span>Выберите характеристики</label>
 								<div class="radio_box">
-									<input type="radio" name="radio" id="radio1">
+<!-- 									<input type="radio" name="radio" id="radio1">
 									<label for="radio1">
 								      вариант 1
+									</label> -->
+									<label>
+										<input type="radio"  name="radio">
+										<span> вариант 1</span>
 									</label>
-									
-
 								</div>
 								<div class="radio_box">
-									<input type="radio" name="radio" id="radio2">
-									<label for="radio2">
-								      вариант 2
+									<label>
+										<input type="radio" name="radio">
+										<span> вариант 1</span>
 									</label>
-									
 									</div>	
 							</div>
 
 
 						</div>
-					</div>	
+					</div>
 					<div class="btn_container">
 						<button  class="btn btn_save">
 							<span class="save_icon"></span>
