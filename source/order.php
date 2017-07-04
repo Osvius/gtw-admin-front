@@ -32,7 +32,7 @@
 					</div>
 					<div class="inputs_wrap">
 						<label class="order_label" for="order_status" class="order_label">Статус заказа</label>
-						<!-- <input class="input" type="text" id="order_status"> -->
+
 						<div class="select_bg">
 						<select name="" id="">
 							<option value="">lorem</option>
@@ -49,8 +49,8 @@
 					<div class="inputs_wrap ">
 						<label class="order_label" for="order_date" class="label">Дата добавления</label>
 						<div class="datepicker1">
-						<input  type="text" id="order_date" class="input">
-						<a href="#" class="datepicker_btn"></a>
+						<input  type="text" id="date1" class="input">
+						<span  class="datepicker_btn"></span>
 						</div>	
 
 					</div>
@@ -65,8 +65,8 @@
 					<div class="inputs_wrap">	
 						<label class="order_label" for="order_edit_date" class="order_label">Дата редактирования</label>
 						<div class="datepicker1">
-							<input class="input" type="text" id="order_edit_date">
-							<a href="#" type="button" class="datepicker_btn"></a>
+							<input class="input" id="date2" type="text" >
+							<span class="datepicker_btn"></span>
 						</div>
 					</div>
 				</div>
@@ -80,40 +80,43 @@
 
 				</div>
 				<form action="post" id="form-order">
-					<table class="table table_col-8">
+					<table class="table">
+					<thead>
 						<tr>
-							<th class="checkB">
-							<div class="chechbox_block ">		
+							<th class="td_5">
+							<div class="chechbox_block">		
 								<label >
 								    <input class="checkbox" type="checkbox" name="radio-test">
 								    <span class="checkbox-custom"></span>
 								</label>
 							</div>
 							</th>
-							<th class="td-border td-number">
+							<th class="td_10">
 								<a href="#" class="asc">Заказ № </a>
 							</th>
-							<th>
+							<th class="td_15">
 								<a href="#" class="desc">Покупатель</a>
 							</th>
-							<th class="td-border">
+							<th class="td_15">
 								<a href="#">Статус</a>
 							</th>
-							<th class="td-border">
+							<th class="td_15">
 									<a href="#">Всего</a>
 							</th>
-							<th>
+							<th class="td_15">
 								<a href="#">Создан</a>
 							</th>
-							<th>
+							<th class="td_15">
 								<a href="#">Обнавлен</a>
 							</th>
-							<th>
+							<th class="td_15">
 								<a href="#">Действие</a>
 							</th>
 						</tr>
+					</thead>
+					<tbody>
 						<tr>
-							<td class="checkB">
+							<td class="td_5">
 							<div class="chechbox_block ">		
 								<label >
 								    <input class="checkbox" type="checkbox" name="radio-test">
@@ -121,57 +124,25 @@
 								</label>
 							</div>
 							</td>
-							<td class="td-border td-number">
+							<td class="td_10">
 								<p>132</p>
 							</td>
-							<td >
+							<td class="td_15">
 								<p>Алексей</p>
 							</td>
-							<td class="td-border">
+							<td class="td_15">
 								<p>Ожидание</p>
 							</td>
-							<td class="td-border">
+							<td class="td_15">
 								<p>1350 грн</p>
 							</td>
-							<td>
+							<td class="td_15">
 								<p>19.05.2017</p>
 							</td>
-							<td>
+							<td class="td_15">
 								<p>19.05.2017</p>
 							</td>
-							<td>
-									<a href="#" class="look"></a>
-									<a href="#" class="edit"></a>	
-							</td>
-						</tr>
-						<tr>
-							<td class="checkB">
-							<div class="chechbox_block ">		
-								<label >
-								    <input class="checkbox" type="checkbox" name="radio-test">
-								    <span class="checkbox-custom"></span>
-								</label>
-							</div>
-							</td>
-							<td class="td-border td-number">
-								<p></p>
-							</td>
-							<td>
-								<p></p>
-							</td>
-							<td class="td-border">
-								<p></p>
-							</td>
-							<td class="td-border">
-								<p></p>
-							</td>
-							<td>
-								<p></p>
-							</td>
-							<td>
-								<p></p>
-							</td>
-							<td class="table-btn">
+							<td class="td_15">
 								<div class="td-btn-container">
 									<button class="look"></button>
 									<button class="edit"></button>
@@ -179,7 +150,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td class="checkB">
+							<td class="td_5">
 							<div class="chechbox_block ">		
 								<label >
 								    <input class="checkbox" type="checkbox" name="radio-test">
@@ -187,31 +158,66 @@
 								</label>
 							</div>
 							</td>
-							<td class="td-border td-number">
+							<td class="td_10">
 								<p></p>
 							</td>
 							<td>
 								<p></p>
 							</td>
-							<td class="td-border">
+							<td class="td_15">
 								<p></p>
 							</td>
-							<td class="td-border">
+							<td class="td_15">
 								<p></p>
 							</td>
-							<td>
+							<td class="td_15">
+								<p></p>
+							</td class="td_15">
+							<td class="td_15">
 								<p></p>
 							</td>
-							<td>
-								<p></p>
-							</td>
-							<td>
+							<td class="td_15">
 								<div class="td-btn-container">
 									<button class="look"></button>
 									<button class="edit"></button>
 								</div>	
 							</td>
 						</tr>
+						<tr>
+							<td class="td_5">
+							<div class="chechbox_block ">		
+								<label >
+								    <input class="checkbox" type="checkbox" name="radio-test">
+								    <span class="checkbox-custom"></span>
+								</label>
+							</div>
+							</td>
+							<td class="td-10">
+								<p></p>
+							</td>
+							<td class="td_15">
+								<p></p>
+							</td>
+							<td class="td_15">
+								<p></p>
+							</td>
+							<td class="td_15">
+								<p></p>
+							</td>
+							<td class="td_15">
+								<p></p>
+							</td>
+							<td class="td_15">
+								<p></p>
+							</td>
+							<td class="td_15">
+								<div class="td-btn-container">
+									<button class="look"></button>
+									<button class="edit"></button>
+								</div>	
+							</td>
+						</tr>
+					</tbody>
 					</table>
 				</form>
 				<div class="pagination">
