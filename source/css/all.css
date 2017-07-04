@@ -68,13 +68,13 @@ body{
 body,html,input,form,textarea,button,label{
   font-family: 'Mallanna', sans-serif;
 }
-/*a,button,li,span,img {
-    -webkit-transition: all .5s ease;
-     -moz-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-       -o-transition: all .5s ease;
-          transition: all .5s ease;
-  }*/
+a,button,li,span,img,button {
+    -webkit-transition: all .6s ease;
+     -moz-transition: all .6s ease;
+      -ms-transition: all .6s ease;
+       -o-transition: all .6s ease;
+          transition: all .6s ease;
+  }
 button{
   cursor: pointer;
 }
@@ -599,10 +599,10 @@ th a:active{
   width: 100%;
 }
 .chechbox_block .checkbox-custom{
-    position:absolute;
-    display:block;
-   left: 50%;
-   top:5px;
+  position:absolute;
+  display:block;
+  left: 50%;
+  top:5px;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -916,12 +916,15 @@ th a:active{
   overflow: hidden;
 }
 */
+.td-btn-container{
+  height: 26px;
+}
 .look ,
 .edit {
   display:inline-block;
   border: 1px solid #377de7;
   width: 30px;
-  height: 26px;
+  height: 100%;
   color: #377de7;
   background: #fff;
   background-repeat: no-repeat;
@@ -1114,7 +1117,7 @@ th a:active{
 }
 
 .tab_inputs_wrap {
-  margin: 17px 0;
+  margin: 20px 0;
   width: 100%;
   height: 45px;
   display: block;
@@ -1140,7 +1143,7 @@ th a:active{
 .tab_label {
   position:absolute;
   width: calc(25% - 40px);
-  line-height: 20px;
+  line-height: 40px;
   text-align: right;
   color: #040404;
   font-weight: 400;
@@ -1178,7 +1181,7 @@ th a:active{
  .error-box {
   display:block;
   position: absolute;
-  top: -17px;
+  top: -22px;
   color: #ff0000!important;
   font-weight: normal;
   z-index: 100;
@@ -1190,21 +1193,26 @@ th a:active{
 }
 .dropdown-menu{
   position:absolute ;
-  /*left:25%;*/
   top: 58px;
   left:-23px;
-  z-index:9999;
   color:#000;
   background-color: #FFF;
-    border:1px solid #4991e3;
+  border:1px solid #4991e3;
+  overflow: hidden;
 }
-.dropdown-menu li{
 
+.dropdown-menu  a{
+  z-index: 200;
   cursor:pointer;
   background-color: #fff;
+  width: 100%;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
   padding:5px 10px;
 }
-.dropdown-menu li:hover{
+
+.dropdown-menu a:hover{
   background-color: #dce4f4;
 }
 .tab-form .btn_container {
@@ -1320,8 +1328,7 @@ th a:active{
 }
 
 .select-min .tab4_select {
-   width:162px!important;
-  left: -1px;
+  width:162px!important;
   padding-left: 5px;
 }
 .radio_container{
@@ -1333,11 +1340,36 @@ th a:active{
    display: block;
    margin:5px 0;
 }
-input[type="radio"] {
+/*input[type="radio"] {
     display:none;
+}*/
+label input[type="radio"] {
+  display: none;
 }
-
-input[type=radio] + label:before {
+label input[type="radio"] ~ span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 0 3px 25px;
+}
+label input[type="radio"] ~ span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  left: 0;
+  top: 8px;
+  box-sizing: border-box;
+  transition: all 300ms ease-in-out;
+}
+label input[type="radio"]:checked ~ span:before {
+  border: 5px solid #377de7;
+}
+/*input[type=radio] + label:before {
     content: "\26AB";
     
     border-radius: 50%;
@@ -1356,7 +1388,7 @@ input[type=radio] + label:before {
 input[type=radio]:checked + label:before {
     font-size: 13px;    
 }
-
+*/
 
  .button_count {
   position: absolute;
@@ -1504,7 +1536,7 @@ input[type=radio]:checked + label:before {
   width: 573px;
   height: 100%;
   padding-left: 20px;
-  z-index: 150;
+/*  z-index: 150;*/
   border: none;
   background: transparent;
 }
@@ -1684,6 +1716,9 @@ input[type=radio]:checked + label:before {
 }
 .table a{
   position: relative;
+  margin: auto;
+  display: block;
+
 }
 .table a.asc:after {
     content: "\2193";
@@ -1816,7 +1851,7 @@ input[type=radio]:checked + label:before {
 .switch:not(checked) + label:after {
   content: '';
   position: absolute;
-  top:60%;
+  top:59%;
   left: 2px;
   width: 22px;
   height: 22px;
@@ -1892,7 +1927,6 @@ input[type=radio]:checked + label:before {
     font-size: 14px;
     background-color: #f4f4f7;
     padding:15px 30px;
-    margin-bottom:0;
     -webkit-border-radius: 8px;
             border-radius: 8px;
   }
@@ -1940,7 +1974,7 @@ input[type=radio]:checked + label:before {
 .delivery_table .switch_box{
   position:absolute;
   left:4px;
-  top:-5px;
+  top:-11px;
   display:block;
   width:100%;
   float:none;
@@ -2086,7 +2120,8 @@ input[type=radio]:checked + label:before {
     position: absolute;
     height: 38px;
     line-height: 38px;
-    top:-7px;
+    /*top:-7px;*/
+    top:-2px;
     left: 28%;
   }
 
@@ -2112,29 +2147,23 @@ input[type=radio]:checked + label:before {
       overflow: hidden;
       background-color: #fff;
       border: 1px solid #377de7;
-      line-height: 38px;
+      line-height: 40px;
       height: 38px;
       left:28%;
       text-indent: 10px;
       width: 50px;
+      
   }
 .character_container  .add_img img{
-  width:80%;
-  height: 80%;
-  position:absolute;
-  display:block;
-  top:50%;
-  left:50%;
-  -webkit-transform: translate(-50%,-50%);
-     -moz-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-       -o-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-  opacity: .7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 34px;
+  width:70%;
+  margin-top:-17px;
+  margin-left: -35%;
 }
-.character_container  .add_img:hover img{
-  opacity: 1;
-}
+
 /*  content style for page index7.html Categories end*/
 
 
@@ -2148,7 +2177,6 @@ input[type=radio]:checked + label:before {
 }
 .add_pages{
   margin:0;
-  background-color: #f3f4f6;
   padding:30px 0  70px;
 }
 .add_pages .table{
@@ -2162,7 +2190,7 @@ input[type=radio]:checked + label:before {
   margin-right: 19.5px;
 }
 .add_pages_2 .switch_box {
-    margin-top: -15px;
+    margin-top: -10px;
 }
 .add_pages_2 .tab_inputs_container {
   border:none;
@@ -2221,16 +2249,16 @@ input[type=radio]:checked + label:before {
   border: 1px solid #377de7;
   color: #377de7;
   padding: 0 20px 0 50px;
-   background-image: url(../image/gtw-images/download.png);
+  background-image: url(../image/gtw-images/download.png);
   background-repeat: no-repeat;
   background-position: 18px 50%;
   height: 28px;
 }
-.btn_upload:hover{
+/*.btn_upload:hover{
   background-color: #377de7;
   color: #fff;
   background-image: url(../image/gtw-images/download_inverse.png);
-}
+}*/
 
 
 .btn-container_1 .delete_all {
@@ -2278,6 +2306,7 @@ input[type=radio]:checked + label:before {
   -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   overflow: hidden;
+  position: relative;
 }
 .gallery_container .img_block,
 .gallery_container .add_img_block{
@@ -2288,6 +2317,7 @@ input[type=radio]:checked + label:before {
   position: relative;
   opacity: 1;
   overflow: hidden;
+  background-color: #FFF;
   cursor: pointer;
   
 }
@@ -2311,6 +2341,23 @@ input[type=radio]:checked + label:before {
   height: 100%;
   position: relative;
 }
+
+
+.img_block .upload_layer{
+  position: absolute;
+  opacity: 0;
+  top:0;
+  left:0;
+  bottom:0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../image/gtw-images/download-arrow2_inverse.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 80px;
+       -o-background-size: 80px;
+          background-size: 80px;
+}
 .gallery_container .add_img img{
   position: absolute;
   top:50%;
@@ -2321,7 +2368,6 @@ input[type=radio]:checked + label:before {
        -o-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
   opacity: 1;
-
 }
 .gallery_container .img_block:hover img{
     -webkit-filter: blur(1px);
@@ -2330,7 +2376,14 @@ input[type=radio]:checked + label:before {
       -ms-filter: blur(1px);
           filter: blur(1px);
 }
-
+/*.gallery_container .img_block:hover .img_layer{
+  opacity: 0.5;
+}*/
+.gallery_container .img_block:hover .upload_layer
+{
+  background-color: rgba(0,0,0,0.45);
+  opacity: .9;
+}
 
 
 
@@ -2367,6 +2420,7 @@ input[type=radio]:checked + label:before {
   opacity: 0;
   position:absolute;
 }
+
 /*  content style for page index9.html mediafiles end
 
 /*  content style for page index10.html slider start*/
@@ -2457,6 +2511,7 @@ input[type=radio]:checked + label:before {
           transform: translate(-50%,-50%);
   opacity: .7;
 }
+
 .slider_container  img:hover{
     opacity: 1;
 }
@@ -2744,9 +2799,7 @@ input[type=radio]:checked + label:before {
   margin: 0 0 15px 15px;
 }
 .main_goods .label{
-  /*float:left;*/
   width:170px;
-  /*height: 35px;*/
   line-height: 35px;
   text-align:center;
 }
@@ -3159,7 +3212,7 @@ input[type=radio]:checked + label:before {
 .my_shop  .tab_label {
     width: calc(30% - 40px);
     text-align: left;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     padding-left: 30px;
   }
 .my_shop .tab6 .tab_textarea{
@@ -3299,12 +3352,31 @@ input[type=radio]:checked + label:before {
 }
 
 /*tab 3 my shop start */
-
-.my_shop .switch_box{
-  margin-top: -8px;
-
+.social_table td,
+.social_table th {
+  height: 55px;
 }
-
+.social_icon{
+  display: block;
+  width: 50%;
+  height: 45px;
+  /*height: 30px;*/
+  border:1px solid #397ce6;
+  background-color: #FFF;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  position:relative ;
+  margin-bottom: 10px;
+}
+.social_icon img{
+  height: 100%;
+  width: 100%;
+/*  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-12px;
+  margin-left: -30%;*/
+}
 
 /*tab 5 my shop start */
 .map_text{
@@ -3326,6 +3398,63 @@ input[type=radio]:checked + label:before {
 
 /*tab 3 my shop end */
 /*  content style for page index13.html myShop end*/
+
+/*  content style for page index14.html media popup start*/
+.overlay{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 555;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 555;
+}
+.popUp{
+  position: absolute;
+  top:6%;
+  left:50%;
+  max-width: 800px;
+  width: 100%;
+  min-height: 500px;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #f5f5f5;
+}
+.popUp .gallery_container{
+  width:99%;
+  margin: 40px auto 20px;
+}
+.popUp .btn_close{
+  width: 40px;
+  height: 30px;
+  padding:0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top:5px;
+  right: 7px;
+  overflow:hidden;
+}
+
+.popUp .btn_close{
+  border: 1px solid #f20101;
+  background-image: url(../image/gtw-images/remove1.png);
+}
+.popUp .btn_close:hover{
+  background-color: #f20101;
+  background-image: url(../image/gtw-images/remove1_inverse.png);
+}
+
+.btn_upload:hover{
+  background-color: #377de7;
+  color: #fff;
+  background-image: url(../image/gtw-images/download_inverse.png);
+}
+/*  content style for page index14.html  media popup end*/
 @media (max-width: 768px) {
   .btn_save{
     width: 80px;

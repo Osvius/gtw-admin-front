@@ -129,10 +129,10 @@
 			</div>
 			
 			<div class="tab3">
-					<div class="tab-form " >
+					<div class="tab-form" >
 						<div class="inputs_container ">
 						<div class="tab_table_wrap ">
-						<table class="table delivery_table border-b">
+						<table class="table delivery_table border-b social_table">
 						<thead>
 							<tr>
 								<th class="td_10">Иконка</th>
@@ -142,7 +142,11 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="td_10"><input type="text" class="input"></td>
+								<td class="td_10">
+									<a href="#" class="social_icon">
+										<img src="image/gtw-images/add-plus-sign-outline-little.png" alt="AddImg">
+									</a>
+								</td>
 								<td class="td_20"><input type="text" class="input"></td>
 								<td class="td_10 ">
 									<div class="switch_box">
@@ -235,7 +239,10 @@
           map: map
         });
       }
-    </script>			
+    </script>	
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC89S35Vje50IkzLRK-UXA8bEejDpUfhs4&callback=initMap">
+    </script>		
 					</div>
 					<div class="btn_container">
 						<button  class="btn btn_save">
