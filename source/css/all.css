@@ -204,6 +204,7 @@ input:focus, textarea:focus {
 .checkbox:checked + .checkbox-custom::before,
 .radio:checked + .radio-custom::before {
     content: "\2713";
+    /*content: "";*/
     display: block;
     color:#377de7;
     position: absolute;
@@ -215,6 +216,8 @@ input:focus, textarea:focus {
 .radio:checked + .radio-custom::before {
     border-radius: 50%;
 }
+
+
 
 /*radio chechbock style  END*/
 
@@ -2254,11 +2257,6 @@ input[type=radio]:checked + label:before {
   background-position: 18px 50%;
   height: 28px;
 }
-/*.btn_upload:hover{
-  background-color: #377de7;
-  color: #fff;
-  background-image: url(../image/gtw-images/download_inverse.png);
-}*/
 
 
 .btn-container_1 .delete_all {
@@ -2288,7 +2286,10 @@ input[type=radio]:checked + label:before {
 }
 .gallery_block .btn-container_1 .btn{
   float:none;
-  margin:auto;
+  /*margin:auto;*/
+  height: 30px;
+  line-height: 32px;
+  
 }
 .gallery_container{
   width:90%;
@@ -2343,7 +2344,8 @@ input[type=radio]:checked + label:before {
 }
 
 
-.img_block .upload_layer{
+.img_block .upload_layer,
+.img_block .img_layer{
   position: absolute;
   opacity: 0;
   top:0;
@@ -2351,6 +2353,8 @@ input[type=radio]:checked + label:before {
   bottom:0;
   height: 100%;
   width: 100%;
+}
+.img_block .upload_layer{
   background-image: url(../image/gtw-images/download-arrow2_inverse.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -2358,6 +2362,7 @@ input[type=radio]:checked + label:before {
        -o-background-size: 80px;
           background-size: 80px;
 }
+
 .gallery_container .add_img img{
   position: absolute;
   top:50%;
@@ -2379,25 +2384,73 @@ input[type=radio]:checked + label:before {
 /*.gallery_container .img_block:hover .img_layer{
   opacity: 0.5;
 }*/
-.gallery_container .img_block:hover .upload_layer
-{
+.gallery_container .img_block:hover .upload_layer,
+.gallery_container .img_block:hover .img_layer{
   background-color: rgba(0,0,0,0.45);
   opacity: .9;
 }
 
-
-
-
-.gallery_container .chechbox_block {
-    width:40px!important;
-    text-indent: 10px;
-    overflow: hidden;
+.gallery_container .checkbox:checked +  .checkbox-custom::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    color:#377de7;
     position: absolute;
-    top:5px;
-    left: 5px;
-    border:1px solid #f3f4f6;
-    background: rgba(214, 208, 208, 0.3 );
-    z-index: 20;
+    top: -8px;
+    right: 8px;
+    border-radius: 2px;
+    /*background-color: red;*/
+    -webkit-background-size: 20px;
+         -o-background-size: 20px;
+            background-size: 20px;
+    /*background-image: url(../image/gtw-images/checkmark-hand-drawn-outline.png);*/
+    /*background-image: url(../image/gtw-images/long-check-mark.png);*/
+    /*background-image: url(../image/gtw-images/long-check-mark_inverse.png);*/
+    background-image: url(../image/gtw-images/tick_inverse.png);
+    
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+.gallery_container .chechbox_block,
+.gallery_container .close_btn {
+  width:30px!important;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-indent: 10px;
+  overflow: hidden;
+  position: absolute;
+  top:5px;
+  background: rgba(214, 208, 208, 0.3 );
+  z-index: 20;
+  border:1px solid #f3f4f6;
+}
+.gallery_container .chechbox_block{
+  left: 5px;
+  
+  /*background: rgba(214, 208, 208, 0.3 );*/
+}
+.gallery_container .close_btn{
+  right: 5px;
+  /*line-height: 40px;*/
+  /*height: 40px;*/
+  background-repeat: no-repeat;
+  /*border:1px solid #f20101;*/
+   /*border:1px solid #f3f4f6;*/
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+   -webkit-background-size: 20px;
+        -o-background-size: 20px;
+           background-size: 20px;
+  background-image: url(../image/gtw-images/delete-cross_inverse.png);
+   /*background-image: url(../image/gtw-images/remove-symbol_red.png);*/
+  background-position: 50% 50%;
+}
+.gallery_container .close_btn:hover{
+  
 }
 .gallery_container .checkbox-custom {
     display: block;
