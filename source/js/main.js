@@ -26,7 +26,9 @@ $(function() {
   $('#date2').datepicker(); 
 });
  
-
+$('.add_img_block, .close_btn').click(function(event){
+  event.preventDefault()
+})
 
 
 // vallidator
