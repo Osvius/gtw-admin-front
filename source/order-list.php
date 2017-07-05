@@ -6,9 +6,9 @@
 <main id="main">
 	  <div class="content-wrap">
 	  <?php include('aside.php')?>
-<div class="order_wrap">
+<div class="order_wrap ">
 		<h5 >Здесь Вы можете добавлять, обрабатывать и удалять Ваши заказы</h5>
-		<div class="order_content  ">
+		<div class="order_content page_2">
 			<div class="order_head">
 				<span class="add_order">
 				Заказы 
@@ -20,7 +20,7 @@
 					</span>
 				</div>			
 			</div>
-		<div class="order_list_container">
+		<div class="order_list_container ">
 			<div class="order_list list_1">
 				<h3 class="h3_block">Информация о заказе</h3>	
 				<ul class="page2_main_list">
@@ -43,20 +43,23 @@
 		<div class="order_details">
 			<h3 class="h3_block h3_details">Детали заказа</h3>
 			<table class="table">
-					<tr>
-						<th class="td_20">
-							<p></p>
-						</th>
-						<th class="td_30">
-							<p></p>
-						</th>
-						<th class="td_20">
-							<p></p>
-						</th>
-						<th class="td_20">
-							<p></p>
-						</th>
-					</tr>
+				<thead>
+				<tr>
+					<th class="td_20">
+						<p></p>
+					</th>
+					<th class="td_30">
+						<p></p>
+					</th>
+					<th class="td_20">
+						<p></p>
+					</th>
+					<th class="td_20">
+						<p></p>
+					</th>
+				</tr>	
+				</thead>
+				<tbody>
 					<tr>
 						<td class="td_20">
 							<p></p>
@@ -70,12 +73,15 @@
 						<td class="td_20">
 							<p></p>
 						</td>
-					</tr>
+					</tr>					
+				</tbody>
+
 			</table>			
 		</div>
 		<div class="order_history">
 			<h3 class="h3_block h3_add_history">Добавить историю заказов</h3>
 			<table class="table">
+				<thead>
 					<tr>
 						<th class="td_20">
 							<p></p>
@@ -89,7 +95,9 @@
 						<th class="td_20">
 							<p></p>
 						</th>
-					</tr>
+					</tr>	
+				</thead>
+				<tbody>
 					<tr>
 						<td class="td_20">
 							<p></p>
@@ -103,29 +111,28 @@
 						<td class="td_20">
 							<p></p>
 						</td>
-					</tr>
+					</tr>					
+				</tbody>
 			</table>			
 		</div>
 		<h3 class="h3_block">Управление историей заказов</h3>
 		<div class="history_form">
 			<div class="inputs_container">
-			<form >
+			<form>
 				<div class="inputs_wrap">
-					<label class="history_label" for="order_status">Статус заказа</label>
-					<div class="select_bg select_bg2">
-						<select id="order_status" class="histoty_select">
-							<option>В ожидании</option>
-							<option>Доставлен</option>
-						</select>
-						<div class="select_btn">
-							<img src="image/gtw-images/triangle-t.png" alt="triang">
-							<img src="image/gtw-images/triangle-b.png" alt="triang">
-						</div>
-						<span class="select_arrow_block"></span>
-					</div>
-				</div>
+
+					<label class="label" for="order_status">Статус заказа</label>
+					<div class="custom-select">
+				      <select name="select">
+				          <option>Пункт 1</option>
+				          <option>Пункт 2</option>
+				          <option>Пункт 3</option>
+				      </select>
+				    </div>
+
+			</div>
 				<div class="inputs_wrap">
-					<label  class="history_label">	Уведомить покупателя </label>
+					<label  class="label">	Уведомить покупателя </label>
 					<div class="switch_box">
 						<input type="checkbox" class="switch" id="switch1" />
 						<label for="switch1" class="switch_label"></label>
@@ -133,10 +140,11 @@
 				 	
 					
 				</div>
-				<div class="inputs_wrap h_inputs_wrap">
-					<label for="order_comment" class="history_label">Комментарий к заказу</label>
+				<div class="inputs_wrap  wrap_large">
+					<label for="order_comment" class="label">Комментарий к заказу</label>
 					<textarea class="tab_textarea" ></textarea>
 				</div>
+
 				<div class="btn_container">
 					<button  class="btn btn_add_history">
 						<span class="add_icon"></span>

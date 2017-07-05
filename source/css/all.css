@@ -200,19 +200,36 @@ input:focus, textarea:focus {
 }
 .checkbox-custom,
 .radio-custom {
-    display: inline-block;
-    vertical-align: middle;
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
 }
-.checkbox:checked + .checkbox-custom::before,
+/*.checkbox:checked + .checkbox-custom::before,
 .radio:checked + .radio-custom::before {
     content: "\2713";
-    /*content: "";*/
+    content: "";
     display: block;
     color:#377de7;
     position: absolute;
     top: -10px;
     right: 5px;
     border-radius: 2px;
+}*/
+.checkbox:checked +  .checkbox-custom::before {
+    content: "";
+    width: 16px;
+    height: 18px;
+    display: block;
+    color: #377de7;
+    position: absolute;
+    top: 0px;
+    right: 1px;
+    border-radius: 2px;
+    -webkit-background-size: 10px;
+         -o-background-size: 10px;
+            background-size: 10px;
+    background-image: url(../image/gtw-images/tick.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .radio-custom,
 .radio:checked + .radio-custom::before {
@@ -589,7 +606,8 @@ th a:active{
   height: 70px;
   line-height: 70px;
 }
-.order_content {
+.order_content,
+.goodsList_content {
   padding: 13px 20px;
   background-color: #FFF;
   -webkit-border-radius: 4px;
@@ -601,7 +619,8 @@ th a:active{
 /*content style end */
 
 /*  content style for page index0.html  start */
-.order_form {
+.order_form,
+.main_form {
   display: block;
   overflow: hidden;
   width: 100%;
@@ -840,7 +859,7 @@ th a:active{
   width: 20px;
   height: 35px;
   position: absolute;
-  top: 1px;
+  top: 5px;
   right: 5px;
   background-color: #fff;
 }
@@ -1182,7 +1201,12 @@ th a:active{
   overflow:hidden;
   padding-bottom: 20px;
 }
-
+.tab_inputs_wrap .custom-select:before{
+  top:3px;
+}
+.tab_inputs_wrap .custom-select:after{
+  top:18px;
+}
 .tab_label {
   /*position:absolute;*/
   float:left;
@@ -1553,7 +1577,15 @@ input[type=radio]:checked + label:before {
   background: transparent;
   overflow: hidden;
 }
-
+.select40 {
+  /*width: 100%;*/
+  width: calc(100% - 2px)!important;
+  height: 40px!important;
+  margin-right: 0!important;
+}
+.select40 select {
+    margin-top: -20px;
+    }
 .custom-select {
   float: right;
   margin-right: 12px;
@@ -1566,6 +1598,7 @@ input[type=radio]:checked + label:before {
   text-indent: 10px;
   /*width: calc(75% - 36px);*/
   width: calc(75% - 14px);
+/*  width: calc(100% - 2px);*/
   /*width: 200px;*/
   height: 34px;
   position: relative;
@@ -1574,26 +1607,31 @@ input[type=radio]:checked + label:before {
 .custom-select:before {
   content: "";
   display: block;
-  height: 33px;
-  width: 2px;
-  background-color: #f5f5f5;
+  height: 15px;
+  width: 13px;
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-image: url(../image/gtw-images/triangle-t.png);
   position: absolute;
   pointer-events: none;
-  top: 1px;
-  right: 35px;
+  top: 5px;
+  right: 10px;
   z-index: 222;
 }
 .custom-select:after {
   content: "";
-  border-style: solid;
-  border-width: 6px 6px 0 6px;
-  border-color: #fff transparent transparent transparent;
+  display: block;
+  height: 15px;
+  width: 13px;
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-image: url(../image/gtw-images/triangle-b.png);
   position: absolute;
   pointer-events: none;
-  top: 50%;
-  right: 14px;
-  margin-top: -3px;
-  z-index: 200;
+  top: 20px;
+  
+  right: 10px;
+  z-index: 222;
 }
 .custom-select select {
   -webkit-appearance: none;
@@ -1794,7 +1832,7 @@ input[type=radio]:checked + label:before {
 
  .list_1 h3 {
   background-image: url(../image/gtw-images/shopping-bag.png);
-  background-position: 23% 50%;
+  background-position: 19% 50%;
 }
 
  .real-estate {
@@ -1819,7 +1857,7 @@ input[type=radio]:checked + label:before {
 
  .list_2 h3 {
   background-image: url(../image/gtw-images/avatar.png);
-  background-position: 18% 50%;
+  background-position: 14% 50%;
 }
 
 .id-card {
@@ -3274,7 +3312,7 @@ input[type=radio]:checked + label:before {
   width: 40%;
  } 
 .main_goods .tab3 .custom-select{
-  width: 85%;
+  width: 84%;
   margin-right: 18px;
   
   -webkit-border-radius: 8px;
@@ -3673,6 +3711,50 @@ input[type=radio]:checked + label:before {
   background-image: url(../image/gtw-images/download_inverse.png);
 }
 /*  content style for page index14.html  media popup end*/
+
+/*  content style for page index15.html  goodsList start*/
+.goodsList_content .custom-select{
+  float:left;
+  width: calc(100% - 2px);
+  line-height: 40px;
+  height: 40px;
+}
+.goodsList_content select {
+    margin-top: -20px;
+  }
+.goodsList_content .inputs_wrap{
+  overflow:visible;
+}
+.goodsList_content .dropdown-menu {
+    top: 86px;
+    left:0;
+    z-index: 200;
+  }
+.goodsList_content td img{
+  display:block;
+  margin: auto;
+}
+.goodsList_content .edit{
+  width: 40px;
+}
+.goodsList_content .count_label{
+  display: inline-block;
+  max-width: 35px;
+  width: 100%;
+  height: 20px;
+  color: #FFF;
+  text-align: center;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.goodsList_content .label-success{
+  background-color: #8fbb6c;
+}
+.goodsList_content .label-danger{
+  background-color:#f56b6b;
+}
+/*  content style for page index15.html  goodsList end*/
+
 @media (max-width: 830px) {
   .aside_wrap{
     display:none;
@@ -3706,6 +3788,10 @@ input[type=radio]:checked + label:before {
 }
 
 @media screen and (max-width: 600px) {
+  .order_head{
+   -webkit-justify-content: space-around;
+          justify-content: space-around;  
+  }
   .navigation{
     display:none;
   }
@@ -3753,14 +3839,49 @@ input[type=radio]:checked + label:before {
    .table .edit{
      display:none;
    }
+
+/*order-*/
+
+.order_list_container  .order_list{
+  width: 100%;
+  float:none;
+  display:block;
+  margin: 5px auto;
+}
+.order_list h3 { 
+  background-position: 4% 50%;
+}
+.history_form .label,
+.history_form .custom-select{
+  width: 80%;
+  float:none;
+  display:block;
+  margin: 5px auto;
+}
+.history_form .inputs_wrap:nth-child(2){
+  width: 80%;
+  margin: 17px auto;
+}
+.history_form .inputs_wrap:nth-child(2) .label{
+  width: 60%;
+  float:left;
+}
+.history_form  .switch_box {
+    margin-top: -3px;
+ }
+.wrap_large {
+    min-height: 180px; 
+ }
+.history_form .tab_textarea{
+  width: calc(80% - 27px);
+  float:none;
+  display:block;
+  margin: 5px auto;
 }
 
+}
+@media screen and (max-width: 500px) {
 
-@media screen and (max-width: 600px) {
-.order_head{
-   -webkit-justify-content: space-around;
-          justify-content: space-around;  
-  }
- 
-      
-      }
+
+
+}

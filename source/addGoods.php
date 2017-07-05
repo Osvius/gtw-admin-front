@@ -8,6 +8,9 @@
 	  <?php include('aside.php')?>
 	<div class="order_wrap">
 			<h5>Здесь Вы можете настроить страницы.</h5>
+			
+
+
 			<div class="order_content">
 				
 				<div class="order_form">
@@ -77,31 +80,27 @@
 					<div class="inputs_container visible">
 						<div class="tab_inputs_wrap">
 							<label class="tab_label" for="delivery_method">Способ доставки</label>
-							<div class="tab4_select_bg">
-								<select  class="tab4_select">
-									<option>Доставка курьером</option>
-									<option>Доставка не курьером</option>
-								</select>
-								<div class="tab4_select_btn">
-									<img src="image/gtw-images/triangle-t.png" alt="triang">
-									<img src="image/gtw-images/triangle-b.png" alt="triang">
-								</div>
-								<span class="tab4_select_arrow_block"></span>
-							</div>
+							<!-- добавил -->
+								<div class="custom-select">
+							      <select name="select">
+							          <option>Пункт 1</option>
+							          <option>Пункт 2</option>
+							          <option>Пункт 3</option>
+							      </select>
+							    </div>
+							  <!-- добавил -->
 						</div>
 						<div class="tab_inputs_wrap">
 							<label class="tab_label" for="delivery_method">Главная категория</label>
-							<div class="tab4_select_bg">
-								<select  class="tab4_select">
-									<option>Категория 1</option>
-									<option>Категория 2</option>
-								</select>
-								<div class="tab4_select_btn">
-									<img src="image/gtw-images/triangle-t.png" alt="triang">
-									<img src="image/gtw-images/triangle-b.png" alt="triang">
-								</div>
-								<span class="tab4_select_arrow_block"></span>
-							</div>
+							<!-- добавил -->
+								<div class="custom-select">
+							      <select name="select">
+							          <option>Пункт 1</option>
+							          <option>Пункт 2</option>
+							          <option>Пункт 3</option>
+							      </select>
+							    </div>
+							  <!-- добавил -->
 						</div>
 						<div class="tab_table_wrap h_300">
 							<label class="tab_label">Главная категория</label>
@@ -223,7 +222,7 @@
 				<div  class="tab-form">
 					<div class="inputs_container ">
 						<div class="tab_table_wrap ">
-						<table class="table delivery_table border-b">
+						<table class="table delivery_table">
 							<tr>
 								<th class="td_5">Характеристика:</th>
 								<th class="td_20">Текст </th>
@@ -257,7 +256,7 @@
 				<div  class="tab-form">
 					<div class="inputs_container">
 						<div class="tab_table_wrap ">
-						<table class="table delivery_table border-b ">
+						<table class="table delivery_table  ">
 							<thead>
 							<tr>
 								<th class="td_20">Вариант:</th>
@@ -269,17 +268,15 @@
 							<tbody>
 							<tr>
 								<td class="td_20">
-									<div class="tab4_select_bg">
-										<select  class="tab4_select">
-											<option>Вариант 1 </option>
-											<option>Вариант 2 </option>
-										</select>
-										<div class="tab4_select_btn">
-											<img src="image/gtw-images/triangle-t.png" alt="triang">
-											<img src="image/gtw-images/triangle-b.png" alt="triang">
-										</div>
-										<span class="tab4_select_arrow_block"></span>
-									</div>
+							<!-- добавил -->
+								<div class="custom-select">
+							      <select name="select">
+							          <option>Пункт 1</option>
+							          <option>Пункт 2</option>
+							          <option>Пункт 3</option>
+							      </select>
+							    </div>
+							  <!-- добавил -->
 									<input type="text" class="input input2">
 								</td>
 								<td class="td_30">
@@ -353,6 +350,12 @@
 									<a href="#" class="chechbox_block btn_add"></a>
 								</td>
 							</tr>
+			
+
+		
+
+
+				
 			
 						</table>
 						</div>	

@@ -30,6 +30,12 @@ $('.add_img_block, .close_btn').click(function(event){
   event.preventDefault()
 })
 
+if( $('#modal-image').is(":visible") ){
+   $('body').css('overflow-y','hidden');
+   // $('#modal-image').css('overflow-y','scroll');
+}else{
+  $('body').css('overflow-y','scroll');
+}
 
 // vallidator
 	 function valid(){

@@ -58,12 +58,12 @@
 							</button>			
 						</div>	
 					</div>
-		
+			<!-- </form> -->
 					
-			</div>
+			</div><!-- tab end  -->
 			
 			<div class="tab2">
-				
+				<!-- <form  class="tab-form "> -->
 				<div class="tab-form ">
 					<table class="table ">
 						<tr>
@@ -139,7 +139,7 @@
 							<label  for="product_name" class="tab_label">Выбрать товар </label>
 							<input type="text"  name="product" value="" id="input-product" class="tab1_input">
 							<span  for="tel" class="error-box">	
-							<ul class="dropdown-menu">
+							<ul class="dropdown-menu hidden">
 								<li><a href="#">1cckckkckckckckck</a></li>
 								<li><a href="#">2</a></li>
 								<li><a href="#">3</a></li>
@@ -154,21 +154,17 @@
 						<div class="tab_inputs_wrap wrap_large">
 							<label  for="product_name" class="tab_label">Выбрать товар </label>
 
-							<div class="tab4_select_bg select-min">
-								<select  class="tab4_select">
-								    <option>Доставка курьером</option>
-								    <option>Доставка не курьером</option>
-								</select>
-								
-							</div>	
+							<div class="custom-select">
+						      <select name="select">
+						          <option>Пункт 1</option>
+						          <option>Пункт 2</option>
+						          <option>Пункт 3</option>
+						      </select>
+						    </div>
 
 							<div class="radio_container">
 							<label class="select_radio"><span class="star"> * </span>Выберите характеристики</label>
 								<div class="radio_box">
-<!-- 									<input type="radio" name="radio" id="radio1">
-									<label for="radio1">
-								      вариант 1
-									</label> -->
 									<label>
 										<input type="radio"  name="radio">
 										<span> вариант 1</span>
@@ -184,7 +180,7 @@
 
 
 						</div>
-					</div>
+					</div>	
 					<div class="btn_container">
 						<button  class="btn btn_save">
 							<span class="save_icon"></span>
@@ -271,7 +267,15 @@
 					<div class="tab4_inputs_container">
 						<div class="tab_inputs_wrap">
 							<label class="tab_label" for="delivery_method">Способ доставки</label>
-							<div class="tab4_select_bg">
+
+							<div class="custom-select">
+						      <select name="select">
+						          <option>Пункт 1</option>
+						          <option>Пункт 2</option>
+						          <option>Пункт 3</option>
+						      </select>
+						    </div>
+<!-- 							<div class="tab4_select_bg">
 							<select id="delivery_method" class="tab4_select">
 							    <option>Доставка курьером</option>
 							    <option>Доставка не курьером</option>
@@ -281,21 +285,22 @@
 								<img src="image/gtw-images/triangle-b.png" alt="triang">
 							</div>
 							<span class="tab4_select_arrow_block"></span>
-							</div>
+							</div> -->
 						</div>
 						<div class="tab_inputs_wrap">
 							<label class="tab_label" for="payment_method" class="tab_label">Способ оплаты</label>
-							<div class="tab4_select_bg">
-							<select id="payment_method" class="tab4_select">
-							    <option >Выберите</option>
-							    <option>Наличные</option>
-							</select>
-							<div class="tab4_select_btn">
-								<img src="image/gtw-images/triangle-t.png" alt="triang">
-								<img src="image/gtw-images/triangle-b.png" alt="triang">
-							</div>
-							<span class="tab4_select_arrow_block"></span>
-							</div>
+
+
+								<!-- добавил -->
+							<div class="custom-select">
+						      <select name="select">
+						          <option>Пункт 1</option>
+						          <option>Пункт 2</option>
+						          <option>Пункт 3</option>
+						      </select>
+						    </div>							
+
+								<!-- добавил -->
 
 						</div>
 						<div class="tab_inputs_wrap">

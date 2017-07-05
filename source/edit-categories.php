@@ -31,7 +31,14 @@
 						</div>
 						<div class="tab_inputs_wrap">
 							<label class="tab_label"  class="tab_label">Родительская категория</label>
-							<div class="tab_select_bg">
+						<div class="custom-select">
+					      <select name="select">
+					          <option>Пункт 1</option>
+					          <option>Пункт 2</option>
+					          <option>Пункт 3</option>
+					      </select>
+					    </div>								
+<!-- 							<div class="tab_select_bg">
 							<select  class="tab_select">
 							    <option>Родительская категория 1</option>
 							    <option>Родительская категория 2</option>
@@ -41,7 +48,7 @@
 								<img src="image/gtw-images/triangle-b.png" alt="triang">
 							</div>
 							<span class="tab_select_arrow_block"></span>
-							</div>
+							</div> -->
 						</div>
 						<div class="tab_inputs_wrap">
 							<label class="tab_label" class="tab_label">Порядок сортировки</label>
@@ -49,7 +56,14 @@
 						</div>
 						<div class="tab_inputs_wrap">
 							<label class="tab_label"  class="tab_label">Статус</label>
-							<div class="tab_select_bg">
+						<div class="custom-select">
+					      <select name="select">
+					          <option>Пункт 1</option>
+					          <option>Пункт 2</option>
+					          <option>Пункт 3</option>
+					      </select>
+					    </div>							
+<!-- 							<div class="tab_select_bg">
 							<select id="payment_method" class="tab_select">
 							    <option>Статус 1</option>
 							    <option>Статус 2</option>
@@ -59,7 +73,7 @@
 								<img src="image/gtw-images/triangle-b.png" alt="triang">
 							</div>
 							<span class="tab_select_arrow_block"></span>
-							</div>
+							</div> -->
 						</div>	
 						<div class="tab_inputs_wrap">
 							<label class="tab_label" class="tab_label">Главное меню <span class="star"> * </span></label>
@@ -81,7 +95,7 @@
 						</button>		
 				</div>
 			</div>
-		</div>			
+		</div>	
 	  </div>
 </main>
 

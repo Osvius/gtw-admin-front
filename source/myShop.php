@@ -6,7 +6,7 @@
 <main id="main">
 	  <div class="content-wrap">
 	  <?php include('aside.php')?>
-<div class="order_wrap">
+	<div class="order_wrap">
 		<h5>Здесь Вы можете добавлять, обрабатывать и удалять Ваши заказы</h5>
 		<div class="order_content my_shop">
 			<div class="order_head">
@@ -30,23 +30,23 @@
 				<div  class="tab-form">
 				<div class="inputs_container">
 					<div class="tab_inputs_wrap">
-						<label class="tab_label" for="name">* Название магазина</label>
+						<label class="label" for="name">* Название магазина</label>
 						<input type="text" class="tab1_input">
 					</div>
 					<div class="tab_textarea_wrap">
-						<label class="tab_label" for="name"> Адрес магазина</label>
+						<label class="label" for="name"> Адрес магазина</label>
 						<textarea class="tab_textarea"></textarea>
 					</div>
 					<div class="tab_textarea_wrap">
-						<label class="tab_label" for="name">Время работы</label>
+						<label class="label" for="name">Время работы</label>
 						<textarea class="tab_textarea"></textarea>
 					</div>
 					<div class="tab_inputs_wrap">
-						<label class="tab_label" for="name">Телефон</label>
+						<label class="label" for="name">Телефон</label>
 						<input type="tel" class="tab1_input">
 					</div>
 					<div class="tab_inputs_wrap">
-						<label class="tab_label" for="name">E-mail</label>
+						<label class="label" for="name">E-mail</label>
 						<input type="email" class="tab1_input">
 					</div>							
 				</div>	
@@ -182,8 +182,15 @@
 				<div  class="tab-form">
 				<div class="inputs_container">
 					<div class="tab_inputs_wrap">
-						<label class="tab_label">Валюта системы</label>
-						<div class="tab4_select_bg">
+						<label class="label">Валюта системы</label>
+					<div class="custom-select">
+				      <select name="select">
+				          <option>Пункт 1</option>
+				          <option>Пункт 2</option>
+				          <option>Пункт 3</option>
+				      </select>
+				    </div>
+<!-- 						<div class="tab4_select_bg">
 							<select  class="tab4_select">
 								<option>Валюта 1</option>
 								<option>Валюта 1</option>
@@ -193,11 +200,18 @@
 								<img src="image/gtw-images/triangle-b.png" alt="triang">
 							</div>
 							<span class="tab4_select_arrow_block"></span>
-						</div>
+						</div> -->
 					</div>	
 					<div class="tab_inputs_wrap">
-						<label class="tab_label">Валюта цен на сайте</label>
-						<div class="tab4_select_bg">
+						<label class="label">Валюта цен на сайте</label>
+					<div class="custom-select">
+				      <select name="select">
+				          <option>Пункт 1</option>
+				          <option>Пункт 2</option>
+				          <option>Пункт 3</option>
+				      </select>
+				    </div>
+<!-- 						<div class="tab4_select_bg">
 							<select  class="tab4_select">
 								<option>Валюта 1</option>
 								<option>Валюта 1</option>
@@ -207,10 +221,10 @@
 								<img src="image/gtw-images/triangle-b.png" alt="triang">
 							</div>
 							<span class="tab4_select_arrow_block"></span>
-						</div>
+						</div> -->
 					</div>	
 					<div class="tab_inputs_wrap">
-						<label class="tab_label" >Курс валют</label>
+						<label class="label" >Курс валют</label>
 						<input type="text" class="tab1_input">
 					</div>	
 				</div>	
@@ -257,11 +271,11 @@
 				<div  class="tab-form">
 				<div class="inputs_container">
 					<div class="tab_textarea_wrap">
-						<label class="tab_label" for="name">Текст приветствия (перед данными о заказе)</label>
+						<label class="label" for="name">Текст приветствия (перед данными о заказе)</label>
 						<textarea class="tab_textarea" placeholder="Ваш заказ успешно оформлен…"></textarea>
 					</div>
 					<div class="tab_textarea_wrap">
-						<label class="tab_label" for="name">Подпись (после данных о заказе)</label>
+						<label class="label" for="name">Подпись (после данных о заказе)</label>
 						<textarea class="tab_textarea" placeholder="Спасибо что выбрали нас…"></textarea>
 					</div>						
 				</div>	
