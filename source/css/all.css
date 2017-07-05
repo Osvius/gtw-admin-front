@@ -2205,7 +2205,7 @@ input[type=radio]:checked + label:before {
   padding-bottom:70px;
 }
 .character_container .tab_input,
-.character_container .tab_select_bg,
+.character_container .custom-select,
 .character_container .textarea_container
 {
   width: calc(72% - 14px);  
@@ -3412,15 +3412,24 @@ input[type=radio]:checked + label:before {
   -webkit-border-radius: 8px;
           border-radius: 8px;
 }
-.my_shop  .tab_label {
-    width: calc(30% - 40px);
-    text-align: left;
+.my_shop  .label {
+    width: 25%;
+    /*width: 26%;*/
+    /*text-align: left*/
+    text-align: center;
     /*padding-top: 10px;*/
-    padding-left: 30px;
+    /*padding-left: 30px;*/
   }
+/*  .my_shop .tab1_input, 
+  .my_shop .tab_input {
+  width: calc(75% - 25px);
+}*/
 .my_shop .tab6 .tab_textarea{
-    width: calc(70% - 24px);
+  width: calc(75% - 46px);
 }  
+
+
+
 /* style for page index13.html tab1 myShop start*/
 .logoEdit_container{
   display: -webkit-box;
@@ -3488,12 +3497,12 @@ input[type=radio]:checked + label:before {
           transform: translate(-50%,-50%);
 }
 .download_icon img{
-  width: 100%;
-  -webkit-transform: scale(0.5);
+  /*width: 100%;*/
+/*  -webkit-transform: scale(0.5);
      -moz-transform: scale(0.5);
       -ms-transform: scale(0.5);
        -o-transform: scale(0.5);
-          transform: scale(0.5);
+          transform: scale(0.5);*/
 }
 
 .popover-content{
@@ -3572,8 +3581,8 @@ input[type=radio]:checked + label:before {
   margin-bottom: 10px;
 }
 .social_icon img{
-  height: 100%;
-  width: 100%;
+  /*height: 100%;*/
+  /*width: 100%;*/
 /*  position: absolute;
   top:50%;
   left:50%;
