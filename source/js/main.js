@@ -3,22 +3,91 @@
 
 	$(document).ready(function() {
 	//tabs
+  function removeTabs(){
 
-	$('#tabs li').click(function(){
-	  var thisClass = this.className.slice(0,5);
-	    $('div.tab1').hide();
-	       $('div.tab2').hide();
-	       $('div.tab3').hide();
-	       $('div.tab4').hide();
-         $('div.tab5').hide();
-         $('div.tab6').hide();
-	       $('div.' + thisClass).fadeIn(500);
-	       $('#tabs li').removeClass('active');
-	       $(this).addClass('active');
+      $('div.tab2').hide();
+      $('div.tab3').hide();
+      $('div.tab4').hide();
+      $('div.tab5').hide();
+      $('div.tab6').hide();
+  }
+  removeTabs()
 
-	       return false;
+    function popUpShop(){
+        $('.overlay').show();
+        $('.alert-popUp').show();
+        var self = this;
+        $('.popUp_btn').click( function(event) {
+          event.preventDefault();
+          $(this).parent('.alert-popUp').hide();
+          $('.overlay').hide();
+           changeTabs.call(self);
+        })      
+      }
+    function changeTabs(){
+      var thisClass = this.className.slice(0,5);
+      $('div.tab1').hide();
+        removeTabs();
+        $('div.' + thisClass).fadeIn(0);
+        $('#tabs li').removeClass('active');
+        $(this).addClass('active');
+
+        return false;
+    }
+	$('#tabs li').click(function(event){
+	  // var thisClass = this.className.slice(0,5);
+       event.preventDefault();
+       // if()
+         popUpShop.call(this);
 	  });
-	 $('li.tab1').click();
+
+  $('.btn_save').click(function(event){
+       event.preventDefault();
+       changeTabs.call();
+  })
+	 // $('li.tab1').click();
+
+   // tabs popUp window start
+
+      // $('.tabs li').click( function(event) {
+      //     popUpShop();
+      // })
+
+      // $('.popUp_btn').click( function(event) {
+      //   event.preventDefault();
+      //   $(this).parent('.alert-popUp').hide();
+      //   $('.overlay').hide();
+      // })
+
+  // tabs popUp window end
+
+// sidebar slide 
+$('.aside_nav a').click( function(event){
+  event.preventDefault();
+
+  
+  var dropDown = $(this).next('.sub-nav');
+    if( dropDown != undefined ){
+       if( dropDown.hasClass('menu-hidden') ){
+
+           dropDown.slideDown(500)
+           dropDown.toggleClass('menu-hidden menu-visible');        
+
+         return ;
+        }
+        else if( dropDown.hasClass('menu-visible') ){
+
+          dropDown.slideUp(500);
+          dropDown.toggleClass('menu-visible menu-hidden');
+
+        return ;
+       }
+  }
+
+});
+
+// sidebar end 
+
 
 
 $(function() {

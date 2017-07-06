@@ -6,7 +6,7 @@
 <main id="main">
 	  <div class="content-wrap">
 	  <?php include('aside.php')?>
-	<div class="order_wrap">
+		<div class="order_wrap">
 			<h5>Здесь Вы можете настроить страницы.</h5>
 			
 
@@ -61,10 +61,7 @@
 					</div>
 
 					<div class="additional_setting">
-						<div class="btn-container_1">
-							<span >Дополнительные настройки</span>
-							<a href="#"  class="btn btn_add">Добавить</a>
-						</div>
+
 						<div class="tabs_container">
 							<ul id="tabs" class="tabs">
 							 	 <li class="tab1 active"><a href="#">Связи</a></li>
@@ -195,8 +192,9 @@
 								</tr>																
 	
 
-							</table>
+							</table>						
 						</div>
+
 						<div class="link_container">
 							<a onclick="$(this).parent().find('.checkbox').prop('checked ', true);">Выделить всё  </a>
 							<a  onclick="$(this).parent().find('.checkbox').prop('checked', false);">Снять выделение</a>
@@ -212,6 +210,14 @@
 							<li><a href="#"></a>3</li>
 						</ul>
 					</div>
+						<div class="tab_inputs_wrap">
+							<div class="btn_container ">
+								<button  class="btn btn_save right">
+									<span class="save_icon"></span>
+									<span class="save_text">Сохранить</span>
+								</button>			
+							</div>
+						</div>	
 				</div>
 			</div>
 		</div>
@@ -245,7 +251,16 @@
 
 
 						</table>
+						<div class="tab_inputs_wrap">
+							<div class="btn_container ">
+								<button  class="btn btn_save right">
+									<span class="save_icon"></span>
+									<span class="save_text">Сохранить</span>
+								</button>			
+							</div>
+						</div>							
 						</div>
+
 					</div>		
 				</div>
 			</div>
@@ -308,6 +323,14 @@
 							</tbody>
 						</table>
 						</div>
+						<div class="tab_inputs_wrap">
+							<div class="btn_container ">
+								<button  class="btn btn_save right">
+									<span class="save_icon"></span>
+									<span class="save_text">Сохранить</span>
+								</button>			
+							</div>
+						</div>							
 					</div>	
 				</div>
 			</div>
@@ -351,13 +374,15 @@
 								</td>
 							</tr>
 			
-
-		
-
-
-				
-			
 						</table>
+						</div>	
+						<div class="tab_inputs_wrap">
+							<div class="btn_container ">
+								<button  class="btn btn_save right">
+									<span class="save_icon"></span>
+									<span class="save_text">Сохранить</span>
+								</button>			
+							</div>
 						</div>	
 				</div>
 			</div>
@@ -374,8 +399,13 @@
 				<span class="btn_icon"></span>
 			</a>		
 		</div>			
-					
-			</div>
+			<div class="alert-popUp">
+				<h4>Lorem ipsum dolor sit amet.</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quisquam dolores inventore illum dolore? Magnam totam deleniti, ullam aliquid quia placeat minus recusandae ab sed! Delectus cum ex sequi repellendus!</p>
+				<a href="#" class="popUp_btn">Сохранить</a>
+			</div>	
+
+		</div>
 
 
 
@@ -385,7 +415,9 @@
 		</div>	
 	  </div>
 </main>
+<div class="overlay">
 
+</div>
 
 </body>
 </html>
