@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Mallanna" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+	<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=ssldlvfdd4c41o5q9i55o13bxwu8345c5kg0qwaz0o21gfuj"></script>
+	<script src="./js/jquery-3.2.0.js"></script>
+	<script src="js/main.js"></script>
+	
+	<title>GoToWeb</title>
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+		<div class="logo">
+			<span class="logo_item1">goto</span>
+			<span class="logo_item2">web</span>
+		</div>
+		<nav class="nav">
+			<ul class="navigation">
+				<li><a href="#">Главная</a></li>
+				<li class="active"><a href="#" >Просмотр сайта</a></li>
+				<li><a href="#">Продвижение</a></li>
+				<li><a href="#">GoTo Social</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Поддержка</a></li>
+			</ul>
+		</nav>
+		<div class="login_block">
+			<span>Выход</span>
+		</div>	
+	</header>
+	<main id="main">
+	  <div class="content-wrap">
+		<aside class="aside_wrap">
+			<h2>Панель&nbsp;управления</h2>
+			<div class="aside_content">
+				<h3>Доступные разделы</h3>
+				<ul class="aside_nav">
+					<li>
+						<a href="#">
+							<span class="item-icon real-estate"></span>
+							<span class="item-name">Мой магазин</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="item-icon slider"></span>
+							<span class="item-name">Слайдер</span>
+						</a>
+					<li>
+						<a href="#">
+							<span class="item-icon list"></span>
+							<span class="item-name">Категории</span>
+						</a>
+					</li>
+					<li> 
+						<a href="#">
+							<span class="item-icon portfolio"></span>
+							<span class="item-name">Товары</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="item-icon factory"></span>
+							<span class="item-name">Производители</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="item-icon folder1"></span>
+							<span class="item-name">Группы Характеристик</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="item-icon folder2"></span>
+							<span class="item-name">Характеристики</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="item-icon truck"></span>
+							<span class="item-name">Доставка / Оплата</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="#">
+							<span class="item-icon attach"></span>
+							<span class="item-name">Заказы</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+		</aside>
+		<div class="order_wrap">
+			<h5>Здесь Вы можете настроить страницы.</h5>
+			<div class="order_content ">
+				
+				<div class="order_form">
+		
+				<div class="order_head">
+					<span class="order_list_name char_add">
+					Добавление страниц
+					</span>
+					<div class="btn-container_1">
+
+						<a class="btn btn_remove">
+						</a >
+					</div>		
+				</div>
+				
+				<form action="post" class="character_container add_pages_2 ">
+					<div class="tab_inputs_container ">
+						<div class="tab_inputs_wrap">
+							<label class="tab_label" >Заголовок страницы</label>
+							<input type="text" class="tab_input" >
+						</div>
+						<div class="large_wrap">
+							<label class="tiny_label">Описание</label>
+							<div class="tiny_textarea">
+								<textarea ></textarea>
+							</div>
+						</div>
+						<script>
+							tinymce.init({ selector:'textarea' });
+						</script>
+
+						<div class="tab_inputs_wrap">
+							<label class="tab_label" class="tab_label">Порядок сортировки</label>
+							<input type="text" class="tab_input">
+						</div>
+						<div class="tab_inputs_wrap">
+							<label class="tab_label" class="tab_label">Отображать в футере</label>
+							<div class="switch_box">
+								<input type="checkbox" class="switch" id="switch1" />
+								<label for="switch1" class="switch_label"></label>
+							</div>
+						</div>
+						<div class="tab_inputs_wrap">
+							<label class="tab_label" class="tab_label">Статус отображения</label>
+							<div class="switch_box">
+								<input type="checkbox" class="switch " id="switch2" />
+								<label for="switch2" class="switch_label"></label>
+							</div>
+						</div>
+
+					</div>
+				</form>
+				<div class="btn_container">
+						<button  class="btn btn_save">
+							<span class="save_icon"></span>
+							<span class="save_text">Сохранить</span>
+						</button>		
+				</div>
+			</div>
+		</div>	
+	  </div>	
+
+		
+	</main>
+</div>
+
+</body>
+</html>
