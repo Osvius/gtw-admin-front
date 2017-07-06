@@ -455,6 +455,7 @@ th a:active{
   border: 2px solid #f5f7fb;
   -webkit-border-radius: 5px;
           border-radius: 5px;
+  overflow:hidden;
 }
 .aside_nav a {
   font-size: 14px;
@@ -467,7 +468,7 @@ th a:active{
   padding-left: 60px;
 }
 
-.aside_nav .active {
+.aside_nav .active a{
   background-color: #377de7;
   color: #fff;
 }
@@ -475,13 +476,24 @@ th a:active{
 .aside_nav .active a {
   color: #fff;
 }
-.aside_nav li:hover {
+.aside_nav li a:hover {
   background-color: #377de7;
   color: #fff;
 }
 .aside_nav li:hover a{
   color: #fff;
+  background-color: #377de7;
 }
+.sub-nav li{
+  background-color: #FFF;
+  color: #000;
+  padding-left: 60px;
+      width: 67%;
+    margin: 20px auto;
+}
+/*.sub-nav li:last-child{
+  margin-bottom: 20px;
+}*/
 .item-icon{
     display: block;
     position: absolute;
@@ -2524,12 +2536,16 @@ input[type=radio]:checked + label:before {
 .img_block .upload_layer,
 .img_block .img_layer{
   position: absolute;
-  opacity: 0;
-  top:0;
+  /*opacity: 0;*/
+  opacity: 1;
+/*  top:0;
   left:0;
-  bottom:0;
+  bottom:0;*/
   height: 100%;
   width: 100%;
+  display:block;
+  
+  
 }
 .img_block .upload_layer{
   background-image: url(../image/gtw-images/download-arrow2_inverse.png);
@@ -2550,6 +2566,7 @@ input[type=radio]:checked + label:before {
        -o-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
   opacity: 1;
+
 }
 .gallery_container .img_block:hover img{
     -webkit-filter: blur(1px);
@@ -2558,13 +2575,23 @@ input[type=radio]:checked + label:before {
       -ms-filter: blur(1px);
           filter: blur(1px);
 }
+.gallery_container .img_block img{
+  
+}
+.gallery_container .img_block:hover .img_layer{
+  background-color: rgba(0,0,0,0.45);
+  
+  
+ 
+}
 /*.gallery_container .img_block:hover .img_layer{
   opacity: 0.5;
 }*/
+
 .gallery_container .img_block:hover .upload_layer,
 .gallery_container .img_block:hover .img_layer{
   background-color: rgba(0,0,0,0.45);
-  opacity: .9;
+  /*opacity: 1;*/
 }
 
 .gallery_container .checkbox:checked +  .checkbox-custom::before {

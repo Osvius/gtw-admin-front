@@ -116,24 +116,36 @@
 				</a>
 			</div>
 			<div class="img_block">
-				<img src="https://cdn.pixabay.com/photo/2017/06/23/16/57/tree-2435269_960_720.jpg" alt="">
-				<a href="#" class="img_layer"></a>
+				
+				<a href="#" class="img_layer"><img src="https://cdn.pixabay.com/photo/2017/06/23/16/57/tree-2435269_960_720.jpg" alt="">
+				<span class="img_layer"></span></a>
+				</a>
 			</div>
 			<div class="img_block">
-				<img src="https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_960_720.jpg" alt="">	
-				<a href="#" class="img_layer"></a>
+				<a href="#" class="img_layer">
+					<img src="https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_960_720.jpg" alt="">						
+					<span class="img_layer"></span>
+				</a>
 			</div>
 			<div class="img_block">
-				<img src="https://cdn.pixabay.com/photo/2017/06/11/02/05/summer-2391348_960_720.jpg" alt="im">
-				<a href="#" class="img_layer"></a>		
+
+				<a href="#" class="img_layer">
+					<img src="https://cdn.pixabay.com/photo/2017/06/11/02/05/summer-2391348_960_720.jpg" alt="im">
+					<span class="img_layer"></span>
+				</a>		
 			</div>
 			<div class="img_block">
-				<img src="https://cdn.pixabay.com/photo/2017/05/24/11/40/desert-2340326_960_720.jpg" alt="">	
-				<a href="#" class="img_layer"></a>		
+
+				<a href="#" class="img_layer">
+				<img src="https://cdn.pixabay.com/photo/2017/05/24/11/40/desert-2340326_960_720.jpg" alt="">	<span class="img_layer"></span>				
+				</a>		
 			</div>
 			<div class="img_block">
-				<img src="https://cdn.pixabay.com/photo/2017/02/19/15/28/italy-2080072_960_720.jpg" alt="">
-				<a href="#" class="img_layer"></a>			
+
+				<a href="#" class="img_layer">
+				<img src="https://cdn.pixabay.com/photo/2017/02/19/15/28/italy-2080072_960_720.jpg" alt="">		
+				<span class="img_layer"></span>				
+				</a>			
 			</div>
 		</div>	
 	</div>
