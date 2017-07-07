@@ -6,7 +6,7 @@
 <main id="main">
 	  <div class="content-wrap">
 	  <?php include('aside.php')?>
-		<div class="order_wrap">
+	<div class="order_wrap">
 			<h5>Здесь Вы можете настроить страницы.</h5>
 			
 
@@ -26,13 +26,26 @@
 					<div class="main_setting">
 						<div class="setting_left">
 							<p class="add_img_text">Добавить изображение</p>
-							<a href="#"  class="add_img"><img src="image/gtw-images/add-plus-sign-outline.png" alt="add"></a>
+							<a href="#" class="add_img no-img">
+								<button class="close_btn"></button>	
+							</a>
+							<!-- Туглим класс is-img no-img .если is-img то кнопка удаления видна  -->
+
+<!-- 							<a href="#" class="add_img no-img ">
+								<button class="close_btn"></button>	
+							</a> -->
 
 							<p class="add_img_text">Дополнительные изображения:</p>
 							<div class="add_more_container">
-								<a href="#" class="add_more_img"><img src="image/gtw-images/add-plus-sign-outline.png" alt="add"></a>
-								<a href="#"  class="add_more_img"><img src="image/gtw-images/add-plus-sign-outline.png" alt="add"></a>
-								<a href="#" class="add_more_img"><img src="image/gtw-images/add-plus-sign-outline.png" alt="add"></a>
+								<a href="#" class="add_more_img no-img">
+									<button class="close_btn"></button>			
+								</a>
+								<a href="#"  class="add_more_img is-img">
+									<button class="close_btn"></button>		
+								</a>
+								<a href="#" class="add_more_img is-img">
+									<button class="close_btn"></button>	
+								</a>
 							</div>
 						</div>
 						<div class="setting_right">
@@ -57,6 +70,7 @@
 								<label  class="label">Описание</label>
 								<textarea class="textarea"></textarea>
 							</div>
+
 						</div>
 					</div>
 
@@ -210,14 +224,7 @@
 							<li><a href="#"></a>3</li>
 						</ul>
 					</div>
-						<div class="tab_inputs_wrap">
-							<div class="btn_container ">
-								<button  class="btn btn_save right">
-									<span class="save_icon"></span>
-									<span class="save_text">Сохранить</span>
-								</button>			
-							</div>
-						</div>	
+
 				</div>
 			</div>
 		</div>
@@ -251,14 +258,7 @@
 
 
 						</table>
-						<div class="tab_inputs_wrap">
-							<div class="btn_container ">
-								<button  class="btn btn_save right">
-									<span class="save_icon"></span>
-									<span class="save_text">Сохранить</span>
-								</button>			
-							</div>
-						</div>							
+							
 						</div>
 
 					</div>		
@@ -323,14 +323,7 @@
 							</tbody>
 						</table>
 						</div>
-						<div class="tab_inputs_wrap">
-							<div class="btn_container ">
-								<button  class="btn btn_save right">
-									<span class="save_icon"></span>
-									<span class="save_text">Сохранить</span>
-								</button>			
-							</div>
-						</div>							
+							
 					</div>	
 				</div>
 			</div>
@@ -376,19 +369,12 @@
 			
 						</table>
 						</div>	
-						<div class="tab_inputs_wrap">
-							<div class="btn_container ">
-								<button  class="btn btn_save right">
-									<span class="save_icon"></span>
-									<span class="save_text">Сохранить</span>
-								</button>			
-							</div>
-						</div>	
+
 				</div>
 			</div>
 		</div>
 		<!-- tab 4 index12.html addGoods end -->
-		<dl class="dl_container">
+<!-- 		<dl class="dl_container">
 			<dt>Расширенные настройки:</dt>
 			<dd>Здесь будет какое-нибудь текстовое описание текстовое  описание
 					Здесь будет какое-нибудь текстовое описание текстовое описание</dd>
@@ -398,7 +384,7 @@
 				<span class="btn_text">Перейти в расширенные 				настройки</span>
 				<span class="btn_icon"></span>
 			</a>		
-		</div>			
+		</div>	 -->		
 			<div class="alert-popUp">
 				<h4>Lorem ipsum dolor sit amet.</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quisquam dolores inventore illum dolore? Magnam totam deleniti, ullam aliquid quia placeat minus recusandae ab sed! Delectus cum ex sequi repellendus!</p>
@@ -413,6 +399,14 @@
 
 			</div>
 		</div>	
+								<div class="tab_inputs_wrap">
+							<div class="btn_container ">
+								<button  class="btn btn_save right">
+									<span class="save_icon"></span>
+									<span class="save_text">Сохранить</span>
+								</button>			
+							</div>
+						</div>	
 	  </div>
 </main>
 <div class="overlay">

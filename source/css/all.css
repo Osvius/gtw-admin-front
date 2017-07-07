@@ -3046,73 +3046,48 @@ input[type=radio]:checked + label:before {
   text-align:center;
   padding-bottom: 10px;
 }
+.no-img,.is-img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .no-img{
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
   background-position: 50% 50%;
+  -webkit-background-size: 50%;
+       -o-background-size: 50%;
+          background-size: 50%;
   background-image: url(../image/gtw-images/add-plus-sign-outline.png);
 }
-.no-img button{
+.is-img{
+  background-image: none;
+}
+.no-img .close_btn{
   display:none;
 }
-.popover-content button{
-  position: absolute; 
-  top:2%;
-  width: 40%;
-  height: 20%;
-  display:block;
-  border:none;
-  -webkit-border-radius: 9px;
-          border-radius: 9px;
-
-  background-repeat: no-repeat;
-  background-color: #fff;
-/*  background-color: rgba(0,0,0,.05);*/
-  background-position: 50% 50%;
-  -webkit-background-size: 40%;
-       -o-background-size: 40%;
-          background-size: 40%;
-  -webkit-transition: all .1s;
-     -moz-transition: all .1s;
-      -ms-transition: all .1s;
-       -o-transition: all .1s;
-          transition: all .1s;
-  
-}
-.popover-content button:hover{
-
-}
-.popover-content .btn1{
-  left:2%;
-  background-image: url(../image/gtw-images/editH.png);
-  border:1px solid #397ce6;
-}
-.popover-content .btn1:hover{
-  background-color: #397ce6;
-  background-image: url(../image/gtw-images/editH_inverse.png);
-}
-
-.popover-content .btn2{
-  right:2%;
-  background-image: url(../image/gtw-images/cancelH.png);
-  border:1px solid #f20101;
-}
-.popover-content .btn2:hover{
-    background-color: #f20101;
-  background-image: url(../image/gtw-images/cancelH_inverse.png);
-}
-
-.is-img button{
+.is-img .close_btn{
   display: block;
   position: absolute;
   top:2%;
   right: 2%;
-  width: 30%;
-  height: 20%;
+  width: 20%;
+  height: 15%;
+  margin:0;
+  border:none;
   background-color: #FFF;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: ;
+  background-image: url(../image/gtw-images/cancelH.png);
+  -webkit-border-radius: 9px;
+          border-radius: 9px;
+  -webkit-background-size: 50%;
+       -o-background-size: 50%;
+          background-size: 50%;
+
 }
+
 .main_goods .btn_container button,
 .main_goods .btn_container a {
   margin-right: 12px;
@@ -3718,7 +3693,11 @@ input[type=radio]:checked + label:before {
     text-align: center;
 
   }
-
+.my_shop .is-img .close_btn,
+.add_more_img.is-img .close_btn{
+  width: 30%;
+  height: 30%;
+}
 .my_shop .tab6 .tab_textarea{
   width: calc(75% - 46px);
 }  
@@ -3790,6 +3769,7 @@ input[type=radio]:checked + label:before {
       -ms-transform: translate(-50%,-50%);
        -o-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
+  overflow: hidden;
 }
 /*.download_icon img{*/
   /*width: 100%;*/
@@ -3883,7 +3863,7 @@ input[type=radio]:checked + label:before {
     background-color: #f20101;
   background-image: url(../image/gtw-images/cancelH_inverse.png);
 }
-*/
+
 .logoEdit_container .switch_box{
   float:none;
   position:absolute;

@@ -72,8 +72,10 @@
 								<span class="add_icon_text">1. Изменить логотип</span>		
 							</div>
 							<div class="item2">
-								<a href="#" class="download_icon">
-									<img src="image/gtw-images/add-plus-sign-outline-little.png" alt="AddImg">
+								<a href="#" class="download_icon is-img">
+									<!-- <a href="#" class="no-img"> -->
+										<button class="close_btn"></button>	
+									<!-- </a> -->
 								</a>
 							</div>
 						</div>
@@ -82,8 +84,10 @@
 								<span class="add_icon_text">2. Изменить фавикон</span>		
 							</div>
 							<div class="item2">
-								<a href="#" class="download_icon">
-									<img src="image/gtw-images/add-plus-sign-outline-little.png" alt="addIMg">
+								<a href="#" class="download_icon no-img">
+									<!-- <a href="#" class="no-img"> -->
+										<button class="close_btn"></button>	
+									<!-- </a> -->
 								</a>
 							</div>
 						</div>
@@ -94,13 +98,13 @@
 								<span class="add_icon_text">Изменить логотип для мобильной версии:</span>		
 							</div>
 							<div class="item2">
-								<a href="#" class="download_icon">
-									<img src="image/gtw-images/add-plus-sign-outline-little.png" alt="AddImg">
+								<a href="#" class="download_icon no-img">
+									<!-- <a href="#" class="no-img"> -->
+										<button class="close_btn"></button>	
+									<!-- </a> -->
+
 								</a>
-								<div class="popover-content">
-									<button class="edit"></button>
-									<button class="delete"></button>
-								</div>
+
 							</div>
 						</div>
 						<div class="logo_block2">
