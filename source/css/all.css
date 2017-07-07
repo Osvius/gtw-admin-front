@@ -643,11 +643,16 @@ th a:active{
 .order_form,
 .main_form {
   display: block;
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100%;
 }
 .main_form{
   height: 100%;
+}
+.main_form .head_text{
+  text-align:center;
+  width: 100%;
+  font-size: 25px;
 }
 .chechbox_block .checkbox-custom{
   position:absolute;
@@ -2523,6 +2528,7 @@ input[type=radio]:checked + label:before {
   overflow: hidden;
   background-color: #FFF;
   cursor: pointer;
+
   
 }
 .gallery_container .img_block img{
@@ -2547,29 +2553,48 @@ input[type=radio]:checked + label:before {
 }
 
 
-.img_block .upload_layer,
+.img_block .upload_layer{
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display:block; 
+  z-index: 19;
+  background-image: url(../image/gtw-images/download-arrow2_inverse.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 80px;
+       -o-background-size: 80px;
+          background-size: 80px; 
+    -webkit-transition: all 1s;
+     -moz-transition: all .5s;
+      -ms-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;
+}
+.img_block:hover .upload_layer{
+  opacity: 0.9;
+}
 .img_block .img_layer{
   position: absolute;
-  /*opacity: 0;*/
   opacity: 1;
-/*  top:0;
-  left:0;
-  bottom:0;*/
   height: 100%;
   width: 100%;
   display:block;
-  
-  
+
 }
-.img_block .upload_layer{
+/*.img_block .upload_layer{
   background-image: url(../image/gtw-images/download-arrow2_inverse.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   -webkit-background-size: 80px;
        -o-background-size: 80px;
           background-size: 80px;
+}*/
+.img_block :hover .upload_layer{
+  opacity: 1;
+  
 }
-
 .gallery_container .add_img img{
   position: absolute;
   top:50%;
@@ -3001,22 +3026,93 @@ input[type=radio]:checked + label:before {
 .main_goods .setting_left{
   width:35%;
   float:left;
-  
+  position: relative;
 }
 .main_goods .setting_right{
   width:65%;
   float:left;
-  /*padding-top: 50px;*/
-  padding: 30px;
+  padding-top: 30px;
  
 }
+/*.popover{
+  width: 60%;
+    height: 50px;
+}*/
+
+
 .main_goods .add_img_text{
   line-height: 20px;
   height: 20px;
   text-align:center;
   padding-bottom: 10px;
 }
+.no-img{
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../image/gtw-images/add-plus-sign-outline.png);
+}
+.no-img button{
+  display:none;
+}
+.popover-content button{
+  position: absolute; 
+  top:2%;
+  width: 40%;
+  height: 20%;
+  display:block;
+  border:none;
+  -webkit-border-radius: 9px;
+          border-radius: 9px;
 
+  background-repeat: no-repeat;
+  background-color: #fff;
+/*  background-color: rgba(0,0,0,.05);*/
+  background-position: 50% 50%;
+  -webkit-background-size: 40%;
+       -o-background-size: 40%;
+          background-size: 40%;
+  -webkit-transition: all .1s;
+     -moz-transition: all .1s;
+      -ms-transition: all .1s;
+       -o-transition: all .1s;
+          transition: all .1s;
+  
+}
+.popover-content button:hover{
+
+}
+.popover-content .btn1{
+  left:2%;
+  background-image: url(../image/gtw-images/editH.png);
+  border:1px solid #397ce6;
+}
+.popover-content .btn1:hover{
+  background-color: #397ce6;
+  background-image: url(../image/gtw-images/editH_inverse.png);
+}
+
+.popover-content .btn2{
+  right:2%;
+  background-image: url(../image/gtw-images/cancelH.png);
+  border:1px solid #f20101;
+}
+.popover-content .btn2:hover{
+    background-color: #f20101;
+  background-image: url(../image/gtw-images/cancelH_inverse.png);
+}
+
+.is-img button{
+  display: block;
+  position: absolute;
+  top:2%;
+  right: 2%;
+  width: 30%;
+  height: 20%;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: ;
+}
 .main_goods .btn_container button,
 .main_goods .btn_container a {
   margin-right: 12px;
@@ -3036,6 +3132,7 @@ input[type=radio]:checked + label:before {
   margin:5px 0 10px;
   position: relative;
 }
+
 .main_setting img{
   width:50%;
   display:block;
@@ -3063,6 +3160,7 @@ input[type=radio]:checked + label:before {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 .main_goods .add_more_img{
   display:block;
@@ -3101,6 +3199,12 @@ input[type=radio]:checked + label:before {
     -webkit-border-radius: 8px;
         border-radius: 8px;
 }
+.main_goods .custom-select:after{
+  top: 18px;
+}
+.main_goods .custom-select:before{
+  top: 3px;
+}
 .main_goods .textarea{
   float:left;
   width:274px;
@@ -3112,11 +3216,11 @@ input[type=radio]:checked + label:before {
 .additional_setting{
   width:100%;
   margin-top:20px;
-  overflow:hidden;
+  /*overflow:hidden;*/
 }
 .additional_setting .btn-container_1{
   margin:15px 0;
-  float:none;"additional_item
+  float:none;
 }
 .additional_setting .btn{
   margin-left: 40px;
@@ -3233,7 +3337,7 @@ input[type=radio]:checked + label:before {
   width: 500px;
   min-height: 300px;
   position: absolute;
-  top:50px;
+  top:-25px;
   left:50%;
   margin-left:-250px;
   text-align:center;
@@ -3512,9 +3616,9 @@ input[type=radio]:checked + label:before {
   display:block;
   height: 200px;
   margin-bottom: 70px;
-  border:1px solid #397ce5;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
+  border:2px solid #397ce5;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   background-color: #f0f5fd;
   overflow:hidden;
   position: relative;
@@ -3534,28 +3638,17 @@ input[type=radio]:checked + label:before {
 .main_item:hover{
   background-color: #f0f5fd;
 }
-.additional_item .number{
+
+.additional_item .number,
+.main_item .number{
   position: absolute;
   top:2px;
   left:9px;
   font-size: 40px;
-  color:#c3daff;
+  font-weight: 700;
+  color:#d5e3fa;
 }
-.main_item .number{
-  position: absolute;
-  top:8px;
-  left:8px;
-  display:block;
-  font-size: 20px;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  text-align:center;
-  -webkit-border-radius: 50px;
-          border-radius: 50px;
-   background-color:#26c1b8;   
-   color: #FFF;
-}
+
 .additional_item .icon,
 .main_item .icon{
   position: absolute;
@@ -3568,7 +3661,6 @@ input[type=radio]:checked + label:before {
    background-image: url(../image/gtw-images/info.png);
 }
 .main_item .icon{
-
   -webkit-background-size: 25px;
        -o-background-size: 25px;
           background-size: 25px;
@@ -3590,7 +3682,7 @@ input[type=radio]:checked + label:before {
 .additional_item p{
   height: 40px;
   line-height: 40px;
-  color:#397ce6;
+  color:#377de7;
   font-size: 20px;
   border-top:1px solid #b9d0f6;
   margin-top:20px;
@@ -3600,11 +3692,13 @@ input[type=radio]:checked + label:before {
   height: 110px;
 }
 .main_item p{
+  border-top:1px solid #397ce6;
   height: 60px;
   line-height: 30px;
   color:#397ce6;
   font-size: 26px;
-  margin-top:20px;
+  padding-top:10px;
+  margin-top:10px;
 
   }
 
@@ -3621,16 +3715,10 @@ input[type=radio]:checked + label:before {
 }
 .my_shop  .label {
     width: 25%;
-    /*width: 26%;*/
-    /*text-align: left*/
     text-align: center;
-    /*padding-top: 10px;*/
-    /*padding-left: 30px;*/
+
   }
-/*  .my_shop .tab1_input, 
-  .my_shop .tab_input {
-  width: calc(75% - 25px);
-}*/
+
 .my_shop .tab6 .tab_textarea{
   width: calc(75% - 46px);
 }  
@@ -3703,16 +3791,16 @@ input[type=radio]:checked + label:before {
        -o-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
 }
-.download_icon img{
+/*.download_icon img{*/
   /*width: 100%;*/
 /*  -webkit-transform: scale(0.5);
      -moz-transform: scale(0.5);
       -ms-transform: scale(0.5);
        -o-transform: scale(0.5);
           transform: scale(0.5);*/
-}
+/*}*/
 
-.popover-content{
+/*.popover-content{
   width: 90px;
   height: 30px;
   padding: 10px;
@@ -3728,10 +3816,9 @@ input[type=radio]:checked + label:before {
       -ms-transform: translateY(-50%);
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: -5px;
-  
-}
-.popover-content button{
+  right: -5px; 
+}*/
+/*.popover-content button{
   height: 100%;
   width: 47%;
   margin:0 auto;
@@ -3739,25 +3826,64 @@ input[type=radio]:checked + label:before {
           border-radius: 4px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}*/
+
+/*.popover-content{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display:block;
+
+}*/
+/*.popover-content button{
+  position: absolute; 
+  top:2%;
+  width: 40%;
+  height: 20%;
+  display:block;
+  border:none;
+  -webkit-border-radius: 9px;
+          border-radius: 9px;
+
+  background-repeat: no-repeat;
+  background-color: #fff;
+/*  background-color: rgba(0,0,0,.05);*/
+  background-position: 50% 50%;
+  -webkit-background-size: 40%;
+       -o-background-size: 40%;
+          background-size: 40%;
+  -webkit-transition: all .1s;
+     -moz-transition: all .1s;
+      -ms-transition: all .1s;
+       -o-transition: all .1s;
+          transition: all .1s;
+  
 }
-.popover-content .edit{
+.popover-content button:hover{
+
+}
+.popover-content .btn1{
+  left:2%;
+  background-image: url(../image/gtw-images/editH.png);
   border:1px solid #397ce6;
+}
+.popover-content .btn1:hover{
   background-color: #397ce6;
-  background-image: url(../image/gtw-images/edit_inverse.png);
+  background-image: url(../image/gtw-images/editH_inverse.png);
 }
-.popover-content .edit:hover{
-  background-color: #fff;
-  background-image: url(../image/gtw-images/edit.png);
-}
-.popover-content .delete{
+
+.popover-content .btn2{
+  right:2%;
+  background-image: url(../image/gtw-images/cancelH.png);
   border:1px solid #f20101;
-  background-color: #f20101;
-  background-image: url(../image/gtw-images/garbage_inverse.png);
 }
-.popover-content .delete:hover{
-  background-color: #fff;
-  background-image: url(../image/gtw-images/garbage.png);
+.popover-content .btn2:hover{
+    background-color: #f20101;
+  background-image: url(../image/gtw-images/cancelH_inverse.png);
 }
+*/
 .logoEdit_container .switch_box{
   float:none;
   position:absolute;
