@@ -3006,7 +3006,8 @@ input[type=radio]:checked + label:before {
 .main_goods .setting_right{
   width:65%;
   float:left;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
+  padding: 30px;
  
 }
 .main_goods .add_img_text{
@@ -3077,7 +3078,13 @@ input[type=radio]:checked + label:before {
 
 .main_goods .inputs_wrap,
 .main_goods .double_inputs_wrap {
-  margin: 0 0 15px 15px;
+  /*margin: 0 0 15px 15px;*/
+  padding: 23px 0 0px 15px!important;
+}
+.main_goods .inputs_wrap .error-box {
+    top: 0px!important;
+    width: 100%!important;
+    left: 8%!important;
 }
 .main_goods .label{
   width:170px;
