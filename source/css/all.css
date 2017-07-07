@@ -133,7 +133,7 @@ input:focus, textarea:focus {
 .aside_wrap,
 .order_wrap {
   overflow: hidden;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 .hidden{
@@ -612,6 +612,13 @@ th a:active{
   background-image: url(../image/gtw-images/attach.png);
 }
 
+.gallery {
+  background-image: url(../image/gtw-images/gallery_blue.png);
+}
+.aside_nav li a:hover > .gallery,
+.aside_nav .active > a .gallery{
+  background-image: url(../image/gtw-images/gallery_inverse.png);
+}
 
 /*sidebar style end*/
   
@@ -622,14 +629,16 @@ th a:active{
   width: 820px;
 }
 .order_wrap h5 {
-  font-size: 14px;
+/*  font-size: 14px;
   margin-left: 60px;
   height: 70px;
-  line-height: 70px;
+  line-height: 70px;*/
+  display:none;
 }
 .order_content,
 .goodsList_content {
   padding: 13px 20px;
+  margin-top:70px;
   background-color: #FFF;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -1076,8 +1085,8 @@ th a:active{
  .pagination-list li {
   display: inline-block;
   text-align: center;
+  margin: 0 1px
   border: 1px solid  #4c8aea;
-  
 }
 
 
@@ -2022,12 +2031,20 @@ input[type=radio]:checked + label:before {
   line-height: 50px;
 }
 .history_form .tab_textarea {
-  /*height: 25px !important;*/
   right: 36px;
   width: calc(73% - 27px);
 }
 .history_form .custom-select{
    width: calc(73% - 16px);
+}
+.history_form .custom-select:before{
+  top:3px;
+}
+.history_form .custom-select:after{
+  top:19px;
+}
+.history_form .switch_box{
+  margin-left:4px;
 }
 .switch {
   margin: 0 3px 0 0;
@@ -2062,7 +2079,7 @@ input[type=radio]:checked + label:before {
 .switch:not(checked) + label:after {
   content: '';
   position: absolute;
-  top:59%;
+  top:60%;
   left: 2px;
   width: 22px;
   height: 22px;
@@ -2080,10 +2097,10 @@ input[type=radio]:checked + label:before {
   left: 26px;
 }
  .btn_add_history {
-  color: #000;
+  color: #377de7;
   border: 1px solid #377de7;
   float: right!important;
-  margin-right: 36px;
+  margin-right: 12px;
   width: 160px!important;
   overflow: hidden;
   background-color: #fff;
@@ -2095,8 +2112,8 @@ input[type=radio]:checked + label:before {
   height: 28px;
   line-height: 28px;
   background-repeat: no-repeat;
-  background-size: 21px 21px;
-  background-image: url(../image/gtw-images/add.png);
+  background-size: 20px 20px;
+  background-image: url(../image/gtw-images/addblue.png);
   background-position: 10px 50%;
 
 }
@@ -2190,7 +2207,7 @@ input[type=radio]:checked + label:before {
   width:100%;
   float:none;
   height: 30px;
-  margin-top:0;
+  margin:0;
 }
 .delivery_table td,
 .delivery_table th{
@@ -2245,11 +2262,11 @@ input[type=radio]:checked + label:before {
   position:relative;
 }
 .edit_2{
-  display:inline-block;
+  display: block;
+  margin: auto;
   border: 1px solid #377de7;
   width: 60%;
   height: 28px;
-
   -webkit-border-radius: 5px;
           border-radius: 5px;
   background-image: url(../image/gtw-images/edit.png);
@@ -2331,9 +2348,8 @@ input[type=radio]:checked + label:before {
     position: absolute;
     height: 38px;
     line-height: 38px;
-    /*top:-7px;*/
     top:-2px;
-    left: 28%;
+    left: 26.5%;
   }
 
 .h_min{
@@ -2407,6 +2423,10 @@ input[type=radio]:checked + label:before {
   border:none;
     padding:30px 0 ;
 }
+.add_pages_2 .tab_textarea{
+  width: calc(72% - 24px);
+}
+    
 .large_wrap{
   width: 100%;
   display: -webkit-box;
@@ -2765,7 +2785,8 @@ input[type=radio]:checked + label:before {
   padding:5px 20px;
 }
 .slider_container .block_item2{
-  margin-top: 35px;
+  /*margin-top: 35px;*/ 
+  padding-top: 35px;
   width: 50%;
   position: relative;
 }
@@ -2860,14 +2881,15 @@ input[type=radio]:checked + label:before {
 .slider_container .btn_container_2{
   height: 35px;
   padding-left: 30px;
+  line-height: 35px;
 }
 .slider_container .btn_container_2 span{
-  float:left;
-  margin-right: 10px;
+    display:none;
 }
 .slider_container .btn_add{
   height: 32px;
-  width: 25px;
+  width: 140px;
+  float: right;
   border:1px solid #397ce6;
   -webkit-border-radius: 8px;
           border-radius: 8px;
@@ -2878,6 +2900,12 @@ input[type=radio]:checked + label:before {
 .slider_container .btn_add:hover{
   background-color: #397ce6;
   background-image: url(../image/gtw-images/add_inverse.png);
+}
+.slider_container .block1:first-child .img_block{
+  margin-top:0!important;
+}
+.slider_container .block1 .img_block{
+  margin-top:28px;
 }
 /*  content style for page index10.html slider end*/
 
@@ -3698,11 +3726,17 @@ input[type=radio]:checked + label:before {
   width: 30%;
   height: 30%;
 }
+.my_shop .tab6 .label{
+  line-height: 25px;
+  padding-top:5px;
+}
 .my_shop .tab6 .tab_textarea{
   width: calc(75% - 46px);
 }  
 
-
+.my_shop .btn_save{
+  margin-top:20px;
+}
 
 /* style for page index13.html tab1 myShop start*/
 .logoEdit_container{
@@ -3881,10 +3915,22 @@ input[type=radio]:checked + label:before {
 .social_table th {
   height: 55px;
 }
+.social_table .input,
+.social_table .switch_box{
+  position: relative;
+  top:0;
+  left:0;
+  margin:0;
+  -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+       -o-transform: translateX(0);
+          transform: translateX(0);
+}
 .social_icon{
   display: inline-block;
   width: 50%;
-  height: 45px;
+  height: 60px;
   /*height: 30px;*/
   border:1px solid #397ce6;
   background-color: #FFF;
@@ -3892,6 +3938,7 @@ input[type=radio]:checked + label:before {
           border-radius: 8px;
   position:relative ;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 .social_icon img{
   /*height: 100%;*/
@@ -3946,7 +3993,7 @@ input[type=radio]:checked + label:before {
   margin:auto;
   max-width: 800px;
   width: 100%;
-  height: 80%;
+  /*height: 80%;*/
   padding:0 10px;
   overflow: auto;
   background-color: #f5f5f5;
@@ -4013,6 +4060,7 @@ input[type=radio]:checked + label:before {
   max-width: 35px;
   width: 100%;
   height: 20px;
+  line-height: 20px;
   color: #FFF;
   text-align: center;
   -webkit-border-radius: 5px;
@@ -4137,9 +4185,12 @@ input[type=radio]:checked + label:before {
   width: 60%;
   float:left;
 }
-.history_form  .switch_box {
-    margin-top: -3px;
+.history_form .switch_box {
+    margin-top: -3px!important;
+
  }
+
+
 .wrap_large {
     min-height: 180px; 
  }

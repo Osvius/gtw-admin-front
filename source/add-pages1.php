@@ -29,16 +29,21 @@
 							<label class="tab_label" >Заголовок страницы</label>
 							<input type="text" class="tab_input" >
 						</div>
+						// <div class="large_wrap">
+						// 	<label class="tiny_label">Описание</label>
+						// 	<div class="tiny_textarea">
+						// 		<textarea ></textarea>
+						// 	</div>
+						// </div>
+						// <script>
+						// 	tinymce.init({ selector:'textarea' });
+						// </script>
 						<div class="large_wrap">
-							<label class="tiny_label">Описание</label>
-							<div class="tiny_textarea">
-								<textarea ></textarea>
-							</div>
+							<label class="tab_label">Описание</label>
+								<textarea class="tab_textarea"></textarea>
 						</div>
-						<script>
-							tinymce.init({ selector:'textarea' });
-						</script>
 
+						
 						<div class="tab_inputs_wrap">
 							<label class="tab_label" class="tab_label">Порядок сортировки</label>
 							<input type="text" class="tab_input">

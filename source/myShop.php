@@ -73,9 +73,7 @@
 							</div>
 							<div class="item2">
 								<a href="#" class="download_icon is-img">
-									<!-- <a href="#" class="no-img"> -->
-										<button class="close_btn"></button>	
-									<!-- </a> -->
+									<button class="close_btn"></button>	
 								</a>
 							</div>
 						</div>
@@ -85,9 +83,7 @@
 							</div>
 							<div class="item2">
 								<a href="#" class="download_icon no-img">
-									<!-- <a href="#" class="no-img"> -->
-										<button class="close_btn"></button>	
-									<!-- </a> -->
+									<button class="close_btn"></button>	
 								</a>
 							</div>
 						</div>

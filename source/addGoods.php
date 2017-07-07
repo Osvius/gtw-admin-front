@@ -7,10 +7,7 @@
 	  <div class="content-wrap">
 	  <?php include('aside.php')?>
 	<div class="order_wrap">
-			<h5>Здесь Вы можете настроить страницы.</h5>
 			
-
-
 			<div class="order_content">
 				
 				<div class="order_form">
