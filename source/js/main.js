@@ -12,8 +12,13 @@
       $('div.tab6').hide();
   }
   removeTabs()
-
-    function popUpShop(){
+  
+  // разрешает переключение между табами 
+  popUpKey = {
+    key : false,
+  }
+  // Функция вызова попАп окна и сохранения таба 
+    function popUpShow(){
         $('.overlay').show();
         $('.alert-popUp').show();
         var self = this;
@@ -24,6 +29,7 @@
            changeTabs.call(self);
         })      
       }
+    // Переключение таба
     function changeTabs(){
       var thisClass = this.className.slice(0,5);
       $('div.tab1').hide();
@@ -31,33 +37,27 @@
         $('div.' + thisClass).fadeIn(0);
         $('#tabs li').removeClass('active');
         $(this).addClass('active');
-
         return false;
     }
-	$('#tabs li').click(function(event){
-	  // var thisClass = this.className.slice(0,5);
-       event.preventDefault();
-       // if()
-         popUpShop.call(this);
-	  });
 
+
+	$('#tabs li').click(function(event){
+       event.preventDefault();
+       if( popUpKey.key ){
+          changeTabs.call(this);
+          popUpKey.key = false;
+       }else{
+          popUpShow.call(this);
+          popUpKey.key = false;
+       }
+	  });
+// кнопка сохранения,разрешает переключение на другой таб
   $('.btn_save').click(function(event){
        event.preventDefault();
-       changeTabs.call();
+       popUpKey.key = true;
+       // alert('Сохранено')
   })
-	 // $('li.tab1').click();
 
-   // tabs popUp window start
-
-      // $('.tabs li').click( function(event) {
-      //     popUpShop();
-      // })
-
-      // $('.popUp_btn').click( function(event) {
-      //   event.preventDefault();
-      //   $(this).parent('.alert-popUp').hide();
-      //   $('.overlay').hide();
-      // })
 
   // tabs popUp window end
 

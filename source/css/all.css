@@ -2986,7 +2986,7 @@ input[type=radio]:checked + label:before {
 
 /*  content style for page index12.html addGoods start*/
 .main_goods {
-  margin-bottom:70px;
+  margin-bottom:20px;
   background-color: #f3f4f6;
   -webkit-border-radius: 8px;
           border-radius: 8px;
@@ -3019,6 +3019,10 @@ input[type=radio]:checked + label:before {
 .main_goods .btn_container button,
 .main_goods .btn_container a {
   margin-right: 12px;
+}
+.main_goods .tab2 .btn_container button{
+  margin-right: 27px;
+  width: 135px;
 }
 .main_goods .add_img{
   display:block;
