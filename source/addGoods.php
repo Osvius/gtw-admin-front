@@ -34,28 +34,29 @@
 
 							<p class="add_img_text">Дополнительные изображения:</p>
 							<div class="add_more_container">
-							
+
 								<div class="add_more_img">
 									<a href="#" class="is-img">
 										<img src="" alt="">
-										<button class="close_btn"></button>		
-									</a>					
+	
+									</a>
+									<button class="close_btn"></button>						
 									<input>				
 								</div>
 
 								<div class="add_more_img">
 									<a href="#" class="no-img">
 										<img src="" alt="">
-										<button class="close_btn"></button>		
-									</a>					
+									</a>		
+									<button class="close_btn"></button>					
 									<input>				
 								</div>
 
 								<div class="add_more_img">
 									<a href="#" class="is-img">
 										<img src="" alt="">
-										<button class="close_btn"></button>		
-									</a>					
+									</a>	
+									<button class="close_btn"></button>			
 									<input>				
 								</div>
 							</div>
