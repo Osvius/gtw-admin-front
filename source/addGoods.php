@@ -34,15 +34,30 @@
 
 							<p class="add_img_text">Дополнительные изображения:</p>
 							<div class="add_more_container">
-								<a href="#" class="add_more_img no-img">
-									<button class="close_btn"></button>			
-								</a>
-								<a href="#"  class="add_more_img is-img">
-									<button class="close_btn"></button>		
-								</a>
-								<a href="#" class="add_more_img is-img">
-									<button class="close_btn"></button>	
-								</a>
+							
+								<div class="add_more_img">
+									<a href="#" class="is-img">
+										<img src="" alt="">
+										<button class="close_btn"></button>		
+									</a>					
+									<input>				
+								</div>
+
+								<div class="add_more_img">
+									<a href="#" class="no-img">
+										<img src="" alt="">
+										<button class="close_btn"></button>		
+									</a>					
+									<input>				
+								</div>
+
+								<div class="add_more_img">
+									<a href="#" class="is-img">
+										<img src="" alt="">
+										<button class="close_btn"></button>		
+									</a>					
+									<input>				
+								</div>
 							</div>
 						</div>
 						<div class="setting_right">

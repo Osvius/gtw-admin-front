@@ -88,6 +88,7 @@ textarea{
   background-color: #f3f4f6; 
     overflow:auto;
 }
+
  .content-wrap{
   max-width:1170px ;
     width: 100%;
@@ -111,6 +112,7 @@ textarea{
    background-color: #FFF;
  }
  .visible{
+
    overflow:visible!important;
  }
 .btn {
@@ -3075,6 +3077,7 @@ input[type=radio]:checked + label:before {
   padding-bottom: 10px;
 }
 .no-img,.is-img{
+  display:block;
   position: absolute;
   top:0;
   left: 0;
@@ -3174,6 +3177,10 @@ input[type=radio]:checked + label:before {
   height: 60px;
   background-color: #FFF;
   position: relative;
+  overflow: hidden;
+}
+.main_goods .add_more_img input{
+  display:none;
 }
 /*right setting*/
 
@@ -3722,9 +3729,12 @@ input[type=radio]:checked + label:before {
 
   }
 .my_shop .is-img .close_btn,
-.add_more_img.is-img .close_btn{
+.add_more_img .is-img .close_btn{
   width: 30%;
   height: 30%;
+}
+.add_more_img .no-img img{
+  display:none;
 }
 .my_shop .tab6 .label{
   line-height: 25px;

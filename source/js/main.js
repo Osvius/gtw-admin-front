@@ -12,7 +12,9 @@
       $('div.tab6').hide();
   }
   removeTabs()
-  
+  $('.overlay:not(.popUp)').click(function(){
+    console.log(this)
+  })
   // разрешает переключение между табами 
   popUpKey = {
     key : false,
@@ -41,7 +43,7 @@
     }
 
 
-	$('#tabs li').click(function(event){
+	$('.main_goods #tabs li').click(function(event){
        event.preventDefault();
        if( popUpKey.key ){
           changeTabs.call(this);
@@ -57,13 +59,17 @@
        popUpKey.key = true;
        // alert('Сохранено')
   })
+  $(' #tabs li').click(function(event){
+       event.preventDefault();
+       changeTabs.call(this);
 
+    });
 
   // tabs popUp window end
 
 // sidebar slide 
 $('.aside_nav a').click( function(event){
-  event.preventDefault();
+  // event.preventDefault();
 
   
   var dropDown = $(this).next('.sub-nav');
