@@ -7,81 +7,102 @@
 	  <div class="content-wrap">
 	  <?php include('aside.php')?>
 	<div class="order_wrap">
-			<h5>Здесь Вы можете настроить категории.</h5>
-			<div class="order_content ">
-				
-				<div class="order_form">
-		
+			<h5>Здесь Вы можете настроить категории</h5>
+			<div class="order_content gallery_block">
 				<div class="order_head">
-					<span class="order_list_name char_add">
-					Добавление категории 
+					<span class="order_list_name media_img">
+					Галерея 
 					</span>
-					<div class="btn-container_1">
-
-						<a class="btn btn_remove">
-						</a >
-					</div>		
 				</div>
-				
-				<form action="post" class="character_container ">
-					<div class="tab_inputs_container paddin0">
-						<div class="tab_inputs_wrap">
-							<label class="tab_label" ><span class="star">* </span>Название категории</label>
-							<input type="text" class="tab_input" >
+					<div class="btn-container_1">
+						<a href="#" class="btn btn_upload">
+							Скачать  все 
+						</a>
+						<a href="#" class="btn btn_delete delete_all">
+							Удалить  все 
+						</a>
+					</div>
+				<form class="gallery_container">
+					<div class="add_img_block" id='button-image'>
+						<a href="#" class="add_img" >
+							<img src="image/gtw-images/add-plus-sign-outline.png" alt="">
+						</a>
+					</div>
+					<div class="img_block" >
+						<img src="https://cdn.pixabay.com/photo/2017/06/23/16/57/tree-2435269_960_720.jpg" alt="">
+						<div class="chechbox_block ">		
+							<label for="img1" >
+								<input class="checkbox" id="img1" type="checkbox" >
+								<span class="checkbox-custom"></span>
+							</label>
 						</div>
-						<div class="tab_inputs_wrap">
-							<label class="tab_label"  class="tab_label">Родительская категория</label>
-						<div class="custom-select">
-					      <select name="select">
-					          <option>Пункт 1</option>
-					          <option>Пункт 2</option>
-					          <option>Пункт 3</option>
-					      </select>
-					    </div>								
-
-						</div>
-						<div class="tab_inputs_wrap">
-							<label class="tab_label" class="tab_label">Порядок сортировки</label>
-							<input type="text" class="tab_input">
-						</div>
-						<div class="tab_inputs_wrap">
-							<label class="tab_label"  class="tab_label">Статус</label>
-						<div class="custom-select">
-					      <select name="select">
-					          <option>Пункт 1</option>
-					          <option>Пункт 2</option>
-					          <option>Пункт 3</option>
-					      </select>
-					    </div>	
-	
-						</div>	
-						<div class="tab_inputs_wrap">
-							<label class="tab_label"  class="tab_label">Добавить изображение</label>
-							<a href="#" class="add_img is-img">
-								<button class="close_btn"></button>	
-							</a>
-				
-						</div>
-						<div class="tab_inputs_wrap">
-							<label class="tab_label" class="tab_label">Главное меню <span class="star"> * </span></label>
-							<div class="switch_box">
-								<input type="checkbox" class="switch" id="switch4" />
-								<label for="switch4" class="switch_label"></label>
-							</div>
-						</div>
-						<div class="tab_inputs_wrap h_min">
-							<p class="tab_text">* показывать в верхнем меню (работает только для основных категорий)</p>
-						</div>	
+						<a href="#" class="close_btn"></a>	
+						<a href="#" class="upload_layer"></a>	
 
 					</div>
+					<div class="img_block">
+
+						<img src="http://www.gamer.ru/system/attached_images/images/000/625/881/original/the-witcher-3_6.jpg" alt="">
+						<div class="chechbox_block">		
+							<label for="img2">
+								<input class="checkbox" id="img2" type="checkbox" >
+								<span class="checkbox-custom"></span>
+							</label>
+						</div>	
+						<a href="#" class="close_btn"></a>							
+						<a href class="upload_layer"></a>								
+						
+			
+					</div>
+					<div class="img_block">
+						<img src="https://cdn.pixabay.com/photo/2014/10/07/13/48/mt-fuji-477832_960_720.jpg" alt="">
+						<div class="chechbox_block ">		
+							<label for="img3">
+								<input class="checkbox" id="img3" type="checkbox" >
+								<span class="checkbox-custom"></span>
+							</label>
+						</div>
+						<a href="#" class="close_btn"></a>	
+						<a href="#" class="upload_layer"></a>							
+					</div>
+					<div class="img_block">
+						<img src="https://cdn.pixabay.com/photo/2017/05/19/15/16/countryside-2326787_960_720.jpg" alt="">
+						<div class="chechbox_block ">		
+							<label for="img4" >
+								<input class="checkbox" id="img4" type="checkbox" >
+								<span class="checkbox-custom"></span>
+							</label>
+						</div>
+						<a href="#" class="close_btn"></a>	
+						<a href="#" class="upload_layer"></a>							
+					</div>
+					<div class="img_block">
+						<img src="https://cdn.pixabay.com/photo/2017/06/14/15/18/cherries-2402449__340.jpg" alt="">
+						<div class="chechbox_block ">		
+							<label for="img5">
+								<input class="checkbox" id="img5" type="checkbox" >
+								<span class="checkbox-custom"></span>
+							</label>
+						</div>
+						<a href="#" class="close_btn"></a>	
+						<a href="#" class="upload_layer"></a>						
+					</div>
 				</form>
-				<div class="btn_container">
-						<button  class="btn btn_save">
-							<span class="save_icon"></span>
-							<span class="save_text">Сохранить</span>
-						</button>		
-				</div>
-			</div>
+	
+					<div class="pagination">
+					<ul class="pagination-list">
+						<li class="prev"><a href="#">
+							&laquo;
+						</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">...</a></li>
+						<li><a href="#">35</a></li>
+						<li class="next"><a href="#">&raquo;</a></li>
+					</ul>
+
+		</div>
 		</div>	
 	  </div>
 </main>

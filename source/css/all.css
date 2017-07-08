@@ -177,7 +177,10 @@ input:focus, textarea:focus {
 .close:hover{
   color:#000;
 }
-
+.btn_container{
+  overflow: hidden;
+  margin:20px 0;
+}
 .star{
   color:#EB5A46;
 }
@@ -257,6 +260,9 @@ th a{
 th a:hover,
 th a:visited,
 th a:active{
+  color:#5480c1;
+}
+a:active{
   color:#5480c1;
 }
 
@@ -2387,7 +2393,7 @@ input[type=radio]:checked + label:before {
       width: 50px;
       
   }
-.character_container  .add_img img{
+/*.character_container  .add_img img{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2395,7 +2401,7 @@ input[type=radio]:checked + label:before {
   width:70%;
   margin-top:-17px;
   margin-left: -35%;
-}
+}*/
 
 /*  content style for page index7.html Categories end*/
 
@@ -2559,13 +2565,6 @@ input[type=radio]:checked + label:before {
 }
 .gallery_container .img_block img{
       position: absolute;
-/*      top:50%;
-      left:50%;
-      -webkit-transform: translate(-50%,-50%) scale(2);
-         -moz-transform: translate(-50%,-50%) scale(2);
-          -ms-transform: translate(-50%,-50%) scale(2);
-           -o-transform: translate(-50%,-50%) scale(2);
-              transform: translate(-50%,-50%) scale(2);*/
 }
 
 .gallery_container .checkbox:checked + .checkbox-custom::before{
@@ -2609,14 +2608,14 @@ input[type=radio]:checked + label:before {
   display:block;
 
 }
-/*.img_block .upload_layer{
+.img_block .upload_layer{
   background-image: url(../image/gtw-images/download-arrow2_inverse.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   -webkit-background-size: 80px;
        -o-background-size: 80px;
           background-size: 80px;
-}*/
+}
 .img_block :hover .upload_layer{
   opacity: 1;
   
@@ -2633,40 +2632,29 @@ input[type=radio]:checked + label:before {
   opacity: 1;
 
 }
-.gallery_container .img_block:hover img{
-    -webkit-filter: blur(1px);
-     -moz-filter: blur(1px);
-       -o-filter: blur(1px);
-      -ms-filter: blur(1px);
-          filter: blur(1px);
+
+.gallery_container .img_block:hover .upload_layer{
+  background-color: rgba(0,0,0,0.45); 
 }
 .gallery_container .img_block img{
-  
+    -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+      -ms-transform: scale(1);
+       -o-transform: scale(1);
+          transform: scale(1);
 }
-.gallery_container .img_block:hover .img_layer{
-  background-color: rgba(0,0,0,0.45);
-  
-  
- 
+.gallery_container .img_block:hover img{
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
 }
-/*.gallery_container .img_block:hover .img_layer{
-  opacity: 0.5;
-}*/
 .gallery_container button.add_img{
   background-color: #fff;
   border: none;
 }
 
-.gallery_container .img_block:hover .upload_layer,
-.gallery_container .img_block:hover .img_layer{
-  /*background-color: rgba(0,0,0,0.45);*/
-  /*opacity: 1;*/
-      -webkit-filter: blur(1px);
-     -moz-filter: blur(1px);
-       -o-filter: blur(1px);
-      -ms-filter: blur(1px);
-          filter: blur(1px);
-}
 
 .gallery_container .checkbox:checked +  .checkbox-custom::before {
     content: "";
@@ -2678,15 +2666,10 @@ input[type=radio]:checked + label:before {
     top: -8px;
     right: 8px;
     border-radius: 2px;
-    /*background-color: red;*/
     -webkit-background-size: 20px;
          -o-background-size: 20px;
             background-size: 20px;
-    /*background-image: url(../image/gtw-images/checkmark-hand-drawn-outline.png);*/
-    /*background-image: url(../image/gtw-images/long-check-mark.png);*/
-    /*background-image: url(../image/gtw-images/long-check-mark_inverse.png);*/
     background-image: url(../image/gtw-images/tick_inverse.png);
-    
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -3355,7 +3338,7 @@ input[type=radio]:checked + label:before {
 
 /*alert pop up start*/
 .overlay{
-  display:none;
+  /*display:none;*/
 }
 .alert-popUp{
   display:none;
