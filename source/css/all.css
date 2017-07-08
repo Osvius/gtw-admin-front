@@ -729,6 +729,7 @@ a:active{
   display: flex;
     -webkit-justify-content: flex-end;
           justify-content: flex-end;
+  
 }
 
  .btn-container_1 .btn {
@@ -1215,7 +1216,9 @@ a:active{
   display: block;
   width: 100%;
 }
-
+.tab-form .btn_container  .btn_save{
+  margin-right: 12px;
+}
 .inputs_container {
   width: calc(100% - 2px);
   overflow: hidden;
@@ -1340,10 +1343,7 @@ a:active{
   background-color: #dce4f4;
 }
 .tab-form .btn_container {
-  display: block;
-  overflow: hidden;
   width: 100%;
-  margin: 20px 0;
 }
 
  .btn_save {
@@ -2410,13 +2410,14 @@ input[type=radio]:checked + label:before {
 /*  content style for page index8.html addPages start*/
 
 .order_h{
-  text-align: center;
+/*  text-align: center;
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 30px;*/
+  display:none;
 }
 .add_pages{
   margin:0;
-  padding:30px 0  70px;
+  /*padding:30px 0  70px;*/
 }
 .add_pages .table{
   width:95%;
@@ -3091,10 +3092,10 @@ input[type=radio]:checked + label:before {
 .is-img{
   background-image: none;
 }
-.no-img + .close_btn{
+.no-img ~ .close_btn{
   display:none;
 }
-.is-img + .close_btn{
+.is-img ~ .close_btn{
   display: block;
   position: absolute;
 
@@ -3177,7 +3178,9 @@ input[type=radio]:checked + label:before {
   overflow: hidden;
 }
  .add_more_img input,
- .add_img input{
+ .add_img input,
+ .social_icon input,
+ .download_icon input{
   display:none;
 }
 /*right setting*/
@@ -3726,11 +3729,16 @@ input[type=radio]:checked + label:before {
     text-align: center;
 
   }
-.my_shop .is-img .close_btn,
+/*.my_shop .is-img .close_btn,
 .add_more_img .is-img .close_btn{
   width: 30%;
   height: 30%;
-}
+}*/
+ .is-img .close_btn,
+ .is-img .close_btn{
+  width: 30%;
+  height: 30%;
+  }
 .add_more_img .no-img img{
   display:none;
 }
@@ -3850,43 +3858,45 @@ input[type=radio]:checked + label:before {
 }
 
 /*tab 3 my shop start */
-.social_table td,
+
+.social_table td{
+  height: 70px;
+  vertical-align: middle;
+}
 .social_table th {
-  height: 55px;
+  height: 30px;
+  padding: 0;
 }
 .social_table .input,
 .social_table .switch_box{
   position: relative;
+  display:block;
   top:0;
   left:0;
-  margin:0;
+  margin:auto;
   -webkit-transform: translateX(0);
      -moz-transform: translateX(0);
       -ms-transform: translateX(0);
        -o-transform: translateX(0);
           transform: translateX(0);
 }
+.social_table .switch_box{
+  margin-top: -24px;
+}
 .social_icon{
-  display: inline-block;
+  display: block;
+  margin:auto;
   width: 50%;
-  height: 60px;
-  /*height: 30px;*/
+  height: 50px;
   border:1px solid #397ce6;
   background-color: #FFF;
   -webkit-border-radius: 8px;
           border-radius: 8px;
   position:relative ;
-  margin-bottom: 10px;
   overflow: hidden;
 }
-.social_icon img{
-  /*height: 100%;*/
-  /*width: 100%;*/
-/*  position: absolute;
-  top:50%;
-  left:50%;
-  margin-top:-12px;
-  margin-left: -30%;*/
+.social_icon .is-img ~ .close_btn{
+  top:12%;
 }
 
 /*tab 5 my shop start */

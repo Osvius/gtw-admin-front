@@ -72,9 +72,13 @@
 								<span class="add_icon_text">1. Изменить логотип</span>		
 							</div>
 							<div class="item2">
-								<a href="#" class="download_icon is-img">
-									<button class="close_btn"></button>	
-								</a>
+								<div class="download_icon">
+									<a href="#" class="is-img">
+										<img src="" alt="">
+									</a>
+									<button class="close_btn"></button>
+									<input>		
+								</div>						
 							</div>
 						</div>
 						<div class="logo_block2">
@@ -82,9 +86,13 @@
 								<span class="add_icon_text">2. Изменить фавикон</span>		
 							</div>
 							<div class="item2">
-								<a href="#" class="download_icon no-img">
-									<button class="close_btn"></button>	
-								</a>
+								<div class="download_icon">
+									<a href="#" class="no-img">
+										<img src="" alt="">
+									</a>
+									<button class="close_btn"></button>
+									<input>		
+								</div>
 							</div>
 						</div>
 					</div>
@@ -94,13 +102,13 @@
 								<span class="add_icon_text">Изменить логотип для мобильной версии:</span>		
 							</div>
 							<div class="item2">
-								<a href="#" class="download_icon no-img">
-									<!-- <a href="#" class="no-img"> -->
-										<button class="close_btn"></button>	
-									<!-- </a> -->
-
-								</a>
-
+								<div class="download_icon">
+									<a href="#" class="is-img">
+										<img src="" alt="">
+									</a>
+									<button class="close_btn"></button>
+									<input>		
+								</div>	
 							</div>
 						</div>
 						<div class="logo_block2">
@@ -108,12 +116,12 @@
 								<span class="add_icon_text">Отображать логотип в мобильной версии</span>		
 							</div>
 							<div class="item2">
-								<!-- <a href="#" class="download_icon"> -->
+
 								<div class="switch_box">
 									<input type="checkbox" class="switch" id="switch4" />
 									<label for="switch4" class="switch_label"></label>
 								</div>
-								<!-- </a> -->
+
 							</div>
 						</div>
 					</div>
@@ -132,7 +140,7 @@
 					<div class="tab-form" >
 						<div class="inputs_container ">
 						<div class="tab_table_wrap ">
-						<table class="table delivery_table border-b social_table">
+						<table class="table delivery_table border-b social_table ">
 						<thead>
 							<tr>
 								<th class="td_10">Иконка</th>
@@ -143,9 +151,31 @@
 						<tbody>
 							<tr>
 								<td class="td_10">
-									<a href="#" class="social_icon">
-										<img src="image/gtw-images/add-plus-sign-outline-little.png" alt="AddImg">
+								<div class="social_icon">
+									<a href="#" class="no-img">
+										<img src="" alt="">
 									</a>
+									<button class="close_btn"></button>
+									<input>		
+								</div>
+								</td>
+								<td class="td_20"><input type="text" class="input"></td>
+								<td class="td_10 ">
+									<div class="switch_box">
+										<input type="checkbox" class="switch" id="switch3" />
+										<label for="switch3" class="switch_label"></label>
+									</div>									
+								</td>
+							</tr>
+							<tr>
+								<td class="td_10">
+								<div class="social_icon">
+									<a href="#" class="is-img">
+										<img src="" alt="">
+									</a>
+									<button class="close_btn"></button>
+									<input>		
+								</div>								
 								</td>
 								<td class="td_20"><input type="text" class="input"></td>
 								<td class="td_10 ">
