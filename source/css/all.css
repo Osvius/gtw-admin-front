@@ -3193,7 +3193,8 @@ input[type=radio]:checked + label:before {
   position: relative;
   overflow: hidden;
 }
-.main_goods .add_more_img input{
+ .add_more_img input,
+ .add_img input{
   display:none;
 }
 /*right setting*/

@@ -23,9 +23,13 @@
 					<div class="main_setting">
 						<div class="setting_left">
 							<p class="add_img_text">Добавить изображение</p>
-							<a href="#" class="add_img no-img">
-								<button class="close_btn"></button>	
-							</a>
+							<div class="add_img">
+								<a href="#" class="no-img">
+									<img src="" alt="">
+								</a>
+								<button class="close_btn"></button>
+								<input>		
+							</div>
 							<!-- Туглим класс is-img no-img .если is-img то кнопка удаления видна  -->
 
 <!-- 							<a href="#" class="add_img no-img ">
