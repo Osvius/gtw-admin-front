@@ -2686,7 +2686,7 @@ input[type=radio]:checked + label:before {
 
 
 .gallery_container .chechbox_block,
-.gallery_container .close_btn {
+.gallery_container .gall_close_btn {
   width:30px!important;
   height: 30px;
   line-height: 30px;
@@ -2704,7 +2704,7 @@ input[type=radio]:checked + label:before {
   
   /*background: rgba(214, 208, 208, 0.3 );*/
 }
-.gallery_container .close_btn{
+.gallery_container .gall_close_btn{
   right: 5px;
   /*line-height: 40px;*/
   /*height: 40px;*/
@@ -2720,7 +2720,7 @@ input[type=radio]:checked + label:before {
    /*background-image: url(../image/gtw-images/remove-symbol_red.png);*/
   background-position: 50% 50%;
 }
-.gallery_container .close_btn:hover{
+.gallery_container .gall_close_btn:hover{
   
 }
 .gallery_container .checkbox-custom {
@@ -3763,6 +3763,7 @@ input[type=radio]:checked + label:before {
 .my_shop .btn_save{
   /*margin-top:20px;*/
 }
+
 
 /* style for page index13.html tab1 myShop start*/
 .logoEdit_container{
