@@ -180,6 +180,7 @@ input:focus, textarea:focus {
 .btn_container{
   overflow: hidden;
   margin:20px 0;
+
 }
 .star{
   color:#EB5A46;
@@ -991,7 +992,12 @@ a:active{
   height: 40px;
   position:relative;
  }
-
+.sub_td_1{
+  background-color: #f3f6fb;
+}
+.sub_td_2{
+  background-color:#ececec;
+}
 .table .chechbox_block{
   border:none;
   width:100%;
@@ -1082,7 +1088,7 @@ a:active{
 
 .pagination {
   overflow: hidden;
-  margin-top:30px;
+  margin-top:20px;
   font-size: 16px;
 }
 
@@ -1350,6 +1356,8 @@ a:active{
   color: #377de7;
   border: 1px solid #377de7;
   float: right;
+  height: 28px;
+  height: 100%;
   width: 140px;
   background-color: #fff;
   overflow: hidden;
@@ -2302,6 +2310,7 @@ input[type=radio]:checked + label:before {
 .character_container .tab_inputs_container {
   padding-bottom:70px;
 }
+
 .character_container .tab_input,
 .character_container .custom-select,
 .character_container .textarea_container
@@ -3138,7 +3147,7 @@ input[type=radio]:checked + label:before {
 }
 
 .main_setting img{
-  width:50%;
+  /*width:50%;*/
   display:block;
   position: absolute;
   top:50%;
@@ -3218,7 +3227,8 @@ input[type=radio]:checked + label:before {
 }
 .main_goods .textarea{
   float:left;
-  width:274px;
+  /*width:274px;*/
+  width: 290px;
   height: 110px;
     -webkit-border-radius: 8px;
         border-radius: 8px;
@@ -3341,7 +3351,7 @@ input[type=radio]:checked + label:before {
 
 /*alert pop up start*/
 .overlay{
-  /*display:none;*/
+  display:none;
 }
 .alert-popUp{
   display:none;
@@ -3751,7 +3761,7 @@ input[type=radio]:checked + label:before {
 }  
 
 .my_shop .btn_save{
-  margin-top:20px;
+  /*margin-top:20px;*/
 }
 
 /* style for page index13.html tab1 myShop start*/
