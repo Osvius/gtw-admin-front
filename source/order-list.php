@@ -115,7 +115,7 @@
 				</tbody>
 			</table>			
 		</div>
-		<h3 class="h3_block">Управление историей заказов</h3>
+		<h3 class="h3_block h3_history_config">Управление историей заказов</h3>
 		<div class="history_form">
 			<div class="inputs_container">
 			<form>
