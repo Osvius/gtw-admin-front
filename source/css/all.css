@@ -380,6 +380,7 @@ a:active{
   line-height: 80px;
   color: #4c8aea;
   padding-left: 30px;
+  background-size: 25px;
   background-image: url(../image/gtw-images/logout.png);
   background-repeat: no-repeat;
   background-position: 0 50%;
@@ -718,6 +719,7 @@ a:active{
   
 }
 .order_head span {
+  background-size: 26px;
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
@@ -748,6 +750,7 @@ a:active{
   border: 1px solid #377de7;
   color: #377de7;
   padding: 0 20px 0 50px;
+  background-size: 24px;
   background-image: url(../image/gtw-images/addblue.png);
   background-repeat: no-repeat;
   background-position: 18px 50%;
@@ -765,6 +768,7 @@ a:active{
   color: #f20101;
   width: 44px;
   height: 30px;
+  background-size: 24px;
   background-image: url(../image/gtw-images/garbage.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -880,6 +884,7 @@ a:active{
   background-color: #FFF;
   border-left:1px solid #377de7;
   background-repeat: no-repeat;
+  background-size: 30px;
   background-image: url(../image/gtw-images/calendar.png);
   background-position: 50% 50%;
   padding:0;
@@ -929,21 +934,6 @@ a:active{
   transform: rotate(180deg);
 }
 
-/*.select_arrow_block {
-  width: 10px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  right: 1px;
-  z-index: 300;
-  background-color: #fff;
-}*/
-
 
 .btn_container_2 {
   margin: 35px 0;
@@ -957,6 +947,7 @@ a:active{
   color: #377de7;
   margin-left: 5px;
   padding-left: 40px;
+  background-size: 24px;
   background-repeat: no-repeat;
   background-position: 12px 50%;
 }
@@ -966,6 +957,7 @@ a:active{
 }
 
 .btn_reset:hover {
+
   background-color: #377de7;
   color: #fff;
   background-image: url(../image/gtw-images/redo-circular-arrow_inverse.png);
@@ -1376,6 +1368,7 @@ a:active{
   height: 28px;
   line-height: 28px;
   background-repeat: no-repeat;
+          background-size: 22px!important;
   background-image: url(../image/gtw-images/diskette.png);
   background-position: 0 50%;
 
@@ -2244,6 +2237,7 @@ input[type=radio]:checked + label:before {
   border:1px solid  #377de7;
   background-repeat: no-repeat;
   background-color: #377de7;
+  background-size: 25px;
   background-image: url(../image/gtw-images/add_inverse.png);
   background-position: 50% 50%;
 }
@@ -2341,6 +2335,7 @@ input[type=radio]:checked + label:before {
   margin-top:-12px;
 }
 .char_add{
+  background-size: 30px;
   background-image: url(../image/gtw-images/add.png);
 }
 /*  content style for page index4_1.html  Characteristics tab 2 end*/
@@ -2510,6 +2505,8 @@ input[type=radio]:checked + label:before {
   border: 1px solid #377de7;
   color: #377de7;
   padding: 0 20px 0 50px;
+
+          background-size: 25px;
   background-image: url(../image/gtw-images/download.png);
   background-repeat: no-repeat;
   background-position: 18px 50%;
@@ -2725,7 +2722,7 @@ input[type=radio]:checked + label:before {
         -o-background-size: 20px;
            background-size: 20px;
   background-image: url(../image/gtw-images/delete-cross_inverse.png);
-   /*background-image: url(../image/gtw-images/remove-symbol_red.png);*/
+
   background-position: 50% 50%;
 }
 .gallery_container .gall_close_btn:hover{
@@ -3000,6 +2997,7 @@ input[type=radio]:checked + label:before {
   width: 40px;
   height: 38px;
   border-right: 1px solid #397ce6;
+          background-size: 25px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -3366,7 +3364,7 @@ input[type=radio]:checked + label:before {
 
 /*alert pop up start*/
 .overlay{
-  display:none;
+  /*display:none;*/
 }
 .alert-popUp{
   display:none;
@@ -3382,7 +3380,7 @@ input[type=radio]:checked + label:before {
   -webkit-border-radius: 8px;
           border-radius: 8px;
   background-color: #f5f5f5;
-  z-index: 9999;
+  z-index: 8888;
 }
 .alert-popUp h4{
   font-size: 30px;
@@ -3415,6 +3413,55 @@ input[type=radio]:checked + label:before {
 .popUp_btn:hover{
   color:#fff;
   background-color:#83aff1;
+}
+
+.valid_popUp{
+  /*display:none;*/
+  width: 400px;
+  min-height: 100px;
+  position: absolute;
+  top:10%;
+  left:50%;
+  margin-left:-200px;
+  text-align:center;
+  padding:15px;
+  border:1px solid #83aff1;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #fff;
+  z-index: 9999;
+}
+.alert_succes{
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  padding:10px 5px;
+}
+.alert_danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+   -webkit-border-radius: 6px;
+          border-radius: 6px;    
+  padding:10px 5px;
+  }
+.alert_close{
+  display:block;
+  width: 80px;
+  height: 30px;
+  margin:15px auto 0;
+  line-height: 30px;
+  text-align: center;
+  border:1px solid #83aff1;
+  color: #83aff1;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+.alert_close:hover{
+  background-color: #83aff1;
+  color: #FFF;
 }
 /*alert pop up end */
 
@@ -3692,6 +3739,7 @@ input[type=radio]:checked + label:before {
   right:2px;
   width:20px;
   height: 20px;
+  background-size: 20px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
    background-image: url(../image/gtw-images/info.png);
