@@ -12,9 +12,7 @@
       $('div.tab6').hide();
   }
   removeTabs()
-  $('.overlay:not(.popUp)').click(function(){
-    console.log(this)
-  })
+
   // разрешает переключение между табами 
   popUpKey = {
     key : false,
@@ -113,50 +111,50 @@ if( $('#modal-image').is(":visible") ){
 }
 
 // vallidator
-	 function valid(){
-	 	if( $(this).hasClass('error') ){
-          		$(this).removeClass('error').addClass('not_error')
-          	}		
-                $(this).addClass('not_error').next('.error-box').text('Принято')
-                                .css('color','green')
-                                .animate({'paddingLeft':'10px'},400)
-                                .animate({'paddingLeft':'5px'},400);             
-       };
-       function notValid(){
-       	 $(this).removeClass('not_error').addClass('error');
-                $(this).next('.error-box')
-                   				.text(arguments[0])
-                                .css('color','red')
-                                .animate({'paddingLeft':'10px'},400)
-                                .animate({'paddingLeft':'5px'},400);
-       }
-     $('input#name, input#email, input#tel').unbind().blur( function(){
-         var id = $(this).attr('id');
-         var val = $(this).val();
-       switch(id) {
-            case 'name':
-                var rv_name = /^[a-zA-Zа-яА-Я]+$/;
-                if(val.length > 2 && val.length <= 30  && val != '' && rv_name.test(val)){
-                	valid.call(this)
-                }
-                else{
-              	   notValid.call(this,"Обязательное поле. Длина от 2 до 30 символов") 
-             }
-             break;
-            case 'email':
-               var rv_email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
-               if(val != '' && rv_email.test(val))
-          	     {valid.call(this)}
-               else{ notValid.call(this,"Неправильный формат email") ;}
-           break;
-          case 'tel':
-              if(val != '' && !isNaN(val) && val.length < 12)
-              {	valid.call(this)}
-              else{ notValid.call(this,"Неправильный формат номера") ;}
-          break;
+	 // function valid(){
+	 // 	if( $(this).hasClass('error') ){
+  //         		$(this).removeClass('error').addClass('not_error')
+  //         	}		
+  //               $(this).addClass('not_error').next('.error-box').text('Принято')
+  //                               .css('color','green')
+  //                               .animate({'paddingLeft':'10px'},400)
+  //                               .animate({'paddingLeft':'5px'},400);             
+  //      };
+  //      function notValid(){
+  //      	 $(this).removeClass('not_error').addClass('error');
+  //               $(this).next('.error-box')
+  //                  				.text(arguments[0])
+  //                               .css('color','red')
+  //                               .animate({'paddingLeft':'10px'},400)
+  //                               .animate({'paddingLeft':'5px'},400);
+  //      }
+  //    $('input#name, input#email, input#tel').unbind().blur( function(){
+  //        var id = $(this).attr('id');
+  //        var val = $(this).val();
+  //      switch(id) {
+  //           case 'name':
+  //               var rv_name = /^[a-zA-Zа-яА-Я]+$/;
+  //               if(val.length > 2 && val.length <= 30  && val != '' && rv_name.test(val)){
+  //               	valid.call(this)
+  //               }
+  //               else{
+  //             	   notValid.call(this,"Обязательное поле. Длина от 2 до 30 символов") 
+  //            }
+  //            break;
+  //           case 'email':
+  //              var rv_email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+  //              if(val != '' && rv_email.test(val))
+  //         	     {valid.call(this)}
+  //              else{ notValid.call(this,"Неправильный формат email") ;}
+  //          break;
+  //         case 'tel':
+  //             if(val != '' && !isNaN(val) && val.length < 12)
+  //             {	valid.call(this)}
+  //             else{ notValid.call(this,"Неправильный формат номера") ;}
+  //         break;
 
-       } // end switch(...)
-     }); // end blur()
+     //   } // end switch(...)
+     // }); // end blur()
 	//validaton tab 2 
     $('input#input-product, input#quantity').unbind().blur( function(){
          var id = $(this).attr('id');
@@ -196,6 +194,18 @@ if( $('#modal-image').is(":visible") ){
               }
       })
 
+
+
+
+  function validPopUp(message,alertClass){
+   var validBlock = $('.valid_popUp').appendTo('body');
+       validBlock.append( $('p.alert_message').addClass(alertClass) ).text(message);
+       validBlock.append( $('a.alert_close') )
+       $('a.alert_close').click(function(event){
+          event.preventDefault();
+          validBlock.remove();
+       })
+      } 
 // file validation
 $(".upload_img").change(function (){
   var type   = ['image/jpeg','image/png'];
@@ -203,22 +213,36 @@ $(".upload_img").change(function (){
   var height = 768;
   var size   = 5000000; // bytes
   var file   = $(this)[0].files[0];
-  var prev   = document.getElementById('img_prev');
-  function errMsg(x) {
-    alert('Error ' + x);
+  var prev   = $('#img_prev');
+  var fileCount = $(this)[0].files;
+
+  function validPopUp(message,alertClass){
+   var validBlock = $('<div>').appendTo('body').addClass('valid_popUp');
+       $('<p>').appendTo( validBlock).addClass('alert_message ' + alertClass).text(message);
+       validBlock.append( $('<a href="#" class="alert_close">Закрыть</a>') )
+       $('a.alert_close').click(function(event){
+          event.preventDefault();
+          validBlock.remove();
+       })
+      } 
+  function errMsg(message,alertClass) {  
+    validPopUp(message,alertClass);
     prev.src = '';
     $(this)[0].value = '';
   }
   if (type.indexOf(file.type) == -1) {
-    errMsg('Допустимый формат файла jpeg,png ');
+    errMsg('Допустимый формат файла jpeg,png ', 'alert_danger');
     return false;
   } else if (file.size > size) {
-    errMsg('Размер изображения до 5 мб');
+    errMsg('Размер изображения до 5 мб','alert_danger');
     return false;
-  } else {
-      // errMsg('Validation success!');
+  } else if( fileCount.length > 10 ){
+    errMsg('Максимальное количество файлов 10 ','alert_danger');
+    return false;
+  }
+  else {
       $(this)[0].value = '';
-      alert('Validation success!')
+      validPopUp('Все файлы загружены успешно!','alert_succes')
     };
   
 })
