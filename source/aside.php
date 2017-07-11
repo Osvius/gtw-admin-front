@@ -3,6 +3,12 @@
 			<div class="aside_content">
 				<h3>Доступные разделы</h3>
 				<ul class="aside_nav">
+					<li>
+						<a href="#">
+							<span class="item-icon main-icon"></span>
+							<span class="item-name">Главная </span>
+						</a>
+					<li>				
 					<li class="active">
 						<a href="#">
 							<span class="item-icon real-estate"></span>
@@ -48,7 +54,7 @@
 
 						</ul>
 					</li>
-					<li >
+					<li>
 						<a href="#">
 							<span class="item-icon attach"></span>
 							<span class="item-name">Заказы</span>
@@ -61,6 +67,12 @@
 							<span class="item-name">Доставка / Оплата</span>
 						</a>
 					</li>
+					<li>
+						<a href="#">
+							<span class="item-icon pages-icon"></span>
+							<span class="item-name">Страницы</span>
+						</a>
+					</li>					
 					<li >
 						<a href="#">
 							<span class="item-icon gallery"></span>

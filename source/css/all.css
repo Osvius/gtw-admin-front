@@ -565,6 +565,14 @@ a:active{
 .aside_nav li a:hover > .item-name{
   color:#fff;
 }
+.main-icon{
+   background-image: url(../image/gtw-images/back-to-main-page.png);
+}
+.aside_nav li a:hover > .main-icon,
+.aside_nav .active  > a .main-icon{
+  background-image: url(../image/gtw-images/back-to-main-page_inverse.png);
+}
+
 .real-estate {
   background-image: url(../image/gtw-images/real-estate.png);
 }
@@ -639,7 +647,13 @@ a:active{
 .aside_nav .active > a .gallery{
   background-image: url(../image/gtw-images/gallery_inverse.png);
 }
-
+.pages-icon{
+   background-image: url(../image/gtw-images/pages-icon.png);
+ }
+.aside_nav li a:hover > .pages-icon,
+.aside_nav .active > a .pages-icon{
+  background-image: url(../image/gtw-images/pages-icon_inverse.png);
+}
 /*sidebar style end*/
   
 
@@ -725,7 +739,9 @@ a:active{
   background-size: 26px;
   background-repeat: no-repeat;
   background-position: 0 50%;
+  margin: 5px 0;
 }
+
 .order_list_name {
   background-repeat: no-repeat;
   background-position: 0 50%;
@@ -1848,6 +1864,7 @@ input[type=radio]:checked + label:before {
   border-radius: 5px;
   background-color: #f4f4f7;
   text-align: left;
+  overflow: hidden;
   width: calc(100% - 72px);
   margin-bottom: 10px;
   background-repeat: no-repeat;
@@ -4239,6 +4256,10 @@ input[type=radio]:checked + label:before {
 }
 @media screen and (max-width: 500px) {
 
+.btn-container_1{
+  -webkit-justify-content: center;
+    justify-content: center;
+}
 
 
 }
