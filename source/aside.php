@@ -9,7 +9,7 @@
 							<span class="item-name">Главная </span>
 						</a>
 					<li>				
-					<li class="active">
+					<li >
 						<a href="#">
 							<span class="item-icon real-estate"></span>
 							<span class="item-name">Мой магазин</span>
@@ -29,10 +29,10 @@
 					</li>					
 					<li>
 						<a href="#">
-							<span class="item-icon real-estate"></span>
+							<span class="item-icon folder1"></span>
 							<span class="item-name">Расширенный настройки</span>
 						</a>
-						<ul class="sub-nav hidden">
+						<ul class="sub-nav menu-hidden">
 							<li>
 								<a href="#">
 									<span class="item-icon list"></span>
