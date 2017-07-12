@@ -203,22 +203,7 @@ input:focus, textarea:focus {
     border-radius: 3px;
     position: relative;
 }
-.checkbox-custom,
-.radio-custom {
-    /*display: inline-block;*/
-    /*vertical-align: middle;*/
-}
-/*.checkbox:checked + .checkbox-custom::before,
-.radio:checked + .radio-custom::before {
-    content: "\2713";
-    content: "";
-    display: block;
-    color:#377de7;
-    position: absolute;
-    top: -10px;
-    right: 5px;
-    border-radius: 2px;
-}*/
+
 .checkbox:checked +  .checkbox-custom::before {
     content: "";
     width: 16px;
@@ -232,7 +217,7 @@ input:focus, textarea:focus {
     -webkit-background-size: 10px;
          -o-background-size: 10px;
             background-size: 10px;
-    background-image: url(../image/gtw-images/tick.png);
+    background-image: url(../image/gtw-images/tick.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -373,7 +358,7 @@ a:active{
   color: #397ce6;
   padding-left: 30px;
   background-size: 25px;
-  background-image: url(../image/gtw-images/logout.png);
+  background-image: url(../image/gtw-images/logout.svg);
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
@@ -735,12 +720,14 @@ a:active{
   background-position: 0 50%;
   margin: 5px 0;
 }
-
+.track_icon{
+   background-image: url(../image/gtw-images/trackBlac.svg);
+}
 .order_list_name {
   background-repeat: no-repeat;
   background-position: 0 50%;
   padding-left: 35px;
-  background-image: url(../image/gtw-images/list_2.png);
+  background-image: url(../image/gtw-images/list_2.svg);
 
 }
 
@@ -760,7 +747,7 @@ a:active{
   color: #377de7;
   padding: 0 20px 0 50px;
   background-size: 24px;
-  background-image: url(../image/gtw-images/addblue.png);
+  background-image: url(../image/gtw-images/addblue.svg);
   background-repeat: no-repeat;
   background-position: 18px 50%;
   height: 28px;
@@ -769,7 +756,7 @@ a:active{
 .btn-container_1 .btn_add:hover {
   background-color: #377de7;
   color: #fff;
-  background-image: url(../image/gtw-images/add_inverse.png);
+  background-image: url(../image/gtw-images/add_inverse.svg);
 }
 
 .btn-container_1 .btn_delete {
@@ -778,7 +765,7 @@ a:active{
   width: 44px;
   height: 30px;
   background-size: 24px;
-  background-image: url(../image/gtw-images/garbage.png);
+  background-image: url(../image/gtw-images/garbage.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -786,7 +773,7 @@ a:active{
 .btn-container_1 .btn_delete:hover {
   background-color: #f20101;
   color: #fff;
-  background-image: url(../image/gtw-images/garbage_inverse.png);
+  background-image: url(../image/gtw-images/garbage_inverse.svg);
 }
 
 
@@ -878,9 +865,10 @@ a:active{
 .datepicker1 .input:focus{
    box-shadow: none;
 }
-.datepicker1 .input:focus + .datepicker_btn{
+.datepicker1 .input:focus + .datepicker_btn,
+.datepicker1 .input:hover + .datepicker_btn{
     background-color: #377de7;
-    background-image: url(../image/gtw-images/calendar_inverse.png);
+    background-image: url(../image/gtw-images/calendar_inverse.svg);
 }
    
 .datepicker_btn{
@@ -894,7 +882,7 @@ a:active{
   border-left:1px solid #377de7;
   background-repeat: no-repeat;
   background-size: 30px;
-  background-image: url(../image/gtw-images/calendar.png);
+  background-image: url(../image/gtw-images/calendar.svg);
   background-position: 50% 50%;
   padding:0;
   z-index:20;
@@ -902,7 +890,7 @@ a:active{
 }
 .datepicker_btn:hover{
   background-color: #377de7!important;
-  background-image: url(../image/gtw-images/calendar_inverse.png);
+  background-image: url(../image/gtw-images/calendar_inverse.svg);
 
 }
  select {
@@ -962,23 +950,23 @@ a:active{
 }
 
 .btn_reset {
-  background-image: url(../image/gtw-images/redo-circular-arrow.png);
+  background-image: url(../image/gtw-images/redo-circular-arrow.svg);
 }
 
 .btn_reset:hover {
 
   background-color: #377de7;
   color: #fff;
-  background-image: url(../image/gtw-images/redo-circular-arrow_inverse.png);
+  background-image: url(../image/gtw-images/redo-circular-arrow_inverse.svg);
 }
 .btn_filter {
-  background-image: url(../image/gtw-images/funnel.png);
+  background-image: url(../image/gtw-images/funnel.svg);
 }
 
  .btn_filter:hover {
   background-color: #377de7;
   color: #fff;
-  background-image: url(../image/gtw-images/funnel_inverse.png);
+  background-image: url(../image/gtw-images/funnel_inverse.svg);
 }
 
 
@@ -1050,24 +1038,24 @@ a:active{
 }
 
  .look {
-  background-image: url(../image/gtw-images/look.png);
+  background-image: url(../image/gtw-images/look.svg);
   background-position: 50% 50%;
   background-color: #f3f4f6;
 }
 
 .look:hover {
-  background-image: url(../image/gtw-images/look_inverse.png);
+  background-image: url(../image/gtw-images/look_inverse.svg);
   background-color: #377de7;
 }
 
  .edit {
-  background-image: url(../image/gtw-images/edit.png);
+  background-image: url(../image/gtw-images/edit.svg);
   background-position: 50% 50%;
   background-color: #f3f4f6;
 }
 
  .edit:hover {
-  background-image: url(../image/gtw-images/edit_inverse.png);
+  background-image: url(../image/gtw-images/edit_inverse.svg);
   background-color: #377de7;
 }
 
@@ -1132,10 +1120,8 @@ a:active{
   font-size: 20px;
   font-weight: 400;
   padding-left: 30px;
-  -webkit-background-size: 21px 21px;
-  -o-background-size: 21px 21px;
   background-size: 21px 21px;
-  background-image: url(../image/gtw-images/add.png);
+  background-image: url(../image/gtw-images/add.svg);
   background-position: 0 50%;
 }
  .btn-container_1 .btn_remove {
@@ -1144,14 +1130,14 @@ a:active{
   border: 1px solid #f20101;
   background-repeat: no-repeat;
   background-size: 25px;
-  background-image: url(../image/gtw-images/previous.png);
+  background-image: url(../image/gtw-images/previous.svg);
   background-position: 50% 50%;
 }
 
 .btn-container_1 .btn_remove:hover {
   background-color: #f20101;
   color: #fff;
-  background-image: url(../image/gtw-images/previous_inverse.png);
+  background-image: url(../image/gtw-images/previous_inverse.svg);
 }
 
 
@@ -1365,8 +1351,8 @@ a:active{
   height: 28px;
   line-height: 28px;
   background-repeat: no-repeat;
-          background-size: 22px!important;
-  background-image: url(../image/gtw-images/diskette.png);
+  background-size: 22px!important;
+  background-image: url(../image/gtw-images/diskette.svg);
   background-position: 0 50%;
 
 }
@@ -1386,7 +1372,7 @@ a:active{
 }
 
 .btn_save:hover .save_icon {
-  background-image: url(../image/gtw-images/diskette_inverse.png);
+  background-image: url(../image/gtw-images/diskette_inverse.svg);
 }
 /*  tab1 style for  index1.html END */
 
@@ -1407,14 +1393,14 @@ a:active{
   -webkit-background-size: 14px;
   -o-background-size: 14px;
   background-size: 14px;
-  background-image: url(../image/gtw-images/remove1.png);
+  background-image: url(../image/gtw-images/delete-cross.svg);
   background-position: 50% 50%;
   background-color: #fff;
 }
 
  .del:hover {
   background-color: #f41a1a;
-  background-image: url(../image/gtw-images/remove1_inverse.png);
+  background-image: url(../image/gtw-images/delete-cross_inverse.svg);
 }
 
  .table_input_count {
@@ -1535,7 +1521,7 @@ input[type=radio]:checked + label:before {
   -webkit-background-size: 12px;
   -o-background-size: 12px;
   background-size: 12px;
-  background-image: url(../image/gtw-images/refresh--1-.png);
+  background-image: url(../image/gtw-images/refresh.svg);
   background-position: 0 50%;
   background-color: #fff;
 }
@@ -1792,7 +1778,7 @@ input[type=radio]:checked + label:before {
   -webkit-background-size: 21px 21px;
   -o-background-size: 21px 21px;
   background-size: 21px 21px;
-  background-image: url(../image/gtw-images/attach_black.png);
+  background-image: url(../image/gtw-images/attach_black.svg);
   background-position: 0 50%;
 }
 
@@ -1812,23 +1798,23 @@ input[type=radio]:checked + label:before {
 .page_2 .btn_edit {
   border: 1px solid #377de7;
   color: #377de7;
-  background-image: url(../image/gtw-images/edit.png);
+  background-image: url(../image/gtw-images/edit.svg);
   background-position: 50% 50%;
 }
 .page_2 .btn_edit:hover {
   background-color: #377de7;
   color: #fff;
-  background-image: url(../image/gtw-images/edit_inverse.png);
+  background-image: url(../image/gtw-images/edit_inverse.svg);
 }
 .page_2 .btn_remove {
   border: 1px solid #f20101;
-  background-image: url(../image/gtw-images/previous.png);
+  background-image: url(../image/gtw-images/previous.svg);
   background-position: 50% 50%;
 }
 .page_2 .btn_remove:hover {
   background-color: #f20101;
   color: #fff;
-  background-image: url(../image/gtw-images/previous_inverse.png);
+  background-image: url(../image/gtw-images/previous_inverse.svg);
 }
 
 .h3_block {
@@ -1889,24 +1875,21 @@ input[type=radio]:checked + label:before {
 }
 
  .list_1 h3 {
-  background-image: url(../image/gtw-images/shopping-bag.png);
+  background-image: url(../image/gtw-images/shopping-bag.svg);
   background-position: 19% 50%;
 }
 
-/* .real-estate {
-  background-image: url(../image/gtw-images/real-estate.png);
-}*/
 
  .calendar {
-  background-image: url(../image/gtw-images/calendar.png);
+  background-image: url(../image/gtw-images/calendar.svg);
 }
 
 .credit-card{
-  background-image: url(../image/gtw-images/credit-card.png);
+  background-image: url(../image/gtw-images/credit-card.svg);
 }
 
  .truck {
-  background-image: url(../image/gtw-images/truck.png);
+  background-image: url(../image/gtw-images/truck.svg);
 }
 
  .list_2 {
@@ -1914,22 +1897,22 @@ input[type=radio]:checked + label:before {
 }
 
  .list_2 h3 {
-  background-image: url(../image/gtw-images/avatar.png);
+  background-image: url(../image/gtw-images/avatar.svg);
   background-position: 14% 50%;
 }
 
 .id-card {
-  background-image: url(../image/gtw-images/id-card.png);
+  background-image: url(../image/gtw-images/id-card.svg);
 }
 .team {
-  background-image: url(../image/gtw-images/team.png);
+  background-image: url(../image/gtw-images/team.svg);
 }
 
 .mail {
-  background-image: url(../image/gtw-images/mail.png);
+  background-image: url(../image/gtw-images/mail.svg);
 }
 .phone-call {
-  background-image: url(../image/gtw-images/phone-call.png);
+  background-image: url(../image/gtw-images/phone-call.svg);
 }
 .order_history {
   display: block;
@@ -1937,17 +1920,17 @@ input[type=radio]:checked + label:before {
   width: 100%;
 }
 .h3_details {
-  background-image: url(../image/gtw-images/info-sign.png);
+  background-image: url(../image/gtw-images/info-sign.svg);
   background-position: 45px 50%;
   background-size: 20px;
 }
 .h3_add_history {
-  background-image: url(../image/gtw-images/add.png);
+  background-image: url(../image/gtw-images/add.svg);
   background-position: 45px 50%;
   background-size: 20px;
 }
 .h3_history_config{
-  background-image: url(../image/gtw-images/list_black.png);
+  background-image: url(../image/gtw-images/list_3.svg);
   background-position: 45px 50%;
   background-size: 20px;
 }
@@ -2136,7 +2119,7 @@ input[type=radio]:checked + label:before {
   line-height: 28px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  background-image: url(../image/gtw-images/addblue.png);
+  background-image: url(../image/gtw-images/addblue.svg);
   background-position: 10px 50%;
 
 }
@@ -2157,7 +2140,7 @@ input[type=radio]:checked + label:before {
 
 
  .btn_add_history:hover .add_icon {
-  background-image: url(../image/gtw-images/add_inverse.png);
+  background-image: url(../image/gtw-images/add_inverse.svg);
 }
 /*  content style for page index2.html  END */
 
@@ -2212,12 +2195,12 @@ input[type=radio]:checked + label:before {
 }
 .delivery_table .del{
   width:70%;
-  background-image: url(../image/gtw-images/remove1.png);
+  background-image: url(../image/gtw-images/delete-cross.svg);
   height: 30px;
 }
 .delivery_table .del:hover{
     background-color: #f41a1a;
-  background-image: url(../image/gtw-images/remove1_inverse.png);
+  background-image: url(../image/gtw-images/delete-cross_inverse.svg);
 
 }
 
@@ -2241,11 +2224,11 @@ input[type=radio]:checked + label:before {
   background-repeat: no-repeat;
   background-color: #377de7;
   background-size: 25px;
-  background-image: url(../image/gtw-images/add_inverse.png);
+  background-image: url(../image/gtw-images/add_inverse.svg);
   background-position: 50% 50%;
 }
 .delivery_table .btn_add:hover{
-  background-image: url(../image/gtw-images/addblue.png);
+  background-image: url(../image/gtw-images/addblue.svg);
   background-color: #fff;   
 }
 
@@ -2278,7 +2261,7 @@ input[type=radio]:checked + label:before {
 
 /*  content style for page index4.html Characteristics start  */
  .char_name{
-  background-image: url(../image/gtw-images/folder2_1.png);
+  background-image: url(../image/gtw-images/folder2_1.svg);
 }
 
 .char_table td{
@@ -2293,7 +2276,7 @@ input[type=radio]:checked + label:before {
   height: 28px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  background-image: url(../image/gtw-images/edit.png);
+  background-image: url(../image/gtw-images/edit.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   -webkit-background-size: 19px;
@@ -2303,7 +2286,7 @@ input[type=radio]:checked + label:before {
 }
 .edit_2:hover{
   background-color: #377de7;
-  background-image: url(../image/gtw-images/edit_inverse.png);
+  background-image: url(../image/gtw-images/edit_inverse.svg);
 }
 /*  content style for page index4.html  CharacteristicsEND */
 
@@ -2339,7 +2322,7 @@ input[type=radio]:checked + label:before {
 }
 .char_add{
   background-size: 30px;
-  background-image: url(../image/gtw-images/add.png);
+  background-image: url(../image/gtw-images/add.svg);
 }
 /*  content style for page index4_1.html  Characteristics tab 2 end*/
 
@@ -2348,24 +2331,24 @@ input[type=radio]:checked + label:before {
 /*  content style for page index5.html Group of characteristics  start*/
 
 .char_list{
-  background-image: url(../image/gtw-images/folder3.png);
+  background-image: url(../image/gtw-images/folder3.svg);
 }
 
 .char_edit{
-  background-image: url(../image/gtw-images/edit_black.png);
+  background-image: url(../image/gtw-images/edit_black.svg);
 }
 /*  content style for page index5.html Group of characteristics  end*/
 
 /*  content style for page index6.html Manufacturers  start*/
 .factory_img{
-  background-image: url(../image/gtw-images/factory_black.png);
+  background-image: url(../image/gtw-images/factory_black.svg);
 }
 
 /*  content style for page index6.html Manufacturers  end*/
 
 /*  content style for page index7.html Categories  start*/
 .category_img{
-  background-image: url(../image/gtw-images/list_3.png);
+  background-image: url(../image/gtw-images/list_3.svg);
 }
 
 
@@ -2476,7 +2459,6 @@ input[type=radio]:checked + label:before {
   position: relative;
   display:block;
   overflow: hidden;
-
   left: -15px;
 }
 .tiny_textarea textarea{
@@ -2486,42 +2468,37 @@ input[type=radio]:checked + label:before {
 
 /*  content style for page index9.html mediafiles start*/
 .media_img{
-    background-image: url(../image/gtw-images/media.png);
+    background-image: url(../image/gtw-images/media.svg);
   }
-.btn_download{
-  
-  border: 1px solid #377de7;
-  color: #377de7;
-  padding: 0 20px 0 50px;
-  background-image: url(../image/gtw-images/cloud-computing.png);
-  background-repeat: no-repeat;
-  background-position: 18px 50%;
-  height: 28px;
-}
-.btn_download:hover {
-  background-color: #377de7;
-  color: #fff;
-  background-image: url(../image/gtw-images/cloud-computing_inverse.png);
-}
-
+.btn_download,
 .btn_upload{
   border: 1px solid #377de7;
   color: #377de7;
   padding: 0 20px 0 50px;
-
-          background-size: 25px;
-  background-image: url(../image/gtw-images/download.png);
+  background-size: 25px;
   background-repeat: no-repeat;
   background-position: 18px 50%;
   height: 28px;
 }
+.btn_download{
+ background-image: url(../image/gtw-images/cloud-computing.svg);
+}
+.btn_download:hover {
+  background-color: #377de7;
+  color: #fff;
+  background-image: url(../image/gtw-images/cloud-computing_inverse.svg);
+}
+
+
+.btn_upload{
+  background-image: url(../image/gtw-images/download.svg);
+}
 
 
 .btn-container_1 .delete_all {
-
   width: 100px;
   height: 30px;
-  background-image: url(../image/gtw-images/garbage.png);
+  background-image: url(../image/gtw-images/garbage.svg);
   background-repeat: no-repeat;
   background-position: 10px 50%;
   padding-left:40px;
@@ -2603,7 +2580,7 @@ input[type=radio]:checked + label:before {
   width: 100%;
   display:block; 
   z-index: 19;
-  background-image: url(../image/gtw-images/download-arrow2_inverse.png);
+  background-image: url(../image/gtw-images/download-arrow_inverse.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   -webkit-background-size: 80px;
@@ -2626,14 +2603,6 @@ input[type=radio]:checked + label:before {
   display:block;
 
 }
-.img_block .upload_layer{
-  background-image: url(../image/gtw-images/download-arrow2_inverse.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  -webkit-background-size: 80px;
-       -o-background-size: 80px;
-          background-size: 80px;
-}
 .img_block :hover .upload_layer{
   opacity: 1;
   
@@ -2648,6 +2617,7 @@ input[type=radio]:checked + label:before {
        -o-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
   opacity: 1;
+  width: 30%;
 
 }
 
@@ -2687,7 +2657,7 @@ input[type=radio]:checked + label:before {
     -webkit-background-size: 20px;
          -o-background-size: 20px;
             background-size: 20px;
-    background-image: url(../image/gtw-images/tick_inverse.png);
+    background-image: url(../image/gtw-images/tick_inverse.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -2724,7 +2694,7 @@ input[type=radio]:checked + label:before {
    -webkit-background-size: 20px;
         -o-background-size: 20px;
            background-size: 20px;
-  background-image: url(../image/gtw-images/delete-cross_inverse.png);
+  background-image: url(../image/gtw-images/delete-cross_inverse.svg);
 
   background-position: 50% 50%;
 }
@@ -2772,7 +2742,7 @@ input[type=radio]:checked + label:before {
 }
 
 .slider_img{
-    background-image: url(../image/gtw-images/media.png);
+    background-image: url(../image/gtw-images/media.svg);
   }
 .slider_container{
   overflow:hidden;
@@ -2892,11 +2862,15 @@ input[type=radio]:checked + label:before {
   border: 2px solid #f88383;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url(../image/gtw-images/remove1.png);
+   background-size: 20px;
+  /*background-image: url(../image/gtw-images/delete-cross.svg);*/
+  background-image: url(../image/gtw-images/delete-cross.svg);
 }
 .delete_slider:hover{
+
+ 
   background-color: #f47f80;
-  background-image: url(../image/gtw-images/remove1_inverse.png);
+  background-image: url(../image/gtw-images/delete-cross_inverse.svg);
 }
 
 .slider_container .btn_container_2{
@@ -2916,11 +2890,11 @@ input[type=radio]:checked + label:before {
           border-radius: 8px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url(../image/gtw-images/addblue.png);
+  background-image: url(../image/gtw-images/addblue.svg);
 }
 .slider_container .btn_add:hover{
   background-color: #397ce6;
-  background-image: url(../image/gtw-images/add_inverse.png);
+  background-image: url(../image/gtw-images/add_inverse.svg);
 }
 .slider_container .block1:first-child .img_block{
   margin-top:0!important;
@@ -2966,6 +2940,7 @@ input[type=radio]:checked + label:before {
           border-radius: 8px;
   border:1px solid #397ce6;
 }
+
 .login_head{
   height: 40px;
   text-align:center;
@@ -3013,10 +2988,10 @@ input[type=radio]:checked + label:before {
   border:none;
 }
 .user_img{
-  background-image: url(../image/gtw-images/userLogin.png);
+  background-image: url(../image/gtw-images/userLogin.svg);
 }
 .user_key{
-  background-image: url(../image/gtw-images/key.png);
+  background-image: url(../image/gtw-images/key.svg);
 }
 .help-block{
   display:inline-block;
@@ -3030,8 +3005,10 @@ input[type=radio]:checked + label:before {
 .help-block a:hover{
   color: #79adff;
 }
+
 .btn_block{
   width: 100%;
+  margin:10px auto;
   overflow:hidden;
   text-align:center;
 }
@@ -3121,7 +3098,7 @@ input[type=radio]:checked + label:before {
    background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 30%;
-  background-image: url(../image/gtw-images/add-plus-sign-outline.png);
+  background-image: url(../image/gtw-images/addblue.svg);
 }
 .my_shop .no-img,
 .add_more_container .no-img{
@@ -3146,9 +3123,7 @@ input[type=radio]:checked + label:before {
   background-color:transparent;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  /*background-image: url(../image/gtw-images/cancelH.png);*/
-  background-image: url(../image/gtw-images/delete-button.png);
-   /*background-image: url(../image/gtw-images/delete_icon.png);*/
+  background-image: url(../image/gtw-images/delete-button.svg);
   -webkit-border-radius: 9px;
           border-radius: 9px;
   -webkit-background-size: 50%;
@@ -3157,7 +3132,7 @@ input[type=radio]:checked + label:before {
 
 }
 .is-img ~ .close_btn:hover{
-  background-image: url(../image/gtw-images/delete_icon.png);
+  background-image: url(../image/gtw-images/delete_icon.svg);
 }
 .main_goods .btn_container button,
 .main_goods .btn_container a {
@@ -3676,7 +3651,8 @@ input[type=radio]:checked + label:before {
   height: 35px;
   top:0;
   right:0;
-  background-image: url(../image/gtw-images/calendar.png);
+  background-size: 20px;
+  background-image: url(../image/gtw-images/calendar.svg);
   background-position: 50% 50%; 
 }
 /* tab 4 index12.html addGoods end  */
@@ -3686,7 +3662,7 @@ input[type=radio]:checked + label:before {
 
 /*  content style for page index12_1.html additional start*/
 .additional_img{
-   background-image: url(../image/gtw-images/process.png);
+   background-image: url(../image/gtw-images/process.svg);
 }
 .additional_page,
 .main_page{
@@ -3760,7 +3736,7 @@ input[type=radio]:checked + label:before {
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-   background-image: url(../image/gtw-images/info.png);
+   background-image: url(../image/gtw-images/info.svg);
 }
 .main_item .icon_popUp{
   display:none;
@@ -3836,7 +3812,7 @@ input[type=radio]:checked + label:before {
 
 /*  content style for page index13.html myShop start*/
 .shop_img{
-   background-image: url(../image/gtw-images/real-estateBlack.png);
+   background-image: url(../image/gtw-images/real-estateBlack.svg);
 }
 .my_shop .tabs li{
   width: 110px;
@@ -3947,22 +3923,22 @@ input[type=radio]:checked + label:before {
 }
 .popover-content .btn1{
   left:2%;
-  background-image: url(../image/gtw-images/editH.png);
+  background-image: url(../image/gtw-images/edit.svg);
   border:1px solid #397ce6;
 }
 .popover-content .btn1:hover{
   background-color: #397ce6;
-  background-image: url(../image/gtw-images/editH_inverse.png);
+  background-image: url(../image/gtw-images/edit_inverse.svg);
 }
 
 .popover-content .btn2{
   right:2%;
-  background-image: url(../image/gtw-images/cancelH.png);
+  background-image: url(../image/gtw-images/cancelH.svg);
   border:1px solid #f20101;
 }
 .popover-content .btn2:hover{
     background-color: #f20101;
-  background-image: url(../image/gtw-images/cancelH_inverse.png);
+  background-image: url(../image/gtw-images/cancelH_inverse.svg);
 }
 
 .logoEdit_container .switch_box{
@@ -4083,6 +4059,9 @@ input[type=radio]:checked + label:before {
   width: 40px;
   height: 30px;
   padding:0;
+  -webkit-background-size: 18px;
+       -o-background-size: 18px;
+          background-size: 18px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   position: absolute;
@@ -4093,17 +4072,17 @@ input[type=radio]:checked + label:before {
 
 .popUp .btn_close{
   border: 1px solid #f20101;
-  background-image: url(../image/gtw-images/remove1.png);
+  background-image: url(../image/gtw-images/delete-cross.svg);
 }
 .popUp .btn_close:hover{
   background-color: #f20101;
-  background-image: url(../image/gtw-images/remove1_inverse.png);
+  background-image: url(../image/gtw-images/delete-cross_inverse.svg);
 }
 
 .btn_upload:hover{
   background-color: #377de7;
   color: #fff;
-  background-image: url(../image/gtw-images/download_inverse.png);
+  background-image: url(../image/gtw-images/download_inverse.svg);
 }
 /*  content style for page index14.html  media popup end*/
 
