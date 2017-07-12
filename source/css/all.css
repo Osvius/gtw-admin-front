@@ -112,10 +112,10 @@ textarea{
     -webkit-justify-content: space-between;
        -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-align-items: stretch;
-     -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-align-items: flex-start;
+     -webkit-box-align: flex-start;
+        -ms-flex-align: flex-start;
+          align-items: flex-start;
  overflow:hidden;
  }
  .bootstrap-datetimepicker-widget{
@@ -125,18 +125,7 @@ textarea{
 
    overflow:visible!important;
  }
-.btn {
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  display: inline-block;
-  padding: 0 15px;
-  line-height: 28px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: #f3f4f6;
-}
+
 input:focus, textarea:focus {
   -webkit-box-shadow: inset -1px -1px 18px -5px #8c929a;
   -moz-box-shadow: inset -1px -1px 18px -5px #8c929a;
@@ -611,8 +600,8 @@ a:active{
   background-image: url(../image/gtw-images/factory_inverse.png);
 }
 .folder1 {
-  /*background-image: url(../image/gtw-images/folder1.png);*/
-  background-image: url(../image/gtw-images/folder.svg);
+  background-image: url(../image/gtw-images/folder1.png);
+
 }
 .aside_nav li a:hover > .folder1,
 .aside_nav .active > a .folder1 {
@@ -738,7 +727,7 @@ a:active{
   
   
 }
-.order_head span {
+.order_head > span {
   background-size: 26px;
   background-repeat: no-repeat;
   background-position: 0 50%;
@@ -750,8 +739,7 @@ a:active{
   background-position: 0 50%;
   padding-left: 35px;
   background-image: url(../image/gtw-images/list_2.png);
-/*  -webkit-flex-basis: 300px;
-         flex-basis: 300px;*/
+
 }
 
 .btn-container_1 {
@@ -764,9 +752,6 @@ a:active{
   
 }
 
- .btn-container_1 .btn {
-  margin-left: 20px;
-}
 
 .btn-container_1 .btn_add {
   border: 1px solid #377de7;
@@ -1085,27 +1070,6 @@ a:active{
 }
 
 
-/*.checkbox {
-  display: none;
-}
-
-.checkbox + label::before {
-  content: "";
-  height: 15px;
-  width: 15px;
-  border: 1px solid #83aff1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -7.5px;
-  margin-left: -7.5px;
-}
-
-.checkbox:checked + label::before {
-  content: "\2713";
-  color: #83aff1;
-}
-*/
 
 .pagination {
   overflow: hidden;
@@ -1121,8 +1085,8 @@ a:active{
  .pagination-list li {
   display: inline-block;
   text-align: center;
-  margin: 0 1px
-  border: 1px solid  #4c8aea;
+  margin: 0 1px;
+  
 }
 
 
@@ -1140,7 +1104,12 @@ a:active{
   height: 30px;
   color: #4c8aea;
   font-size: 18px;
+  border: 1px solid #4c8aea;
 }
+/*.pagination-list span{
+  border:1px solid #fff;
+}*/
+
 .pagination-list a{
   cursor: pointer;
 }
@@ -1263,6 +1232,9 @@ a:active{
   display: block;
   position: relative;
 }
+.h_60{
+  height: 61px!important;
+}
 .tab_textarea_wrap{
   height: 120px;
   margin: 17px 0;
@@ -1378,8 +1350,8 @@ a:active{
   color: #377de7;
   border: 1px solid #377de7;
   float: right;
-  height: 28px;
-  height: 100%;
+  /*height: 28px;*/
+  height: 30px;
   width: 140px;
   background-color: #fff;
   overflow: hidden;
@@ -3743,7 +3715,7 @@ input[type=radio]:checked + label:before {
   display:block;
   height: 200px;
   margin-bottom: 70px;
-  border:1px solid #397ce6;
+  border:1px solid #377de7;
   -webkit-border-radius: 8px;
           border-radius: 8px;
   background-color: #f0f5fd;
@@ -4065,6 +4037,8 @@ input[type=radio]:checked + label:before {
   margin:auto;
   max-width: 800px;
   width: 100%;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
   /*height: 80%;*/
   max-height: 75vh;
   padding:0 10px;
