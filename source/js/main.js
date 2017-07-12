@@ -93,6 +93,7 @@ $('.aside_nav a').click( function(event){
 // sidebar end 
 
 
+$.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
 
 $(function() {
   $('#date1').datepicker();
@@ -103,12 +104,12 @@ $('.add_img_block, .close_btn').click(function(event){
   event.preventDefault()
 })
 
-if( $('#modal-image').is(":visible") ){
-   $('body').css('overflow-y','hidden');
-   // $('#modal-image').css('overflow-y','scroll');
-}else{
-  $('body').css('overflow-y','scroll');
-}
+// if( $('#modal-image').is(":visible") ){
+//    $('body').css('overflow-y','hidden');
+//    // $('#modal-image').css('overflow-y','scroll');
+// }else{
+//   $('body').css('overflow-y','scroll');
+// }
 
 // vallidator
 	 // function valid(){
@@ -197,15 +198,7 @@ if( $('#modal-image').is(":visible") ){
 
 
 
-  function validPopUp(message,alertClass){
-   var validBlock = $('.valid_popUp').appendTo('body');
-       validBlock.append( $('p.alert_message').addClass(alertClass) ).text(message);
-       validBlock.append( $('a.alert_close') )
-       $('a.alert_close').click(function(event){
-          event.preventDefault();
-          validBlock.remove();
-       })
-      } 
+
 // file validation
 $(".upload_img").change(function (){
   var type   = ['image/jpeg','image/png'];
