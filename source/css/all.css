@@ -2860,17 +2860,17 @@ input[type=radio]:checked + label:before {
   background-color:#fff;
   -webkit-border-radius: 8px;
           border-radius: 8px;
-  border: 2px solid #f88383;
+  border: 2px solid #f20101;
   background-repeat: no-repeat;
   background-position: 50% 50%;
    background-size: 20px;
-  /*background-image: url(../image/gtw-images/delete-cross.svg);*/
+
   background-image: url(../image/gtw-images/delete-cross.svg);
 }
 .delete_slider:hover{
 
  
-  background-color: #f47f80;
+  background-color: #f20101;
   background-image: url(../image/gtw-images/delete-cross_inverse.svg);
 }
 
