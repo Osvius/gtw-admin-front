@@ -2222,14 +2222,15 @@ input[type=radio]:checked + label:before {
 .delivery_table .btn_add{
   border:1px solid  #377de7;
   background-repeat: no-repeat;
-  background-color: #377de7;
+  background-color: #fff; 
   background-size: 25px;
-  background-image: url(../image/gtw-images/add_inverse.svg);
+  background-image: url(../image/gtw-images/addblue.svg);
   background-position: 50% 50%;
 }
 .delivery_table .btn_add:hover{
-  background-image: url(../image/gtw-images/addblue.svg);
-  background-color: #fff;   
+  background-image: url(../image/gtw-images/add_inverse.svg);
+  background-color: #377de7;
+  
 }
 
 .delivery_table .textarea{
