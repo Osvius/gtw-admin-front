@@ -93,12 +93,12 @@ $('.aside_nav a').click( function(event){
 // sidebar end 
 
 
-$.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
+// $.datepicker.setDefaults( $.datepicker.regional[ "ru" ] );
 
-$(function() {
-  $('#date1').datepicker();
-  $('#date2').datepicker(); 
-});
+// $(function() {
+//   $('#date1').datepicker();
+//   $('#date2').datepicker(); 
+// });
  
 $('.add_img_block, .close_btn').click(function(event){
   event.preventDefault()
@@ -197,8 +197,26 @@ $('.add_img_block, .close_btn').click(function(event){
 
 
 
-
-
+ // <div class="overlay  ">
+ //    <div id="circularG">
+ //      <div id="circularG_1" class="circularG"></div>
+ //      <div id="circularG_2" class="circularG"></div>
+ //      <div id="circularG_3" class="circularG"></div>
+ //      <div id="circularG_4" class="circularG"></div>
+ //      <div id="circularG_5" class="circularG"></div>
+ //      <div id="circularG_6" class="circularG"></div>
+ //      <div id="circularG_7" class="circularG"></div>
+ //      <div id="circularG_8" class="circularG"></div>
+ //   </div>
+ //  </div>
+function createPreloader(parent){
+  var preloadContainer = $('<div class="preloadoverlay">').appendTo(parent).append('<div id="circularG">');
+      for (var i = 1 ; i < 9 ; i++ ){
+        console.log(i)
+          $('<div id="circularG_' + 1 + '" class="circularG">').appendTo(preloadContainer);
+      }
+}
+// createPreloader(".gallery_container");
 // file validation
 $(".upload_img").change(function (){
   var type   = ['image/jpeg','image/png'];
@@ -208,19 +226,22 @@ $(".upload_img").change(function (){
   var file   = $(this)[0].files[0];
   var prev   = $('#img_prev');
   var fileCount = $(this)[0].files;
-
+  $('.preloadContainer').show();
   function validPopUp(message,alertClass){
+    
+  $('.preloadContainer').hide();
+  
    var validBlock = $('<div>').appendTo('body').addClass('valid_popUp');
        $('<p>').appendTo( validBlock).addClass('alert_message ' + alertClass).text(message);
        validBlock.append( $('<a href="#" class="alert_close">Закрыть</a>') )
        $('a.alert_close').click(function(event){
           event.preventDefault();
+
           validBlock.remove();
        })
       } 
   function errMsg(message,alertClass) {  
     validPopUp(message,alertClass);
-    prev.src = '';
     $(this)[0].value = '';
   }
   if (type.indexOf(file.type) == -1) {
